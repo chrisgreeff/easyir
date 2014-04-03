@@ -1,0 +1,168 @@
+@mixin easyir-section(
+    $name,
+    $background-color,
+    $text-color,
+    $text-color-sub
+) {
+    .easyir-page-#{$name} {
+        background-color: #{$background-color};
+    }
+
+    .easyir-section-#{$name} {
+        background-color: #{$background-color};
+        color: #{$text-color};
+
+        .easyir-section--heading-underline {
+            border-bottom: 1px solid #{$text-color-sub};
+        }
+
+        .easyir-section--sub-heading {
+            color: #{$text-color-sub};
+        }
+    }
+}
+
+// --------------------------- Base -------------------------
+
+.easyir-page {
+    min-height: 100%;
+}
+
+.easyir-page--header {
+    margin-top: -60px;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 60px;
+    }
+}
+
+.easyir-page--footer {
+    margin-bottom: -92px;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 92px;
+    }
+}
+
+.easyir-section {
+    // line-height: 0 to ensure the sections are hard up against each other.
+    line-height: 0;
+    padding: $section-padding;
+}
+
+.easyir-section-header {
+    position: relative;
+    height: 70px;
+    padding: 0;
+}
+.easyir-section-footer {
+    height: 92px;
+    padding: 0;
+}
+
+.easyir-section--image {
+    width: 100%;
+}
+
+.easyir-section--content {
+    line-height: 2;
+    @extend %easyir-centered-content;
+}
+
+.easyir-section--table {
+    display: table;
+    table-layout: fixed;
+}
+
+.easyir-section--table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.easyir-section--table-cell-img {
+    padding: 0 20px;
+}
+
+.easyir-section--content-footer {
+    padding: $section-footer-padding;
+    // line-height: normal so there is no empty space below the footer.
+    line-height: normal;
+}
+
+.easyir-section--content-header {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.easyir-section--heading {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+
+    .easyir-section--heading-primary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-primary-font-size;
+        margin: $section-heading-margin;
+    }
+
+    .easyir-section--heading-secondary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-secondary-font-size;
+        margin: $section-heading-margin;
+    }
+
+    .easyir-section--heading-tertiary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-tertiary-font-size;
+        margin: 0;
+    }
+
+    .easyir-section--sub-heading {
+        font-weight: $section-sub-heading-font-weight;
+        font-size: $section-sub-heading-font-size;
+        line-height: 2;
+    }
+}
+
+// -------------------------- Teal 1 --------------------------
+
+@include easyir-section(
+    $name: teal1,
+    $background-color: $color-teal1-background,
+    $text-color: $color-teal1-text,
+    $text-color-sub: $color-teal1-text-sub
+);
+
+// -------------------------- Teal 2 --------------------------
+
+@include easyir-section(
+    $name: teal2,
+    $background-color: $color-teal2-background,
+    $text-color: $color-teal2-text,
+    $text-color-sub: $color-teal2-text-sub
+);
+
+// -------------------------- Teal 3 --------------------------
+
+@include easyir-section(
+    $name: teal3,
+    $background-color: $color-teal3-background,
+    $text-color: $color-teal3-text,
+    $text-color-sub: $color-teal3-text-sub
+);
+
+// -------------------------- Teal 4 --------------------------
+
+@include easyir-section(
+    $name: teal4,
+    $background-color: $color-teal4-background,
+    $text-color: $color-teal4-text,
+    $text-color-sub: $color-teal4-text-sub
+);
