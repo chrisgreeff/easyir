@@ -1,0 +1,103 @@
+@mixin easyir-button($name, $background-color, $border-color, $text-color, $box-shadow-color) {
+    .easyir-button-#{$name} {
+        background-color: #{$background-color};
+        border-color: #{$border-color};
+        color: #{$text-color};
+
+        &:hover,
+        &:focus {
+            @include box-shadow(0 0 3px #{$box-shadow-color} inset);
+        }
+
+        &:active {
+            @include box-shadow(none);
+            background-color: #{$text-color};
+            border-color: #{$background-color};
+            color: #{$background-color};
+        }
+    }
+}
+
+// --------------------------- Base -------------------------
+
+.easyir-button {
+    font-family: 'Ubuntu', 'Raleway', sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    @include border-radius(0);
+    @include transition-property(box-shadow, background-color, color);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in-out);
+}
+
+// Pure overrides
+.pure-button {
+    &:focus,
+    &:hover {
+        background-image: none;
+    }
+
+    &:active {
+        @include box-shadow(none);
+    }
+}
+
+// -------------------------- Blue --------------------------
+
+@include easyir-button(
+    $name: blue,
+    $background-color: $color-blue-button-background,
+    $border-color: $color-blue-button-border,
+    $text-color: $color-blue-button-text,
+    $box-shadow-color: $color-blue-button-box-shadow
+);
+
+// ------------------------- Green --------------------------
+
+@include easyir-button(
+    $name: green,
+    $background-color: $color-green-button-background,
+    $border-color: $color-green-button-border,
+    $text-color: $color-green-button-text,
+    $box-shadow-color: $color-green-button-box-shadow
+);
+
+// ------------------------ Purple --------------------------
+
+@include easyir-button(
+    $name: purple,
+    $background-color: $color-purple-button-background,
+    $border-color: $color-purple-button-border,
+    $text-color: $color-purple-button-text,
+    $box-shadow-color: $color-purple-button-box-shadow
+);
+
+// -------------------------- White -------------------------
+
+@include easyir-button(
+    $name: white,
+    $background-color: $color-white-button-background,
+    $border-color: $color-white-button-border,
+    $text-color: $color-white-button-text,
+    $box-shadow-color: $color-white-button-box-shadow
+);
+
+// --------------------------- Gray -------------------------
+
+@include easyir-button(
+    $name: gray,
+    $background-color: $color-gray-button-background,
+    $border-color: $color-gray-button-border,
+    $text-color: $color-gray-button-text,
+    $box-shadow-color: $color-gray-button-box-shadow
+);
+
+// --------------------------- Dark -------------------------
+
+@include easyir-button(
+    $name: dark,
+    $background-color: $color-dark-button-background,
+    $border-color: $color-dark-button-border,
+    $text-color: $color-dark-button-text,
+    $box-shadow-color: $color-dark-button-box-shadow
+);

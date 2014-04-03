@@ -1,0 +1,28 @@
+$spacing_types:   (m margin) (p padding);
+$position_values: (t top) (b bottom) (l left) (r right) a;
+$spacing_values:  (n 0) (s 5px) (m 10px) (l 20px);
+
+@each $spacing_type in $spacing_types {
+    @each $position_value in $position_values {
+        @each $spacing_value in $spacing_values {
+            @if $position_value == a {
+                .easyir-#{nth($spacing_type, 1) + nth($position_value, 1) + nth($spacing_value, 1)} {
+                    #{nth($spacing_type, 2)}: #{nth($spacing_value,2)};
+                }
+            } @else {
+                .easyir-#{nth($spacing_type, 1) + nth($position_value, 1) + nth($spacing_value, 1)} {
+                    #{nth($spacing_type, 2)}-#{nth($position_value, 2)}: #{nth($spacing_value,2)};
+                }
+            }
+        }
+    }
+}
+
+.easyir-center {
+    text-align: center;
+}
+
+%easyir-centered-content {
+    max-width: $section-content-max-width;
+    margin: $section-content-margin;
+}

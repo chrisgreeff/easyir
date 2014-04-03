@@ -1,0 +1,241 @@
+@mixin easyir-section(
+    $name,
+    $background-color,
+    $text-color,
+    $text-color-sub,
+    $text-color-anchor,
+    $text-color-anchor-hover
+) {
+    .easyir-page-#{$name} {
+        background-color: #{$background-color};
+    }
+
+    .easyir-section-#{$name} {
+        background-color: #{$background-color};
+        color: #{$text-color};
+
+        .easyir-section--heading-underline {
+            border-bottom: 1px solid #{$text-color-sub};
+        }
+
+        .easyir-section--sub-heading {
+            color: #{$text-color-sub};
+        }
+
+        .easyir-section--anchor {
+            text-decoration: none;
+            color: #{$text-color-anchor};
+
+            &:hover {
+                color: #{$text-color-anchor-hover};
+
+                span:after {
+                    width: 100%;
+                    background-color: #{$text-color-anchor-hover};
+                }
+            }
+
+            span {
+                display: inline-block;
+                position: relative;
+
+                &:after {
+                    height: 2px;
+                    content: '';
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 0%;
+                    background-color: #{$text-color-anchor};
+
+                    @include transition-property(all);
+                    @include transition-duration(0.4s);
+                    @include transition-timing-function(ease-in-out);
+                }
+            }
+
+            @include transition-property(color);
+            @include transition-duration(0.3s);
+            @include transition-timing-function(ease-in-out);
+        }
+
+        .easyir-section--icon {
+            font-size: 30px;
+        }
+    }
+}
+
+// --------------------------- Base -------------------------
+
+.easyir-page {
+    min-height: 100%;
+}
+
+.easyir-page--header {
+    margin-top: -60px;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 60px;
+    }
+}
+
+.easyir-page--footer {
+    margin-bottom: -92px;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 92px;
+    }
+}
+
+.easyir-section {
+    // line-height: 0 to ensure the sections are hard up against each other.
+    line-height: 0;
+    padding: $section-padding;
+}
+
+.easyir-section-header {
+    position: relative;
+    height: 70px;
+    padding: 0;
+}
+.easyir-section-footer {
+    height: 92px;
+    padding: 0;
+}
+
+.easyir-section--image {
+    width: 100%;
+}
+
+.easyir-section--content {
+    line-height: 2;
+    @extend %easyir-centered-content;
+}
+
+.easyir-section--table {
+    display: table;
+    table-layout: fixed;
+}
+
+.easyir-section--table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.easyir-section--table-cell-img {
+    padding: 0 20px;
+}
+
+.easyir-section--content-footer {
+    padding: $section-footer-padding;
+    // line-height: normal so there is no empty space below the footer.
+    line-height: normal;
+}
+
+.easyir-section--content-header {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.easyir-section--heading {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+
+    .easyir-section--heading-primary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-primary-font-size;
+        margin: $section-heading-margin;
+    }
+
+    .easyir-section--heading-secondary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-secondary-font-size;
+        margin: $section-heading-margin;
+    }
+
+    .easyir-section--heading-tertiary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-tertiary-font-size;
+        margin: 0;
+    }
+
+    .easyir-section--sub-heading {
+        font-weight: $section-sub-heading-font-weight;
+        font-size: $section-sub-heading-font-size;
+        line-height: 2;
+    }
+}
+
+// -------------------------- Blue --------------------------
+
+@include easyir-section(
+    $name: blue,
+    $background-color: $color-blue-background,
+    $text-color: $color-blue-text,
+    $text-color-anchor: $color-blue-anchor,
+    $text-color-anchor-hover: $color-blue-anchor-hover,
+    $text-color-sub: $color-blue-text-sub
+);
+
+// ------------------------- Green --------------------------
+
+@include easyir-section(
+    $name: green,
+    $background-color: $color-green-background,
+    $text-color: $color-green-text,
+    $text-color-anchor: $color-green-anchor,
+    $text-color-anchor-hover: $color-green-anchor-hover,
+    $text-color-sub: $color-green-text-sub
+);
+
+// ------------------------ Purple --------------------------
+
+@include easyir-section(
+    $name: purple,
+    $background-color: $color-purple-background,
+    $text-color: $color-purple-text,
+    $text-color-anchor: $color-purple-anchor,
+    $text-color-anchor-hover: $color-purple-anchor-hover,
+    $text-color-sub: $color-purple-text-sub
+);
+
+// -------------------------- White -------------------------
+
+@include easyir-section(
+    $name: white,
+    $background-color: $color-white-background,
+    $text-color: $color-white-text,
+    $text-color-anchor: $color-white-anchor,
+    $text-color-anchor-hover: $color-white-anchor-hover,
+    $text-color-sub: $color-white-text-sub
+);
+
+// --------------------------- Gray -------------------------
+
+@include easyir-section(
+    $name: gray,
+    $background-color: $color-gray-background,
+    $text-color: $color-gray-text,
+    $text-color-anchor: $color-gray-anchor,
+    $text-color-anchor-hover: $color-gray-anchor-hover,
+    $text-color-sub: $color-gray-text-sub
+);
+
+// --------------------------- Dark -------------------------
+
+@include easyir-section(
+    $name: dark,
+    $background-color: $color-dark-background,
+    $text-color: $color-dark-text,
+    $text-color-anchor: $color-dark-anchor,
+    $text-color-anchor-hover: $color-dark-anchor-hover,
+    $text-color-sub: $color-dark-text-sub
+);
