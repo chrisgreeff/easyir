@@ -24,68 +24,15 @@
 
 // --------------------------- Base -------------------------
 
-.easyir-page {
-    min-height: 100%;
-}
-
-.easyir-page--header {
-    margin-top: -60px;
-
-    &:before {
-        content: '';
-        display: block;
-        height: 60px;
-    }
-}
-
-.easyir-page--footer {
-    margin-bottom: -92px;
-
-    &:after {
-        content: '';
-        display: block;
-        height: 92px;
-    }
-}
-
 .easyir-section {
     // line-height: 0 to ensure the sections are hard up against each other.
     line-height: 0;
     padding: $section-padding;
 }
 
-.easyir-section-header {
-    position: relative;
-    height: 70px;
-    padding: 0;
-}
-.easyir-section-footer {
-    height: 92px;
-    padding: 0;
-}
-
-.easyir-section--image {
-    width: 100%;
-}
-
 .easyir-section--content {
     line-height: 2;
     @extend %easyir-centered-content;
-}
-
-.easyir-section--table {
-    display: table;
-    table-layout: fixed;
-}
-
-.easyir-section--table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
-}
-
-.easyir-section--table-cell-img {
-    padding: 0 20px;
 }
 
 .easyir-section--content-footer {
@@ -165,4 +112,31 @@
     $background-color: $color-teal4-background,
     $text-color: $color-teal4-text,
     $text-color-sub: $color-teal4-text-sub
+);
+
+// -------------------------- Brown 1 --------------------------
+
+@include easyir-section(
+    $name: brown1,
+    $background-color: $color-brown1-background,
+    $text-color: $color-brown1-text,
+    $text-color-sub: $color-brown1-text-sub
+);
+
+// -------------------------- Brown 2 --------------------------
+
+@include easyir-section(
+    $name: brown2,
+    $background-color: $color-brown2-background,
+    $text-color: $color-brown2-text,
+    $text-color-sub: $color-brown2-text-sub
+);
+
+// -------------------------- Brown 3 --------------------------
+
+@include easyir-section(
+    $name: brown3,
+    $background-color: $color-brown3-background,
+    $text-color: $color-brown3-text,
+    $text-color-sub: $color-brown3-text-sub
 );
