@@ -3,6 +3,14 @@
 
     // ============================= Changing Slides =============================
 
+    function getSlideNode() {
+        var mainNode = $('.easyir-main'),
+        storyClass   = getCurrentStoryClass(mainNode),
+        storyNumber  = getCurrentStoryNumber(storyClass);
+
+        return $('#easyir-story' + storyNumber);
+    }
+
     function getCurrentSlideClass(slideNode) {
         var currentClass;
 
@@ -24,8 +32,7 @@
     }
 
     $('.easyir-slide-btn-prev').on('click', function (event) {
-        var targetNode   = $(this),
-            slideNode    = targetNode.parent('.easyir-story'),
+        var slideNode    = getSlideNode(),
             currentClass = getCurrentSlideClass(slideNode),
             slideNumber  = getCurrentSlideNumber(currentClass);
 
@@ -41,8 +48,7 @@
     });
 
     $('.easyir-slide-btn-next').on('click', function (event) {
-        var targetNode   = $(this),
-            slideNode    = targetNode.parent('.easyir-story'),
+        var slideNode    = getSlideNode(),
             slides       = slideNode.data('slides'),
             currentClass = getCurrentSlideClass(slideNode),
             slideNumber  = getCurrentSlideNumber(currentClass);
