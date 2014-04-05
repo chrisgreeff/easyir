@@ -1,8 +1,51 @@
 .easyir-header {
-    height: 100px;
+    height: 70px;
     position: fixed;
     top: 0;
     opacity: 0.8;
     width: 100%;
     background-color: white;
+    z-index: 2;
+
+    .easyir-logo {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 20px;
+        vertical-align: middle;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .easyir-header-nav {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-right: 20px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .easyir-nav {
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    }
 }
