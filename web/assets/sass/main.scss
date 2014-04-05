@@ -26,17 +26,7 @@
 
 // ------------------------ Modules -------------------------
 
+@import "partials/modules/header";
 @import "partials/modules/page";
-
-.easyir-expandable {
-    max-height: 900px;
-    overflow: hidden;
-    @include transition-property(all);
-    @include transition-duration(0.6s);
-    @include transition-timing-function(ease-in-out);
-}
-
-.easyir-hidden {
-    max-height: 0;
-}
-
+@import "partials/modules/page-colors";
+@import "partials/modules/transitions";

@@ -223,24 +223,35 @@ a {
   text-decoration: none;
 }
 
+/* line 1, ../sass/partials/modules/_header.scss */
+.easyir-header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+  width: 100%;
+  background-color: white;
+}
+
 /* line 27, ../sass/partials/modules/_page.scss */
 .easyir-section {
   line-height: 0;
   padding: 100px 25px;
+  box-sizing: border-box;
 }
 
-/* line 33, ../sass/partials/modules/_page.scss */
+/* line 34, ../sass/partials/modules/_page.scss */
 .easyir-section--content {
   line-height: 2;
 }
 
-/* line 38, ../sass/partials/modules/_page.scss */
+/* line 39, ../sass/partials/modules/_page.scss */
 .easyir-section--content-footer {
   padding: 30px 25px;
   line-height: normal;
 }
 
-/* line 44, ../sass/partials/modules/_page.scss */
+/* line 45, ../sass/partials/modules/_page.scss */
 .easyir-section--content-header {
   position: relative;
   height: 100%;
@@ -248,31 +259,31 @@ a {
   margin: auto;
 }
 
-/* line 51, ../sass/partials/modules/_page.scss */
+/* line 52, ../sass/partials/modules/_page.scss */
 .easyir-section--heading {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
-/* line 56, ../sass/partials/modules/_page.scss */
+/* line 57, ../sass/partials/modules/_page.scss */
 .easyir-section--heading .easyir-section--heading-primary {
   font-weight: 300;
   font-size: 48px;
   margin: 10px 0;
 }
-/* line 62, ../sass/partials/modules/_page.scss */
+/* line 63, ../sass/partials/modules/_page.scss */
 .easyir-section--heading .easyir-section--heading-secondary {
   font-weight: 300;
   font-size: 36px;
   margin: 10px 0;
 }
-/* line 68, ../sass/partials/modules/_page.scss */
+/* line 69, ../sass/partials/modules/_page.scss */
 .easyir-section--heading .easyir-section--heading-tertiary {
   font-weight: 300;
   font-size: 20px;
   margin: 0;
 }
-/* line 74, ../sass/partials/modules/_page.scss */
+/* line 75, ../sass/partials/modules/_page.scss */
 .easyir-section--heading .easyir-section--sub-heading {
   font-weight: normal;
   font-size: 18px;
@@ -412,10 +423,36 @@ a {
   color: white;
 }
 
-/* line 31, ../sass/main.scss */
-.easyir-expandable {
-  max-height: 900px;
-  overflow: hidden;
+/* line 3, ../sass/partials/modules/_transitions.scss */
+.easyir-slide-btn {
+  position: absolute;
+  top: 50%;
+}
+
+/* line 8, ../sass/partials/modules/_transitions.scss */
+.easyir-slide-btn-prev {
+  left: 10px;
+}
+
+/* line 12, ../sass/partials/modules/_transitions.scss */
+.easyir-slide-btn-next {
+  right: 10px;
+}
+
+/* line 16, ../sass/partials/modules/_transitions.scss */
+.easyir-story {
+  height: 100%;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+/* line 23, ../sass/partials/modules/_transitions.scss */
+.easyir-slide {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -430,7 +467,82 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 39, ../sass/main.scss */
-.easyir-hidden {
-  max-height: 0;
+/* line 34, ../sass/partials/modules/_transitions.scss */
+.easyir-story-slide1 .easyir-slide {
+  left: 0;
+}
+
+/* line 40, ../sass/partials/modules/_transitions.scss */
+.easyir-story-slide2 .easyir-slide {
+  left: -100%;
+}
+
+/* line 46, ../sass/partials/modules/_transitions.scss */
+.easyir-story-slide3 .easyir-slide {
+  left: -200%;
+}
+
+/* line 52, ../sass/partials/modules/_transitions.scss */
+.easyir-story-slide4 .easyir-slide {
+  left: -300%;
+}
+
+/* line 59, ../sass/partials/modules/_transitions.scss */
+.easyir-story-btn {
+  position: absolute;
+  left: 50%;
+}
+
+/* line 64, ../sass/partials/modules/_transitions.scss */
+.easyir-story-btn-prev {
+  top: 10px;
+}
+
+/* line 68, ../sass/partials/modules/_transitions.scss */
+.easyir-story-btn-next {
+  bottom: 10px;
+}
+
+/* line 72, ../sass/partials/modules/_transitions.scss */
+.easyir-main {
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+/* line 78, ../sass/partials/modules/_transitions.scss */
+.easyir-story {
+  position: relative;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 86, ../sass/partials/modules/_transitions.scss */
+.easyir-main-story1 .easyir-story {
+  top: 0;
+}
+
+/* line 92, ../sass/partials/modules/_transitions.scss */
+.easyir-main-story2 .easyir-story {
+  top: -100%;
+}
+
+/* line 98, ../sass/partials/modules/_transitions.scss */
+.easyir-main-story3 .easyir-story {
+  top: -200%;
+}
+
+/* line 104, ../sass/partials/modules/_transitions.scss */
+.easyir-main-story4 .easyir-story {
+  top: -300%;
 }
