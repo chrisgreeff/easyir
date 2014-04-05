@@ -188,20 +188,19 @@
     });
 
     $(document).keydown(function (event) {
-        console.log(event.which);
         switch (event.which) {
-            case 40:
-                nextStory();
-                break;
-            case 38:
-                prevStory();
-                break;
-            case 39:
-                nextSlide();
-                break;
-            case 37:
-                prevSlide();
-                break;
+        case 40: // Down
+            nextStory();
+            break;
+        case 38: // Up
+            prevStory();
+            break;
+        case 39: // Right
+            nextSlide();
+            break;
+        case 37: // Left
+            prevSlide();
+            break;
         }
     });
 
