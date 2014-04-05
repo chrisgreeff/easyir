@@ -279,7 +279,7 @@ a {
 /* line 27, ../sass/partials/modules/_page.scss */
 .easyir-section {
   line-height: 0;
-  padding: 100px 25px;
+  padding: 95px 100px 25px 100px;
   box-sizing: border-box;
 }
 
