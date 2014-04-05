@@ -112,7 +112,7 @@
             slideNumber  = getCurrentNumber(currentClass);
 
         if (slideNumber > 1) {
-            incrementNodeNumber(slideNode, slideNumber, currentClass, 'easyir-story-slide');
+            decrementNodeNumber(slideNode, slideNumber, currentClass, 'easyir-story-slide');
         }
     }
 
@@ -185,6 +185,24 @@
     $('.easyir-story-btn-next').on('click', function (event) {
         nextStory();
         event.preventDefault();
+    });
+
+    $(document).keydown(function (event) {
+        console.log(event.which);
+        switch (event.which) {
+            case 40:
+                nextStory();
+                break;
+            case 38:
+                prevStory();
+                break;
+            case 39:
+                nextSlide();
+                break;
+            case 37:
+                prevSlide();
+                break;
+        }
     });
 
 }());
