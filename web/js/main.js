@@ -101,8 +101,12 @@
 
     // ============================= Changing Slides =============================
 
-
-    $('.easyir-slide-btn-prev').on('click', function (event) {
+    /**
+     * Navigates to the previous slide.
+     *
+     * @method nextSlide
+     */
+    function prevSlide() {
         var slideNode    = getSlideNode(),
             currentClass = getCurrentClass(slideNode, 'easyir-story'),
             slideNumber  = getCurrentNumber(currentClass);
@@ -110,11 +114,14 @@
         if (slideNumber > 1) {
             incrementNodeNumber(slideNode, slideNumber, currentClass, 'easyir-story-slide');
         }
+    }
 
-        event.preventDefault();
-    });
-
-    $('.easyir-slide-btn-next').on('click', function (event) {
+    /**
+     * Navigates to the next slide.
+     *
+     * @method nextSlide
+     */
+    function nextSlide() {
         var slideNode    = getSlideNode(),
             slides       = slideNode.data('slides'),
             currentClass = getCurrentClass(slideNode, 'easyir-story'),
@@ -123,13 +130,16 @@
         if (slideNumber < slides) {
             incrementNodeNumber(slideNode, slideNumber, currentClass, 'easyir-story-slide');
         }
-
-        event.preventDefault();
-    });
+    }
 
     // ============================= Changing Story =============================
 
-    $('.easyir-story-btn-prev').on('click', function (event) {
+    /**
+     * Navigates to the prev story.
+     *
+     * @method prevStory
+     */
+    function prevStory() {
         var mainNode     = $('.easyir-main'),
             currentClass = getCurrentClass(mainNode, 'easyir-main'),
             storyNumber  = getCurrentNumber(currentClass);
@@ -137,11 +147,14 @@
         if (storyNumber > 1) {
             decrementNodeNumber(mainNode, storyNumber, currentClass, 'easyir-main-story');
         }
+    }
 
-        event.preventDefault();
-    });
-
-    $('.easyir-story-btn-next').on('click', function (event) {
+    /**
+     * Navigates to the next story.
+     *
+     * @method nextStory
+     */
+    function nextStory() {
         var mainNode     = $('.easyir-main'),
             stories      = mainNode.data('stories'),
             currentClass = getCurrentClass(mainNode, 'easyir-main'),
@@ -150,7 +163,27 @@
         if (storyNumber < stories) {
             incrementNodeNumber(mainNode, storyNumber, currentClass, 'easyir-main-story');
         }
+    }
 
+    // ============================= Event Handlers =============================
+
+    $('.easyir-slide-btn-prev').on('click', function (event) {
+        prevSlide();
+        event.preventDefault();
+    });
+
+    $('.easyir-slide-btn-next').on('click', function (event) {
+        nextSlide();
+        event.preventDefault();
+    });
+
+    $('.easyir-story-btn-prev').on('click', function (event) {
+        prevStory();
+        event.preventDefault();
+    });
+
+    $('.easyir-story-btn-next').on('click', function (event) {
+        nextStory();
         event.preventDefault();
     });
 
