@@ -280,6 +280,8 @@ a {
 .easyir-section {
   line-height: 0;
   padding: 95px 100px 25px 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 

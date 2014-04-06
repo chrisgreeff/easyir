@@ -28,7 +28,7 @@
     // line-height: 0 to ensure the sections are hard up against each other.
     line-height: 0;
     padding: $section-padding;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 .easyir-section--content {
