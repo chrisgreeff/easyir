@@ -2,7 +2,8 @@
 (function () {
     'use strict';
 
-    var getStoryNode,
+    var transitionInProgress = false,
+        getStoryNode,
         getCurrentClass,
         getCurrentNumber,
         incrementNodeNumber,
@@ -127,6 +128,7 @@
 
         if (slideNumber > 1) {
             decrementNodeNumber(storyNode, slideNumber, currentClass, 'easyir-story-slide');
+            return true;
         }
     };
 
@@ -143,6 +145,7 @@
 
         if (slideNumber < slides) {
             incrementNodeNumber(storyNode, slideNumber, currentClass, 'easyir-story-slide');
+            return true;
         }
     };
 
@@ -160,6 +163,7 @@
 
         if (storyNumber > 1) {
             decrementNodeNumber(mainNode, storyNumber, currentClass, 'easyir-main-story');
+            return true;
         }
     };
 
@@ -176,6 +180,7 @@
 
         if (storyNumber < stories) {
             incrementNodeNumber(mainNode, storyNumber, currentClass, 'easyir-main-story');
+            return true;
         }
     };
 
@@ -258,6 +263,29 @@
         case 37: // Left
             prevSlide();
             break;
+        }
+    });
+
+    $(document).on('mousewheel', function (event) {
+        var deltaY             = event.deltaY,
+            transitionOccuring = false;
+
+        if (!transitionInProgress) {
+
+            if (deltaY < 0) {
+                transitionOccuring = nextStory();
+
+            } else if (deltaY > 0) {
+                transitionOccuring = prevStory();
+            }
+
+            if (transitionOccuring) {
+                transitionInProgress = true;
+
+                setTimeout(function () {
+                    transitionInProgress = false;
+                }, 600);
+            }
         }
     });
 
