@@ -6,9 +6,11 @@
     width: 100%;
     background-color: white;
     z-index: 2;
+    min-width: 960px;
 
     @include transition-property(all);
-    @include transition-duration(1s);
+    @include transition-delay(0.4s);
+    @include transition-duration(0.6s);
     @include transition-timing-function(ease-in-out);
 
     .easyir-logo {
@@ -26,29 +28,6 @@
             content: '';
             display: inline-block;
             height: 100%;
-            vertical-align: middle;
-        }
-    }
-
-    .easyir-header-nav {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        padding-right: 20px;
-
-        &:before {
-            content: '';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
-
-        .easyir-nav {
-            text-decoration: none;
-            font-size: 14px;
-            margin: 0 10px;
             vertical-align: middle;
         }
     }

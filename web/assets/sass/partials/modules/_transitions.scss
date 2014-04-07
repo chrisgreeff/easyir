@@ -3,6 +3,7 @@
 .easyir-slide {
     height: 100%;
     position: relative;
+    min-width: 960px;
     @include transition-property(all);
     @include transition-duration(1s);
     @include transition-timing-function(ease-in-out);
@@ -35,7 +36,29 @@
     right: 10px;
 }
 
-
 .easyir-header-hidden {
     top: -70px;
+}
+
+.easyir-story-nav-bar {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-right: 20px;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .easyir-story-nav {
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 10px;
+        vertical-align: middle;
+    }
 }
