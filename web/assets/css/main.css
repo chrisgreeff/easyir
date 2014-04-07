@@ -336,49 +336,49 @@ a {
 }
 
 /* line 83, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro {
+.easyir-section-intro {
   height: 100%;
 }
 /* line 86, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-section--content-intro-half {
+.easyir-section-intro .easyir-section-intro-half {
   height: 50%;
 }
 /* line 93, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-image .easyir-intro-image-placeholder {
+.easyir-section-intro .easyir-section-intro-image .easyir-section-intro-image-placeholder {
   background-color: red;
   height: 100%;
 }
 /* line 101, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-features {
+.easyir-section-intro .easyir-section-intro-features {
   display: table;
   table-layout: fixed;
   width: 100%;
 }
 /* line 107, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-feature {
+.easyir-section-intro .easyir-section-intro-feature {
   display: table-cell;
   width: 25%;
   vertical-align: middle;
   text-align: center;
 }
 /* line 114, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-feature1 {
+.easyir-section-intro .easyir-section-intro-feature1 {
   background-color: blue;
 }
 /* line 118, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-feature2 {
+.easyir-section-intro .easyir-section-intro-feature2 {
   background-color: green;
 }
 /* line 122, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-feature3 {
+.easyir-section-intro .easyir-section-intro-feature3 {
   background-color: maroon;
 }
 /* line 126, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-feature4 {
+.easyir-section-intro .easyir-section-intro-feature4 {
   background-color: purple;
 }
 /* line 132, ../sass/partials/modules/_page.scss */
-.easyir-section--content-intro .easyir-intro-stories {
+.easyir-section-intro .easyir-section-intro-stories {
   height: 100%;
   background-color: black;
 }
