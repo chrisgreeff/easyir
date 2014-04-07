@@ -259,7 +259,7 @@
 
     $('.easyir-slide-btn-prev').on('click', prevSlide);
     $('.easyir-slide-btn-next').on('click', nextSlide);
-    $('.easyir-header-nav').on('click', '.easyir-nav', headerNavItemClickHandler);
+    $('.easyir-story-nav-bar').on('click', '.easyir-story-nav', headerNavItemClickHandler);
     documentNode.keydown(keydownEventHandler);
     documentNode.on('mousewheel', mouseWheelEventHandler);
 
