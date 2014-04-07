@@ -45,7 +45,7 @@
 .easyir-section--content-header {
     position: relative;
     height: 100%;
-    max-width: 1000px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -76,5 +76,61 @@
         font-weight: $section-sub-heading-font-weight;
         font-size: $section-sub-heading-font-size;
         line-height: 2;
+    }
+}
+
+
+.easyir-section--content-intro {
+    height: 100%;
+
+    .easyir-section--content-intro-half {
+        height: 50%;
+    }
+
+    // IMAGE
+
+    .easyir-intro-image {
+        .easyir-intro-image-placeholder {
+            background-color: red;
+            height: 100%;
+        }
+    }
+
+    // FEATURES
+
+    .easyir-intro-features {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .easyir-intro-feature {
+        display: table-cell;
+        width: 25%;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .easyir-intro-feature1 {
+        background-color: blue;
+    }
+
+    .easyir-intro-feature2 {
+        background-color: green;
+    }
+
+    .easyir-intro-feature3 {
+        background-color: maroon;
+    }
+
+    .easyir-intro-feature4 {
+        background-color: purple;
+    }
+
+    // STORIES
+    
+    .easyir-intro-stories {
+        height: 100%;
+        background-color: black;
     }
 }
