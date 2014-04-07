@@ -1,30 +1,26 @@
-.easyir-main {
+.easyir-main,
+.easyir-story,
+.easyir-slide {
     height: 100%;
     position: relative;
+    @include transition-property(all);
+    @include transition-duration(1s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-main {
     overflow-y: hidden;
 }
 
 .easyir-story {
-    height: 100%;
-    position: relative;
     white-space: nowrap;
     overflow-x: hidden;
-    @include transition-property(all);
-    @include transition-duration(0.6s);
-    @include transition-timing-function(ease-in-out);
 }
 
 .easyir-slide {
     display: inline-block;
-    position: relative;
-    height: 100%;
     width: 100%;
-    @include transition-property(all);
-    @include transition-duration(0.6s);
-    @include transition-timing-function(ease-in-out);
 }
-
-// SLIDE CONTROL
 
 .easyir-slide-btn {
     position: absolute;
@@ -37,67 +33,4 @@
 
 .easyir-slide-btn-next {
     right: 10px;
-}
-
-.easyir-story-slide1 {
-    .easyir-slide {
-        left: 0;
-    }
-}
-
-.easyir-story-slide2 {
-    .easyir-slide {
-        left: -100%;
-    }
-}
-
-.easyir-story-slide3 {
-    .easyir-slide {
-        left: -200%;
-    }
-}
-
-.easyir-story-slide4 {
-    .easyir-slide {
-        left: -300%;
-    }
-}
-
-// Story Control
-
-.easyir-story-btn {
-    position: absolute;
-    left: 50%;
-}
-
-.easyir-story-btn-prev {
-    top: 10px;
-}
-
-.easyir-story-btn-next {
-    bottom: 10px;
-}
-
-.easyir-main-story1 {
-    .easyir-story {
-        top: 0;
-    }
-}
-
-.easyir-main-story2 {
-    .easyir-story {
-        top: -100%;
-    }
-}
-
-.easyir-main-story3 {
-    .easyir-story {
-        top: -200%;
-    }
-}
-
-.easyir-main-story4 {
-    .easyir-story {
-        top: -300%;
-    }
 }

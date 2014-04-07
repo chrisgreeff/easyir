@@ -1,20 +1,21 @@
-/*global $, document */
+/*global $, document, setTimeout */
 (function () {
     'use strict';
 
     var transitionInProgress = false,
+        documentNode         = $(document),
         getStoryNode,
-        getCurrentClass,
-        getCurrentNumber,
-        incrementNodeNumber,
-        decrementNodeNumber,
+        updateNodeNumber,
+        setSlide,
         prevSlide,
         nextSlide,
-        nextStory,
-        prevStory,
         startStory,
         setStory,
-        setSlide;
+        nextStory,
+        prevStory,
+        mouseWheelEventHandler,
+        keydownEventHandler,
+        headerNavItemClickHandler;
 
     /**
      * Gets the current slide node that is visible in the viewport.
@@ -24,192 +25,44 @@
      */
     getStoryNode = function () {
         var mainNode    = $('.easyir-main'),
-            storyClass  = getCurrentClass(mainNode, 'easyir-main'),
-            storyNumber = getCurrentNumber(storyClass);
+            storyNumber = mainNode.data('story');
 
         return $('#easyir-story' + storyNumber);
     };
 
     /**
-     * Gets the current slide/story class of the passed node.
+     * Updates the passed parent and transition nodes with the passed properties.
      *
-     * @method getCurrentClass
-     * @param  node {Node}
-     *         The node to get the current slide/story class of.
+     * @method updateNodeNumber
+     * @param config {Object}
+     *        @param config.parentNode {Node}
+     *               The parent node that contains the transition nodes.
      *
-     * @param  skipClass {String}
-     *         The class to skip when searching for the current slide/story class.
+     *        @param config.transitionNodes {NodeList}
+     *               The transition nodes to update the inline styles of.
      *
-     * @return {String} The current slide/story class of the passed node.
+     *        @param config.dataProperty {String}
+     *               The data property of the parent node to update.
+     *
+     *        @param config.dataValue {Number}
+     *               The data value to set the passed data property to.
+     *
+     *        @param config.cssProperty {String}
+     *               The inline css property to update the inline style of transition nodes to.
      */
-    getCurrentClass = function (node, skipClass) {
-        var currentClass;
+    updateNodeNumber = function (config) {
+        var parentNode      = config.parentNode,
+            transitionNodes = config.transitionNodes,
+            dataProperty    = config.dataProperty,
+            dataValue       = config.dataValue,
+            cssProperty     = config.cssProperty,
+            cssValue        = (dataValue * 100) - 100;
 
-        $.each(node.attr('class').split(' '), function (index, className) {
-            if (className !== skipClass && !currentClass) {
-                currentClass = className;
-            }
-        });
-
-        return currentClass;
-    };
-
-    /**
-     * Gets the current slide/story number of the passed class.
-     *
-     * @method getCurrentNumber
-     * @param  currentClass {String}
-     *         The class to get the current slide/story number of.
-     *
-     * @return {Number} The current slide/story number of the passed class.
-     */
-    getCurrentNumber = function (currentClass) {
-        var classLength;
-
-        classLength = currentClass.length;
-        return Number(currentClass.substring(classLength - 1, classLength));
-    };
-
-    /**
-     * Increments the slide/story number of the passed node
-     *
-     * @method incrementNodeNumber
-     * @param  node {Node}
-     *         The node to increment the current slide/story number on.
-     *
-     * @param  number {Number}
-     *         The current slide/story number of the passed node
-     *
-     * @param  currentClass {String}
-     *         The current slide/story class of the passed node.
-     *
-     * @param  className {String}
-     *         The current slide/story class prefix (i.e. the class name without the slide/story number).
-     */
-    incrementNodeNumber = function (node, number, currentClass, className) {
-        node.removeClass(currentClass);
-        number += 1;
-        node.addClass(className + number);
-    };
-
-    /**
-     * Decrements the slide/story number of the passed node
-     *
-     * @method decrementNodeNumber
-     * @param  node {Node}
-     *         The node to decrement the current slide/story number on.
-     *
-     * @param  number {Number}
-     *         The current slide/story number of the passed node
-     *
-     * @param  currentClass {String}
-     *         The current slide/story class of the passed node.
-     *
-     * @param  className {String}
-     *         The current slide/story class prefix (i.e. the class name without the slide/story number).
-     */
-    decrementNodeNumber = function (node, number, currentClass, className) {
-        node.removeClass(currentClass);
-        number -= 1;
-        node.addClass(className + number);
+        parentNode.data(dataProperty, dataValue);
+        transitionNodes.css(cssProperty, '-' + cssValue + '%');
     };
 
     // ============================= Changing Slides =============================
-
-    /**
-     * Navigates to the previous slide.
-     *
-     * @method nextSlide
-     */
-    prevSlide = function () {
-        var storyNode    = getStoryNode(),
-            currentClass = getCurrentClass(storyNode, 'easyir-story'),
-            slideNumber  = getCurrentNumber(currentClass);
-
-        if (slideNumber > 1) {
-            decrementNodeNumber(storyNode, slideNumber, currentClass, 'easyir-story-slide');
-            return true;
-        }
-    };
-
-    /**
-     * Navigates to the next slide.
-     *
-     * @method nextSlide
-     */
-    nextSlide = function () {
-        var storyNode    = getStoryNode(),
-            slides       = storyNode.data('slides'),
-            currentClass = getCurrentClass(storyNode, 'easyir-story'),
-            slideNumber  = getCurrentNumber(currentClass);
-
-        if (slideNumber < slides) {
-            incrementNodeNumber(storyNode, slideNumber, currentClass, 'easyir-story-slide');
-            return true;
-        }
-    };
-
-    // ============================= Changing Story =============================
-
-    /**
-     * Navigates to the prev story.
-     *
-     * @method prevStory
-     */
-    prevStory = function () {
-        var mainNode     = $('.easyir-main'),
-            currentClass = getCurrentClass(mainNode, 'easyir-main'),
-            storyNumber  = getCurrentNumber(currentClass);
-
-        if (storyNumber > 1) {
-            decrementNodeNumber(mainNode, storyNumber, currentClass, 'easyir-main-story');
-            return true;
-        }
-    };
-
-    /**
-     * Navigates to the next story.
-     *
-     * @method nextStory
-     */
-    nextStory = function () {
-        var mainNode     = $('.easyir-main'),
-            stories      = mainNode.data('stories'),
-            currentClass = getCurrentClass(mainNode, 'easyir-main'),
-            storyNumber  = getCurrentNumber(currentClass);
-
-        if (storyNumber < stories) {
-            incrementNodeNumber(mainNode, storyNumber, currentClass, 'easyir-main-story');
-            return true;
-        }
-    };
-
-    /**
-     * Sets the story to the passed number, and restarts the slides.
-     *
-     * @method startStory
-     * @param story {Number}
-     *        The story to start.
-     */
-    startStory = function (story) {
-        setStory(story);
-        setSlide(story, 1);
-    };
-
-    /**
-     * Sets the story to the passed number.
-     *
-     * @method setStory
-     * @param story {Number}
-     *        The story to set.
-     */
-    setStory = function (story) {
-        var mainNode     = $('.easyir-main'),
-            currentClass = getCurrentClass(mainNode, 'easyir-main');
-
-        mainNode.removeClass(currentClass);
-        mainNode.addClass('easyir-main-story' + story);
-    };
 
     /**
      * Sets the slide of the passed story to the to the passed number.
@@ -221,35 +74,154 @@
      * @param slide {Number}
      *        The slide to set.
      */
-    setSlide = function (story, slide) {
-        var storyNode    = $('#easyir-story' + story),
-            currentClass = getCurrentClass(storyNode, 'easyir-story');
+    setSlide = function (slide) {
+        var storyNode = getStoryNode();
 
-        storyNode.removeClass(currentClass);
-        storyNode.addClass('easyir-story-slide' + slide);
+        updateNodeNumber({
+            parentNode: storyNode,
+            transitionNodes: storyNode.find('.easyir-slide'),
+            dataProperty: 'slide',
+            dataValue: slide,
+            cssProperty: 'left'
+        });
+    };
+
+    /**
+     * Navigates to the previous slide.
+     *
+     * @method nextSlide
+     */
+    prevSlide = function () {
+        var storyNode    = getStoryNode(),
+            currentSlide = storyNode.data('slide');
+
+        if (currentSlide > 1) {
+            setSlide(currentSlide - 1);
+            return true;
+        }
+    };
+
+    /**
+     * Navigates to the next slide.
+     *
+     * @method nextSlide
+     */
+    nextSlide = function () {
+        var storyNode    = getStoryNode(),
+            totalSlides  = storyNode.data('total-slides'),
+            currentSlide = storyNode.data('slide');
+
+        if (currentSlide < totalSlides) {
+            setSlide(currentSlide + 1);
+            return true;
+        }
+    };
+
+    // ============================= Changing Story =============================
+
+    /**
+     * Sets the story to the passed number, and restarts the slides.
+     *
+     * @method startStory
+     * @param story {Number}
+     *        The story to start.
+     */
+    startStory = function (story) {
+        setStory(story);
+        setSlide(1);
+    };
+
+    /**
+     * Sets the story to the passed number.
+     *
+     * @method setStory
+     * @param story {Number}
+     *        The story to set.
+     */
+    setStory = function (story) {
+        var mainNode = $('.easyir-main');
+
+        updateNodeNumber({
+            parentNode: mainNode,
+            transitionNodes: mainNode.find('.easyir-story'),
+            dataProperty: 'story',
+            dataValue: story,
+            cssProperty: 'top'
+        });
+    };
+    /**
+     * Navigates to the prev story.
+     *
+     * @method prevStory
+     */
+    prevStory = function () {
+        var mainNode     = $('.easyir-main'),
+            currentStory = mainNode.data('story');
+
+        if (currentStory > 1) {
+            setStory(currentStory - 1);
+            return true;
+        }
+    };
+
+    /**
+     * Navigates to the next story.
+     *
+     * @method nextStory
+     */
+    nextStory = function () {
+        var mainNode     = $('.easyir-main'),
+            totalStories = mainNode.data('total-stories'),
+            currentStory = mainNode.data('story');
+
+        if (currentStory < totalStories) {
+            setStory(currentStory + 1);
+            return true;
+        }
     };
 
     // ============================= Event Handlers =============================
 
-    $('.easyir-slide-btn-prev').on('click', function (event) {
-        prevSlide();
-        event.preventDefault();
-    });
+    /**
+     * Handles the mouse wheel event for iterating stories.
+     *
+     * @method mouseWheelEventHandler
+     * @param event {Event}
+     *         The event object.
+     */
+    mouseWheelEventHandler = function (event) {
+        var deltaY = event.deltaY,
+            start  = false;
 
-    $('.easyir-slide-btn-next').on('click', function (event) {
-        nextSlide();
-        event.preventDefault();
-    });
+        if (!transitionInProgress) {
 
-    $('.easyir-header-nav').on('click', '.easyir-nav', function () {
-        var targetNode  = $(this),
-            navClass    = getCurrentClass(targetNode, 'easyir-nav'),
-            storyNumber = getCurrentNumber(navClass);
+            if (deltaY < 0) {
+                start = nextStory();
 
-        startStory(storyNumber);
-    });
+            } else if (deltaY > 0) {
+                start = prevStory();
+            }
 
-    $(document).keydown(function (event) {
+            if (start) {
+                transitionInProgress = true;
+                documentNode.off('mousewheel', mouseWheelEventHandler);
+
+                setTimeout(function () {
+                    transitionInProgress = false;
+                    documentNode.on('mousewheel', mouseWheelEventHandler);
+                }, 1000);
+            }
+        }
+    };
+
+    /**
+     * Handles the global keydown event for iterating stories and slides.
+     *
+     * @method keydownEventHandler
+     * @param event {Event}
+     *         The event object.
+     */
+    keydownEventHandler = function (event) {
         switch (event.which) {
         case 40: // Down
             nextStory();
@@ -264,29 +236,24 @@
             prevSlide();
             break;
         }
-    });
+    };
 
-    $(document).on('mousewheel', function (event) {
-        var deltaY             = event.deltaY,
-            transitionOccuring = false;
+    /**
+     * Handles header nav item clicks to start a particular story.
+     *
+     * @method headerNavItemClickHandler
+     */
+    headerNavItemClickHandler = function () {
+        var targetNode  = $(this),
+            storyNumber = targetNode.data('story');
 
-        if (!transitionInProgress) {
+        startStory(storyNumber);
+    };
 
-            if (deltaY < 0) {
-                transitionOccuring = nextStory();
-
-            } else if (deltaY > 0) {
-                transitionOccuring = prevStory();
-            }
-
-            if (transitionOccuring) {
-                transitionInProgress = true;
-
-                setTimeout(function () {
-                    transitionInProgress = false;
-                }, 600);
-            }
-        }
-    });
+    $('.easyir-slide-btn-prev').on('click', prevSlide);
+    $('.easyir-slide-btn-next').on('click', nextSlide);
+    $('.easyir-header-nav').on('click', '.easyir-nav', headerNavItemClickHandler);
+    documentNode.keydown(keydownEventHandler);
+    documentNode.on('mousewheel', mouseWheelEventHandler);
 
 }());
