@@ -232,8 +232,20 @@ a {
   width: 100%;
   background-color: white;
   z-index: 2;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 10, ../sass/partials/modules/_header.scss */
+/* line 14, ../sass/partials/modules/_header.scss */
 .easyir-header .easyir-logo {
   display: inline-block;
   position: absolute;
@@ -245,14 +257,14 @@ a {
   margin-left: 20px;
   vertical-align: middle;
 }
-/* line 21, ../sass/partials/modules/_header.scss */
+/* line 25, ../sass/partials/modules/_header.scss */
 .easyir-header .easyir-logo:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 29, ../sass/partials/modules/_header.scss */
+/* line 33, ../sass/partials/modules/_header.scss */
 .easyir-header .easyir-header-nav {
   display: inline-block;
   position: absolute;
@@ -261,14 +273,14 @@ a {
   height: 100%;
   padding-right: 20px;
 }
-/* line 37, ../sass/partials/modules/_header.scss */
+/* line 41, ../sass/partials/modules/_header.scss */
 .easyir-header .easyir-header-nav:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 44, ../sass/partials/modules/_header.scss */
+/* line 48, ../sass/partials/modules/_header.scss */
 .easyir-header .easyir-header-nav .easyir-nav {
   text-decoration: none;
   font-size: 14px;
@@ -567,4 +579,9 @@ a {
 /* line 34, ../sass/partials/modules/_transitions.scss */
 .easyir-slide-btn-next {
   right: 10px;
+}
+
+/* line 39, ../sass/partials/modules/_transitions.scss */
+.easyir-header-hidden {
+  top: -70px;
 }

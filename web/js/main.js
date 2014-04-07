@@ -1,5 +1,5 @@
 /*global $, document, setTimeout */
-(function () {
+(function (document) {
     'use strict';
 
     var transitionInProgress = false,
@@ -108,7 +108,7 @@
      */
     nextSlide = function () {
         var storyNode    = getStoryNode(),
-            totalSlides  = storyNode.data('total-slides'),
+            totalSlides  = storyNode.find('.easyir-slide').length,
             currentSlide = storyNode.data('slide');
 
         if (currentSlide < totalSlides) {
@@ -139,7 +139,8 @@
      *        The story to set.
      */
     setStory = function (story) {
-        var mainNode = $('.easyir-main');
+        var mainNode   = $('.easyir-main'),
+            headerNode = $('.easyir-header');
 
         updateNodeNumber({
             parentNode: mainNode,
@@ -148,6 +149,12 @@
             dataValue: story,
             cssProperty: 'top'
         });
+
+        if (story === 1) {
+            headerNode.addClass('easyir-header-hidden');
+        } else {
+            headerNode.removeClass('easyir-header-hidden');
+        }
     };
     /**
      * Navigates to the prev story.
@@ -171,7 +178,7 @@
      */
     nextStory = function () {
         var mainNode     = $('.easyir-main'),
-            totalStories = mainNode.data('total-stories'),
+            totalStories = mainNode.find('.easyir-story').length,
             currentStory = mainNode.data('story');
 
         if (currentStory < totalStories) {
@@ -256,4 +263,4 @@
     documentNode.keydown(keydownEventHandler);
     documentNode.on('mousewheel', mouseWheelEventHandler);
 
-}());
+}(document));

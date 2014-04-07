@@ -7,6 +7,10 @@
     background-color: white;
     z-index: 2;
 
+    @include transition-property(all);
+    @include transition-duration(1s);
+    @include transition-timing-function(ease-in-out);
+
     .easyir-logo {
         display: inline-block;
         position: absolute;
