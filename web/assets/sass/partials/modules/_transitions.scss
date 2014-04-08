@@ -36,8 +36,9 @@
     right: 10px;
 }
 
-.easyir-header-hidden {
-    top: -70px;
+.easyir-header-visible {
+    @include transition-delay(1s);
+    top: 0;
 }
 
 .easyir-story-nav-bar {

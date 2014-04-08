@@ -151,9 +151,9 @@
         });
 
         if (story === 1) {
-            headerNode.addClass('easyir-header-hidden');
+            headerNode.removeClass('easyir-header-visible');
         } else {
-            headerNode.removeClass('easyir-header-hidden');
+            headerNode.addClass('easyir-header-visible');
         }
     };
     /**

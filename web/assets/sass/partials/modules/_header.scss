@@ -1,7 +1,7 @@
 .easyir-header {
     height: 70px;
     position: fixed;
-    top: 0;
+    top: -70px;
     opacity: 0.8;
     width: 100%;
     background-color: white;
@@ -9,8 +9,7 @@
     min-width: 960px;
 
     @include transition-property(all);
-    @include transition-delay(0.4s);
-    @include transition-duration(0.6s);
+    @include transition-duration(0.5s);
     @include transition-timing-function(ease-in-out);
 
     .easyir-logo {
