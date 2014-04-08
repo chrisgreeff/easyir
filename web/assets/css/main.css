@@ -518,7 +518,7 @@ a {
   color: white;
 }
 
-/* line 3, ../sass/partials/modules/_transitions.scss */
+/* line 3, ../sass/partials/modules/_page-transitions.scss */
 .easyir-main,
 .easyir-story,
 .easyir-slide {
@@ -539,40 +539,40 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 12, ../sass/partials/modules/_transitions.scss */
+/* line 12, ../sass/partials/modules/_page-transitions.scss */
 .easyir-main {
   overflow-y: hidden;
 }
 
-/* line 16, ../sass/partials/modules/_transitions.scss */
+/* line 16, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story {
   white-space: nowrap;
   overflow-x: hidden;
 }
 
-/* line 21, ../sass/partials/modules/_transitions.scss */
+/* line 21, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide {
   display: inline-block;
   width: 100%;
 }
 
-/* line 26, ../sass/partials/modules/_transitions.scss */
+/* line 26, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn {
   position: absolute;
   top: 50%;
 }
 
-/* line 31, ../sass/partials/modules/_transitions.scss */
+/* line 31, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-prev {
   left: 10px;
 }
 
-/* line 35, ../sass/partials/modules/_transitions.scss */
+/* line 35, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next {
   right: 10px;
 }
 
-/* line 39, ../sass/partials/modules/_transitions.scss */
+/* line 39, ../sass/partials/modules/_page-transitions.scss */
 .easyir-header-visible {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
@@ -581,7 +581,7 @@ a {
   top: 0;
 }
 
-/* line 44, ../sass/partials/modules/_transitions.scss */
+/* line 44, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar {
   display: inline-block;
   position: absolute;
@@ -590,14 +590,14 @@ a {
   height: 100%;
   padding-right: 20px;
 }
-/* line 52, ../sass/partials/modules/_transitions.scss */
+/* line 52, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 59, ../sass/partials/modules/_transitions.scss */
+/* line 59, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav {
   text-decoration: none;
   font-size: 14px;
