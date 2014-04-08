@@ -604,3 +604,82 @@ a {
   margin: 0 10px;
   vertical-align: middle;
 }
+
+/* line 1, ../sass/partials/modules/_animations.scss */
+.easyir-iphone {
+  background: url("../images/01-open-page/open-page.png");
+}
+
+@keyframes slideUp {
+  /* line 6, ../sass/partials/modules/_animations.scss */
+  0% {
+    transform: translateY(100%);
+  }
+
+  /* line 9, ../sass/partials/modules/_animations.scss */
+  50% {
+    transform: translateY(-8%);
+  }
+
+  /* line 12, ../sass/partials/modules/_animations.scss */
+  65% {
+    transform: translateY(4%);
+  }
+
+  /* line 15, ../sass/partials/modules/_animations.scss */
+  80% {
+    transform: translateY(-4%);
+  }
+
+  /* line 18, ../sass/partials/modules/_animations.scss */
+  95% {
+    transform: translateY(2%);
+  }
+
+  /* line 21, ../sass/partials/modules/_animations.scss */
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  /* line 27, ../sass/partials/modules/_animations.scss */
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+
+  /* line 30, ../sass/partials/modules/_animations.scss */
+  50% {
+    -webkit-transform: translateY(-8%);
+  }
+
+  /* line 33, ../sass/partials/modules/_animations.scss */
+  65% {
+    -webkit-transform: translateY(4%);
+  }
+
+  /* line 36, ../sass/partials/modules/_animations.scss */
+  80% {
+    -webkit-transform: translateY(-4%);
+  }
+
+  /* line 39, ../sass/partials/modules/_animations.scss */
+  95% {
+    -webkit-transform: translateY(2%);
+  }
+
+  /* line 42, ../sass/partials/modules/_animations.scss */
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* line 47, ../sass/partials/modules/_animations.scss */
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}

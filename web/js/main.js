@@ -263,4 +263,10 @@
     documentNode.keydown(keydownEventHandler);
     documentNode.on('mousewheel', mouseWheelEventHandler);
 
+    // ============================= Event Handlers =============================
+
+    $('.easyir-start-animation').on('click', function () {
+        
+    });
+
 }(document));
