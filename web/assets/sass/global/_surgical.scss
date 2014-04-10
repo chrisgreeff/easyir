@@ -30,3 +30,9 @@ $spacing_values:  (n 0) (s 5px) (m 10px) (l 20px);
 .fix-layout-hack {
     color: $color-brown3-background;
 }
+
+.easyir-content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
