@@ -1,0 +1,119 @@
+.easyir-section--animation {
+    height: 100%;
+}
+
+.easyir-section--animation-table {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.easyir-section--animation-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+.easyir-section--animation-start {
+    width: 300px;
+}
+
+.easyir-section--animation-view {
+    position: relative;
+}
+
+.easyir-ani-iphone {
+    position: relative;
+    background: url("../images/00-iphone5s/iphone5s.png");
+    width: 100%;
+    height: 500px;
+    background-size: 250px 500px;
+}
+
+.easyir-ani-overlay {
+    position: absolute;
+    left: 232px;
+    top: 78px;
+    height: 337px;
+    width: 194px;
+    overflow: hidden;
+    background-color: #008B95;
+}
+
+.easyir-ani-default {
+    position: absolute;
+    left: 0;
+    width: 194px;
+}
+
+.easyir-ani-placeholder-text {
+    color: #D4D4D4;
+    font-size: 12px;
+}
+
+.easyir-ani-full-screen {
+    @extend .easyir-ani-default;
+    top: 0;
+    height: 337px;
+}
+
+.easyir-ani-header {
+    @extend .easyir-ani-default;
+    background: url("../images/00-iphone5s/fixed-top-header.png");
+    background-size: 195px 14px;
+    top: 0;
+    height: 12px;
+}
+
+.easyir-ani-open {
+    @extend .easyir-ani-full-screen;
+    background: url("../images/01-open-page/open-page.png");
+    background-size: 100% auto;
+}
+
+// =========================== Registration Page ===========================
+
+.easyir-ani-registration {
+    @extend .easyir-ani-full-screen;
+    background: url("../images/02-registration/bg.png");
+    background-size: 100% auto;
+
+    .easyir-ani-menu-bar {
+        @extend .easyir-ani-default;
+        background: url("../images/02-registration/menu-bar-top.png");
+        background-size: 100% auto;
+        top: 11px;
+        height: 26px;
+    }
+
+    .easyir-ani-apply-button {
+        @extend .easyir-ani-default;
+        background: url("../images/02-registration/apply-button-off.png");
+        background-size: 100% auto;
+        bottom: 0;
+        height: 38px;
+    }
+
+    .easyir-ani-registration-irdnumber {
+        @extend .easyir-ani-placeholder-text;
+        position: absolute;
+        top: 103px;
+        left: 10px;
+    }
+
+    .easyir-ani-registration-password {
+        @extend .easyir-ani-placeholder-text;
+        position: absolute;
+        top: 129px;
+        left: 10px;
+    }
+}
+
+.easyir-ani {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+

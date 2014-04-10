@@ -265,8 +265,8 @@
 
     // ============================= Event Handlers =============================
 
-    $('.easyir-start-animation').on('click', function () {
-        
+    $('.easyir-btn-start-animation').on('click', function () {
+        $('.easyir-ani-open').addClass('easyir-ani-open-app');
     });
 
 }(document));
