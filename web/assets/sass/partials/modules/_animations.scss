@@ -1,25 +1,240 @@
+// =========================== Open App ===========================
+
 @-webkit-keyframes openApp {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 @-moz-keyframes openApp {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 @-o-keyframes openApp {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 @keyframes openApp {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .easyir-ani-open-app {
-    -webkit-animation: openApp 0.5s ease;
-    -moz-animation:    openApp 0.5s ease;
-    -o-animation:      openApp 0.5s ease;
-    animation:         openApp 0.5s ease;
+    -webkit-animation: openApp 0.3s ease;
+    -moz-animation:    openApp 0.3s ease;
+    -o-animation:      openApp 0.3s ease;
+    animation:         openApp 0.3s ease;
 
     opacity: 0;
+}
+
+// =========================== Click Teal Button ===========================
+
+@-webkit-keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+@-moz-keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+@-o-keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+@keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+
+.easyir-ani-click-teal-button {
+    -webkit-animation: clickTealButton 0.4s ease;
+    -moz-animation:    clickTealButton 0.4s ease;
+    -o-animation:      clickTealButton 0.4s ease;
+    animation:         clickTealButton 0.4s ease;
+}
+
+@-webkit-keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+@-moz-keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+@-o-keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+@keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+
+.easyir-ani-click-gray-button {
+    -webkit-animation: clickGrayButton 0.4s ease;
+    -moz-animation:    clickGrayButton 0.4s ease;
+    -o-animation:      clickGrayButton 0.4s ease;
+    animation:         clickGrayButton 0.4s ease;
+}
+
+// =========================== Slide Frame ===========================
+
+@-webkit-keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+@-moz-keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+@-o-keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+@keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+
+.easyir-ani-slide-next-frame {
+    -webkit-animation: slideNextFrame 0.4s ease;
+    -moz-animation:    slideNextFrame 0.4s ease;
+    -o-animation:      slideNextFrame 0.4s ease;
+    animation:         slideNextFrame 0.4s ease;
+
+    right: 0;
+}
+
+@-webkit-keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+@-moz-keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+@-o-keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+@keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+
+.easyir-ani-slide-prev-frame {
+    -webkit-animation: slidePrevFrame 0.4s ease;
+    -moz-animation:    slidePrevFrame 0.4s ease;
+    -o-animation:      slidePrevFrame 0.4s ease;
+    animation:         slidePrevFrame 0.4s ease;
+    
+    left: auto;
+    right: $ird-screen-width;
+}
+
+// =========================== Show Help ===========================
+
+@-webkit-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@-moz-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@-o-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+
+.easyir-ani-show-help {
+    -webkit-animation: showHelp 0.8s ease;
+    -moz-animation:    showHelp 0.8s ease;
+    -o-animation:      showHelp 0.8s ease;
+    animation:         showHelp 0.8s ease;
+
+    top: -281px;
+}
+
+// =========================== Gestures ===========================
+
+@-webkit-keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.easyir-ani-gesture-show-help {
+    -webkit-animation: gestureHelp 0.8s ease;
+    -moz-animation:    gestureHelp 0.8s ease;
+    -o-animation:      gestureHelp 0.8s ease;
+    animation:         gestureHelp 0.8s ease;
+
+    left: 95px;
 }
