@@ -26,3 +26,7 @@ $spacing_values:  (n 0) (s 5px) (m 10px) (l 20px);
     max-width: $section-content-max-width;
     margin: $section-content-margin;
 }
+
+.fix-layout-hack {
+    color: $color-brown3-background;
+}

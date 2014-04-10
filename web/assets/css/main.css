@@ -209,6 +209,11 @@
   margin: 0 auto;
 }
 
+/* line 30, ../sass/global/_surgical.scss */
+.fix-layout-hack {
+  color: #fbeed3;
+}
+
 /* line 3, ../sass/partials/_base.scss */
 html,
 body,
