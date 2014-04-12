@@ -1053,7 +1053,7 @@ a {
 /* line 75, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-iphone {
   position: relative;
-  background: url("../images/00-iphone5s/iphone5s.png");
+  background: url("../images/generic-app/00-iphone5s/iphone5s.png");
   width: 100%;
   height: 600px;
   background-size: 287px 600px;
@@ -1098,7 +1098,7 @@ a {
 
 /* line 110, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-header {
-  background: url("../images/00-iphone5s/fixed-top-header.png");
+  background: url("../images/generic-app/00-iphone5s/fixed-top-header.png");
   background-size: auto 100%;
   top: -1px;
   height: 15px;
@@ -1106,7 +1106,7 @@ a {
 
 /* line 118, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-open {
-  background: url("../images/01-open-page/open-page.png");
+  background: url("../images/generic-app/01-open-page/open-page.png");
   background-size: auto 100%;
 }
 
@@ -1183,12 +1183,12 @@ a {
 
 /* line 180, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration {
-  background: url("../images/02-registration/bg.png");
+  background: url("../images/generic-app/02-registration/bg.png");
   background-size: auto 100%;
 }
 /* line 185, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-menu-bar {
-  background: url("../images/02-registration/menu-bar-top.png");
+  background: url("../images/generic-app/02-registration/menu-bar-top.png");
   background-size: auto 100%;
 }
 /* line 191, ../sass/partials/modules/_animation-layout.scss */
@@ -1418,7 +1418,7 @@ a {
 
 /* line 399, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre1 {
-  background: url("../images/03-pre-1/bg.png");
+  background: url("../images/fred-app/03-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
@@ -1428,31 +1428,31 @@ a {
 .easyir-ani-menu-bar-pre2,
 .easyir-ani-menu-bar-pre3,
 .easyir-ani-menu-bar-pre4 {
-  background: url("../images/03-pre-1/menu-bar-top.png");
+  background: url("../images/fred-app/03-pre-1/menu-bar-top.png");
   background-size: 100% auto;
 }
 
 /* line 417, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre2 {
-  background: url("../images/04-pre-2/bg.png");
+  background: url("../images/fred-app/04-pre-2/bg.png");
   background-size: 100% auto;
 }
 
 /* line 425, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre3 {
-  background: url("../images/05-pre-3/bg.png");
+  background: url("../images/fred-app/05-pre-3/bg.png");
   background-size: 100% auto;
 }
 
 /* line 433, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre4 {
-  background: url("../images/06-pre-4/bg.png");
+  background: url("../images/fred-app/06-pre-4/bg.png");
   background-size: 100% auto;
 }
 
 /* line 441, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre1 {
-  background: url("../images/07-IR595-pre-1/bg.png");
+  background: url("../images/fred-app/07-IR595-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
@@ -1463,32 +1463,32 @@ a {
 .easyir-ani-ir595-menu-bar-pre3,
 .easyir-ani-ir595-menu-bar-pre4,
 .easyir-ani-ir595-menu-bar-pre5 {
-  background: url("../images/07-IR595-pre-1/menu-bar-top.png");
+  background: url("../images/fred-app/07-IR595-pre-1/menu-bar-top.png");
   background-size: 100% auto;
 }
 
 /* line 460, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre2 {
-  background: url("../images/08-IR595-pre-2/bg.png");
+  background: url("../images/fred-app/08-IR595-pre-2/bg.png");
   background-size: 100% auto;
 }
 
 /* line 468, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre3 {
-  background: url("../images/09-IR595-pre-3/bg.png");
+  background: url("../images/fred-app/09-IR595-pre-3/bg.png");
   background-size: 100% auto;
 }
 
 /* line 476, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4 {
-  background: url("../images/09-IR595-pre-4/bg.png");
+  background: url("../images/fred-app/09-IR595-pre-4/bg.png");
   background-size: 100% auto;
   top: 6px;
 }
 
 /* line 483, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4-upload-button {
-  background: url("../images/09-IR595-pre-4/uploadbutton.png");
+  background: url("../images/fred-app/09-IR595-pre-4/uploadbutton.png");
   background-size: 100% auto;
   bottom: 0;
   height: 36px;
@@ -1496,7 +1496,7 @@ a {
 
 /* line 493, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre5 {
-  background: url("../images/09-IR595-pre-5/bg.png");
+  background: url("../images/fred-app/09-IR595-pre-5/bg.png");
   background-size: 100% auto;
   top: 10px;
 }

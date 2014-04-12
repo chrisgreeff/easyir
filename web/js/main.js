@@ -164,6 +164,7 @@
         storyNode.find('.easyir-story-side-bar').removeClass('easyir-story-side-bar-visible');
         storyNode.find('.easyir-slide-btn-prev').removeClass('easyir-slide-btn-prev-visible');
         storyNode.find('.easyir-slide-btn-next').removeClass('easyir-slide-btn-next-hidden');
+        storyNode.find('.easyir-story-side-bar-content').removeClass('easyir-story-side-bar-app-visible');
     };
 
     /**

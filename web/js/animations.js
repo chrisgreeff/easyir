@@ -107,7 +107,7 @@
             '<div class="easyir-ani-options-bar easyir-ani-options-bar4 easyir-ani-next">' +
                 '<div class="easyir-ani-options-bar-full easyir-ani-options-bar-full1">' +
                     'IR595' +
-                    '<img class="easyir-ani-options-bar-arrow" src="web/assets/images/10-IR595-1/arrow.svg">' +
+                    '<img class="easyir-ani-options-bar-arrow" src="web/assets/images/generic-app/00-iphone5s/arrow.svg">' +
                 '</div>' +
             '</div>' +
             '<div class="easyir-ani easyir-ani-menu-bar-pre4 easyir-ani-next"></div>' +
@@ -200,10 +200,10 @@
             '</div>' +
             '<div class="easyir-ani-options-bar easyir-ani-options-bar7 easyir-ani-next">' +
                 '<div class="easyir-ani-options-bar-half easyir-ani-options-bar-half3">' +
-                    '<img class="easyir-ani-options-bar-half-image easyir-mts" src="web/assets/images/09-IR595-pre-3/dropbox.png">' +
+                    '<img class="easyir-ani-options-bar-half-image easyir-mts" src="web/assets/images/fred-app/09-IR595-pre-3/dropbox.png">' +
                 '</div>' +
                 '<div class="easyir-ani-options-bar-half">' +
-                    '<img class="easyir-ani-options-bar-half-image easyir-mtm" src="web/assets/images/09-IR595-pre-3/google-drive.png">' +
+                    '<img class="easyir-ani-options-bar-half-image easyir-mtm" src="web/assets/images/fred-app/09-IR595-pre-3/google-drive.png">' +
                 '</div>' +
             '</div>' +
             '<div class="easyir-ani easyir-ani-ir595-menu-bar-pre3 easyir-ani-next"></div>' +
@@ -555,4 +555,6 @@
     };
 
     $('.easyir-btn-start-fred-animation').on('click', fred1);
+
+// ============================= Jane =============================
 }());
