@@ -1,29 +1,14 @@
 $ird-screen-width: 223px;
 $ird-screen-height: 405px;
 
-.easyir-section--animation {
-    height: 100%;
-}
-
-.easyir-section--animation-table {
-    height: 100%;
-    width: 100%;
-    display: table;
-}
-
-.easyir-section--animation-cell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    height: 100%;
-}
-
 .easyir-section--animation-start {
     width: 300px;
+    vertical-align: middle;
 }
 
 .easyir-section--animation-view {
     position: relative;
+    vertical-align: middle;
 }
 
 .easyir-ani-swipe-gesture {
@@ -56,18 +41,6 @@ $ird-screen-height: 405px;
     height: $ird-screen-height;
     width: $ird-screen-width;
     overflow: hidden;
-    // background-color: #008B95;
-}
-
-%easyir-middle-content {
-    vertical-align: middle;
-
-    &:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
 }
 
 %easyir-ani-default {
@@ -146,7 +119,7 @@ $ird-screen-height: 405px;
     }
 }
 
-// =========================== Pre 1 ===========================
+// =========================== App ===========================
 
 .easyir-ani-app {
     position: relative;
@@ -177,12 +150,14 @@ $ird-screen-height: 405px;
         color: $ird-teal-default;
         font-size: 20px;
         width: 50%;
+        text-align: center;
     }
 
     .easyir-ani-options-no {
         color: red;
         font-size: 20px;
         width: 50%;
+        text-align: center;
         border-left: 1px solid $ird-app-button-border;
     }
 }

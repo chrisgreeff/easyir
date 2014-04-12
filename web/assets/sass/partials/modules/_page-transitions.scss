@@ -28,13 +28,36 @@
     top: 50%;
 }
 
+// =========================== Slide Buttons ===========================
+
 .easyir-slide-btn-prev {
-    left: 10px;
+    left: -50px;
+    opacity: 0;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-slide-btn-prev-visible {
+    left: 210px;
+    opacity: 1;
+    @include transition-delay(0.8s);
 }
 
 .easyir-slide-btn-next {
     right: 10px;
+    opacity: 1;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
 }
+
+.easyir-slide-btn-next-hidden {
+    right: -50px;
+    opacity: 0;
+}
+
+// =========================== Story Header ===========================
 
 .easyir-header-visible {
     @include transition-delay(1s);
@@ -63,3 +86,27 @@
         vertical-align: middle;
     }
 }
+
+.easyir-story-side-bar {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    background-color: $color-teal-background;
+    top: 0;
+    left: -200px;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+    @extend %easyir-middle-content;
+    display: table;
+
+    .easyir-story-side-bar-title {
+        display: table-cell;
+    }
+}
+
+.easyir-story-side-bar-visible {
+    left: 0px;
+    @include transition-delay(0.8s);
+}
+

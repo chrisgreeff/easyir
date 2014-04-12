@@ -1,10 +1,19 @@
-// -------------------------- Teal 1 --------------------------
+// -------------------------- Teal --------------------------
 
 @include easyir-section(
-    $name: teal1,
-    $background-color: $color-teal1-background,
-    $text-color: $color-teal1-text,
-    $text-color-sub: $color-teal1-text-sub
+    $name: teal,
+    $background-color: $color-teal-background,
+    $text-color: $color-teal-text,
+    $text-color-sub: $color-teal-text-sub
+);
+
+// -------------------------- Gray --------------------------
+
+@include easyir-section(
+    $name: gray,
+    $background-color: $color-gray-background,
+    $text-color: $color-gray-text,
+    $text-color-sub: $color-gray-text-sub
 );
 
 // -------------------------- Teal 2 --------------------------

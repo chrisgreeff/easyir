@@ -36,6 +36,7 @@
     line-height: 2;
     min-width: 960px;
     @extend %easyir-centered-content;
+    height: 100%;
 }
 
 .easyir-section--content-footer {
@@ -79,6 +80,22 @@
         font-size: $section-sub-heading-font-size;
         line-height: 2;
     }
+}
+
+.easyir-section--content-table {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.easyir-section--content-cell {
+    display: table-cell;
+    text-align: center;
+    height: 100%;
+}
+
+.easyir-section--content-caption {
+    vertical-align: top;
 }
 
 // INTRO

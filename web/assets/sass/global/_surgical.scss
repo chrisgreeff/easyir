@@ -27,12 +27,13 @@ $spacing_values:  (n 0) (s 5px) (m 10px) (l 20px);
     margin: $section-content-margin;
 }
 
-.fix-layout-hack {
-    color: $color-brown3-background;
-}
+%easyir-middle-content {
+    vertical-align: middle;
 
-.easyir-content-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
 }

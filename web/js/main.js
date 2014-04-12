@@ -93,10 +93,23 @@
      */
     prevSlide = function () {
         var storyNode    = getStoryNode(),
-            currentSlide = storyNode.data('slide');
+            totalSlides  = storyNode.find('.easyir-slide').length,
+            currentSlide = storyNode.data('slide'),
+            nextSlide;
 
         if (currentSlide > 1) {
-            setSlide(currentSlide - 1);
+            nextSlide = currentSlide - 1;
+            setSlide(nextSlide);
+
+            if (nextSlide === 1) {
+                storyNode.find('.easyir-story-side-bar').removeClass('easyir-story-side-bar-visible');
+                storyNode.find('.easyir-slide-btn-prev').removeClass('easyir-slide-btn-prev-visible');
+            }
+
+            if (nextSlide < totalSlides) {
+                storyNode.find('.easyir-slide-btn-next').removeClass('easyir-slide-btn-next-hidden');
+            }
+
             return true;
         }
     };
@@ -109,12 +122,21 @@
     nextSlide = function () {
         var storyNode    = getStoryNode(),
             totalSlides  = storyNode.find('.easyir-slide').length,
-            currentSlide = storyNode.data('slide');
+            currentSlide = storyNode.data('slide'),
+            nextSlide    = currentSlide + 1;
 
         if (currentSlide < totalSlides) {
-            setSlide(currentSlide + 1);
+            setSlide(nextSlide);
+            storyNode.find('.easyir-story-side-bar').addClass('easyir-story-side-bar-visible');
+            storyNode.find('.easyir-slide-btn-prev').addClass('easyir-slide-btn-prev-visible');
+
+            if (nextSlide === totalSlides) {
+                storyNode.find('.easyir-slide-btn-next').addClass('easyir-slide-btn-next-hidden');
+            }
+
             return true;
         }
+
     };
 
     // ============================= Changing Story =============================
@@ -285,6 +307,16 @@
             }, 400);
 
         }, 300);
+    });
+
+    $('.easyir-btn-reset-animation').on('click', function () {
+        $('.easyir-ani-open').removeClass('easyir-ani-open-app');
+        $('.easyir-ani-apply-button').removeClass('easyir-ani-click-teal-button');
+        $('.easyir-ani-app').removeClass('easyir-ani-slide-next-frame');
+        $('.easyir-ani-registration').removeClass('easyir-ani-slide-prev-frame');
+        $('.easyir-ani-pre-1').removeClass('easyir-ani-show-help');
+        $('.easyir-ani-swipe-gesture').removeClass('easyir-ani-gesture-show-help');
+        $('.easyir-ani-options-yes').removeClass('easyir-ani-click-gray-button');
     });
 
 }(document));
