@@ -347,6 +347,11 @@ a {
 }
 
 /* line 91, ../sass/partials/modules/_page.scss */
+.easyir-section--story-telling {
+  padding-left: 250px;
+}
+
+/* line 95, ../sass/partials/modules/_page.scss */
 .easyir-section--content-table {
   height: 100%;
   width: 960px;
@@ -354,7 +359,7 @@ a {
   table-layout: fixed;
 }
 
-/* line 98, ../sass/partials/modules/_page.scss */
+/* line 102, ../sass/partials/modules/_page.scss */
 .easyir-section--content-cell {
   display: table-cell;
   text-align: center;
@@ -362,41 +367,41 @@ a {
   width: 480px;
 }
 
-/* line 105, ../sass/partials/modules/_page.scss */
+/* line 109, ../sass/partials/modules/_page.scss */
 .easyir-section--content-caption {
   vertical-align: top;
 }
 
-/* line 109, ../sass/partials/modules/_page.scss */
+/* line 113, ../sass/partials/modules/_page.scss */
 .easyir-caption-container {
   margin-top: 100px;
   padding: 20px;
 }
 
-/* line 114, ../sass/partials/modules/_page.scss */
+/* line 118, ../sass/partials/modules/_page.scss */
 .easyir-image-container {
   height: 100%;
 }
 
-/* line 120, ../sass/partials/modules/_page.scss */
+/* line 124, ../sass/partials/modules/_page.scss */
 .easyir-section-intro {
   height: 100%;
 }
-/* line 123, ../sass/partials/modules/_page.scss */
+/* line 127, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-top {
   height: 100%;
   margin-bottom: -310px;
 }
-/* line 128, ../sass/partials/modules/_page.scss */
+/* line 132, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-bottom {
   height: 310px;
 }
-/* line 135, ../sass/partials/modules/_page.scss */
+/* line 139, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-image .easyir-section-intro-image-placeholder {
   background-color: red;
   height: 100%;
 }
-/* line 143, ../sass/partials/modules/_page.scss */
+/* line 147, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-features {
   position: absolute;
   bottom: 70px;
@@ -405,29 +410,29 @@ a {
   width: 100%;
   height: 240px;
 }
-/* line 152, ../sass/partials/modules/_page.scss */
+/* line 156, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-feature {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 158, ../sass/partials/modules/_page.scss */
+/* line 162, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-feature1 {
   background-color: blue;
 }
-/* line 162, ../sass/partials/modules/_page.scss */
+/* line 166, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-feature2 {
   background-color: green;
 }
-/* line 166, ../sass/partials/modules/_page.scss */
+/* line 170, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-feature3 {
   background-color: maroon;
 }
-/* line 170, ../sass/partials/modules/_page.scss */
+/* line 174, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-feature4 {
   background-color: purple;
 }
-/* line 176, ../sass/partials/modules/_page.scss */
+/* line 180, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-stories {
   position: absolute;
   bottom: 0;
@@ -626,13 +631,16 @@ a {
   width: 100%;
 }
 
-/* line 26, ../sass/partials/modules/_page-transitions.scss */
+/* line 28, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn {
   position: absolute;
   top: 50%;
+  text-decoration: none;
+  color: #414143;
+  font-size: 80px;
 }
 
-/* line 33, ../sass/partials/modules/_page-transitions.scss */
+/* line 36, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-prev {
   left: -50px;
   opacity: 0;
@@ -650,9 +658,9 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 41, ../sass/partials/modules/_page-transitions.scss */
+/* line 44, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-prev-visible {
-  left: 210px;
+  left: 220px;
   opacity: 1;
   -webkit-transition-delay: 0.8s;
   -moz-transition-delay: 0.8s;
@@ -660,9 +668,9 @@ a {
   transition-delay: 0.8s;
 }
 
-/* line 47, ../sass/partials/modules/_page-transitions.scss */
+/* line 50, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next {
-  right: 10px;
+  right: 20px;
   opacity: 1;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -678,13 +686,13 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 55, ../sass/partials/modules/_page-transitions.scss */
+/* line 58, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next-hidden {
   right: -50px;
   opacity: 0;
 }
 
-/* line 62, ../sass/partials/modules/_page-transitions.scss */
+/* line 65, ../sass/partials/modules/_page-transitions.scss */
 .easyir-header-visible {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
@@ -693,7 +701,7 @@ a {
   top: 0;
 }
 
-/* line 67, ../sass/partials/modules/_page-transitions.scss */
+/* line 70, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar {
   display: inline-block;
   position: absolute;
@@ -702,14 +710,14 @@ a {
   height: 100%;
   padding-right: 20px;
 }
-/* line 75, ../sass/partials/modules/_page-transitions.scss */
+/* line 78, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 82, ../sass/partials/modules/_page-transitions.scss */
+/* line 85, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav {
   text-decoration: none;
   font-size: 14px;
@@ -717,7 +725,7 @@ a {
   vertical-align: middle;
 }
 
-/* line 90, ../sass/partials/modules/_page-transitions.scss */
+/* line 93, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar {
   height: 100%;
   width: 200px;
@@ -739,12 +747,17 @@ a {
   transition-timing-function: ease-in-out;
   display: table;
 }
-/* line 103, ../sass/partials/modules/_page-transitions.scss */
+/* line 106, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar .easyir-story-side-bar-title {
   display: table-cell;
+  white-space: normal;
+  font-size: 48px;
+  font-family: 'proxima_nova_blblack';
+  color: #414143;
+  text-align: center;
 }
 
-/* line 108, ../sass/partials/modules/_page-transitions.scss */
+/* line 116, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar-visible {
   left: 0px;
   -webkit-transition-delay: 0.8s;
@@ -1449,7 +1462,39 @@ a {
   font-style: normal;
 }
 
-/* line 47, ../sass/main.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-s7zo7i");
+  src: url("../fonts/icomoon.eot?#iefix-s7zo7i") format("embedded-opentype"), url("../fonts/icomoon.woff?-s7zo7i") format("woff"), url("../fonts/icomoon.ttf?-s7zo7i") format("truetype"), url("../fonts/icomoon.svg?-s7zo7i#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 58, ../sass/main.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 72, ../sass/main.scss */
+.icon-chevron-left:before {
+  content: "\e600";
+}
+
+/* line 75, ../sass/main.scss */
+.icon-chevron-right:before {
+  content: "\e601";
+}
+
+/* line 79, ../sass/main.scss */
 .easyir-fred-1 {
   height: 650px;
 }
