@@ -43,6 +43,8 @@
     };
 
     // ============================= Fred =============================
+    var fredNode = $('.easyir-ani-fred');
+    var fredBtn = $('.easyir-btn-fred');
 
     var fredAniTemplate = '' +
         '<div class="easyir-ani easyir-ani-registration">' +
@@ -234,18 +236,20 @@
 
     // OPEN APP
     var fred1 = function () {
+        console.log('sup');
         $('.easyir-walkthrough-fred2-point1').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-fred2-point2').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-fred2-point3').addClass(POINT_HIDDEN);
-        $('.easyir-ani-fred').html(fredAniTemplate);
-        $('.easyir-btn-fred').removeClass(ANI_START_BTN_FRED2);
-        $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED1);
-        $('.easyir-btn-fred').addClass(BTN_DISABLED);
-        $('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        fredNode.html(fredAniTemplate);
+        fredNode = $('.easyir-ani-fred');
+        fredBtn.removeClass(ANI_START_BTN_FRED2);
+        fredBtn.addClass(ANI_START_BTN_FRED1);
+        fredBtn.addClass(BTN_DISABLED);
+        fredNode.find('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-fred1-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
-            $('.easyir-ani-open').addClass(ANI_OPEN_APP);
+            fredNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
 
             fred2();
         }, TIME_NEXT_SLIDE);
@@ -254,7 +258,7 @@
     // CLICK APPLY FOR IRD
     var fred2 = function () {
         setTimeout(function () {
-            $('.easyir-ani-apply-button').addClass(ANI_CLICK_TEAL_BTN);
+            fredNode.find('.easyir-ani-apply-button').addClass(ANI_CLICK_TEAL_BTN);
 
             fred3()
         }, TIME_NEXT_SLIDE);
@@ -263,8 +267,8 @@
     // NEXT FRAME
     var fred3 = function () {
         setTimeout(function () {
-            aniNextSlide([$('.easyir-ani-app')]);
-            aniPrevSlide([$('.easyir-ani-registration')]);
+            aniNextSlide([fredNode.find('.easyir-ani-app')]);
+            aniPrevSlide([fredNode.find('.easyir-ani-registration')]);
             $('.easyir-walkthrough-fred1-point2').removeClass(POINT_HIDDEN);
 
             fred4();
@@ -274,11 +278,11 @@
     // SHOW HELP
     var fred4 = function () {
         setTimeout(function () {
-            $('.easyir-ani-swipe-gesture').addClass(ANI_GESTURE_SHOW_HELP);
+            fredNode.find('.easyir-ani-swipe-gesture').addClass(ANI_GESTURE_SHOW_HELP);
 
             setTimeout(function () {
-                $('.easyir-ani-pre1').addClass(ANI_SHOW_HELP);
-                $('.easyir-ani-progress-bar1').addClass(ANI_SHOW_HELP);
+                fredNode.find('.easyir-ani-pre1').addClass(ANI_SHOW_HELP);
+                fredNode.find('.easyir-ani-progress-bar1').addClass(ANI_SHOW_HELP);
 
                 fred5();
             }, TIME_HELP);
@@ -288,7 +292,7 @@
     // CLICK YES
     var fred5 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-yes1').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-yes1').addClass(ANI_CLICK_GRAY_BTN);
 
             fred6();
         }, TIME_READING_HELP);
@@ -298,17 +302,17 @@
     var fred6 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-pre1'),
-                $('.easyir-ani-progress-bar1'),
-                $('.easyir-ani-options-bar1'),
-                $('.easyir-ani-menu-bar-pre1')
+                fredNode.find('.easyir-ani-pre1'),
+                fredNode.find('.easyir-ani-progress-bar1'),
+                fredNode.find('.easyir-ani-options-bar1'),
+                fredNode.find('.easyir-ani-menu-bar-pre1')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-pre2'),
-                $('.easyir-ani-progress-bar2'),
-                $('.easyir-ani-options-bar2'),
-                $('.easyir-ani-menu-bar-pre2')
+                fredNode.find('.easyir-ani-pre2'),
+                fredNode.find('.easyir-ani-progress-bar2'),
+                fredNode.find('.easyir-ani-options-bar2'),
+                fredNode.find('.easyir-ani-menu-bar-pre2')
             ]);
 
             fred7();
@@ -317,7 +321,7 @@
 
     var fred7 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-half1').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-half1').addClass(ANI_CLICK_GRAY_BTN);
             fred8();
         }, TIME_NEXT_SLIDE);
     };
@@ -325,17 +329,17 @@
     var fred8 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-pre2'),
-                $('.easyir-ani-progress-bar2'),
-                $('.easyir-ani-options-bar2'),
-                $('.easyir-ani-menu-bar-pre2')
+                fredNode.find('.easyir-ani-pre2'),
+                fredNode.find('.easyir-ani-progress-bar2'),
+                fredNode.find('.easyir-ani-options-bar2'),
+                fredNode.find('.easyir-ani-menu-bar-pre2')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-pre3'),
-                $('.easyir-ani-progress-bar3'),
-                $('.easyir-ani-options-bar3'),
-                $('.easyir-ani-menu-bar-pre3')
+                fredNode.find('.easyir-ani-pre3'),
+                fredNode.find('.easyir-ani-progress-bar3'),
+                fredNode.find('.easyir-ani-options-bar3'),
+                fredNode.find('.easyir-ani-menu-bar-pre3')
             ]);
 
             fred9();
@@ -344,7 +348,7 @@
 
     var fred9 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-half2').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-half2').addClass(ANI_CLICK_GRAY_BTN);
             fred10();
         }, TIME_NEXT_SLIDE);
     };
@@ -352,16 +356,16 @@
     var fred10 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-pre3'),
-                $('.easyir-ani-progress-bar3'),
-                $('.easyir-ani-options-bar3'),
-                $('.easyir-ani-menu-bar-pre3')
+                fredNode.find('.easyir-ani-pre3'),
+                fredNode.find('.easyir-ani-progress-bar3'),
+                fredNode.find('.easyir-ani-options-bar3'),
+                fredNode.find('.easyir-ani-menu-bar-pre3')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-pre4'),
-                $('.easyir-ani-options-bar4'),
-                $('.easyir-ani-menu-bar-pre4')
+                fredNode.find('.easyir-ani-pre4'),
+                fredNode.find('.easyir-ani-options-bar4'),
+                fredNode.find('.easyir-ani-menu-bar-pre4')
             ]);
 
             $('.easyir-walkthrough-fred1-point3').removeClass(POINT_HIDDEN);
@@ -375,7 +379,7 @@
             $('.easyir-walkthrough-fred1-point1').addClass(POINT_HIDDEN);
             $('.easyir-walkthrough-fred1-point2').addClass(POINT_HIDDEN);
             $('.easyir-walkthrough-fred1-point3').addClass(POINT_HIDDEN);
-            $('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
             $('.easyir-walkthrough-fred2-point1').removeClass(POINT_HIDDEN);
 
             fred12();
@@ -385,17 +389,17 @@
     var fred12 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-pre4'),
-                $('.easyir-ani-options-bar4'),
-                $('.easyir-ani-menu-bar-pre4')
+                fredNode.find('.easyir-ani-pre4'),
+                fredNode.find('.easyir-ani-options-bar4'),
+                fredNode.find('.easyir-ani-menu-bar-pre4')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-ir595-pre1'),
-                $('.easyir-ani-progress-bar4'),
-                $('.easyir-ani-options-bar5'),
-                $('.easyir-ani-ir595-menu-bar-pre1'),
-                $('.easyir-ani-checkbox-bar1')
+                fredNode.find('.easyir-ani-ir595-pre1'),
+                fredNode.find('.easyir-ani-progress-bar4'),
+                fredNode.find('.easyir-ani-options-bar5'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre1'),
+                fredNode.find('.easyir-ani-checkbox-bar1')
             ]);
             fred13();
 
@@ -404,9 +408,9 @@
 
     var fred13 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-quater1').addClass(ANI_CLICK_GRAY_BTN);
-            $('.easyir-ani-options-bar-quater1').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
-            $('.easyir-progress-checkbox1').addClass('easyir-progress-checkbox-checked');
+            fredNode.find('.easyir-ani-options-bar-quater1').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-quater1').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            fredNode.find('.easyir-progress-checkbox1').addClass('easyir-progress-checkbox-checked');
 
             fred14();
         }, TIME_NEXT_SLIDE);
@@ -414,9 +418,9 @@
 
     var fred14 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-quater2').addClass(ANI_CLICK_GRAY_BTN);
-            $('.easyir-ani-options-bar-quater2').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
-            $('.easyir-progress-checkbox2').addClass('easyir-progress-checkbox-checked');
+            fredNode.find('.easyir-ani-options-bar-quater2').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-quater2').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            fredNode.find('.easyir-progress-checkbox2').addClass('easyir-progress-checkbox-checked');
 
             fred15();
         }, TIME_CLICK);
@@ -425,19 +429,19 @@
     var fred15 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-ir595-pre1'),
-                $('.easyir-ani-progress-bar4'),
-                $('.easyir-ani-options-bar5'),
-                $('.easyir-ani-ir595-menu-bar-pre1'),
-                $('.easyir-ani-checkbox-bar1')
+                fredNode.find('.easyir-ani-ir595-pre1'),
+                fredNode.find('.easyir-ani-progress-bar4'),
+                fredNode.find('.easyir-ani-options-bar5'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre1'),
+                fredNode.find('.easyir-ani-checkbox-bar1')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-ir595-pre2'),
-                $('.easyir-ani-progress-bar5'),
-                $('.easyir-ani-options-bar6'),
-                $('.easyir-ani-ir595-menu-bar-pre2'),
-                $('.easyir-ani-checkbox-bar2')
+                fredNode.find('.easyir-ani-ir595-pre2'),
+                fredNode.find('.easyir-ani-progress-bar5'),
+                fredNode.find('.easyir-ani-options-bar6'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre2'),
+                fredNode.find('.easyir-ani-checkbox-bar2')
             ]);
             fred16();
 
@@ -446,9 +450,9 @@
 
     var fred16 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-quater3').addClass(ANI_CLICK_GRAY_BTN);
-            $('.easyir-ani-options-bar-quater3').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
-            $('.easyir-progress-checkbox3').addClass('easyir-progress-checkbox-checked');
+            fredNode.find('.easyir-ani-options-bar-quater3').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-quater3').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            fredNode.find('.easyir-progress-checkbox3').addClass('easyir-progress-checkbox-checked');
 
             fred17();
         }, TIME_NEXT_SLIDE);
@@ -456,9 +460,9 @@
 
     var fred17 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-quater4').addClass(ANI_CLICK_GRAY_BTN);
-            $('.easyir-ani-options-bar-quater4').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
-            $('.easyir-progress-checkbox4').addClass('easyir-progress-checkbox-checked');
+            fredNode.find('.easyir-ani-options-bar-quater4').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-quater4').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            fredNode.find('.easyir-progress-checkbox4').addClass('easyir-progress-checkbox-checked');
 
             fred18();
         }, TIME_CLICK);
@@ -467,19 +471,19 @@
     var fred18 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-ir595-pre2'),
-                $('.easyir-ani-progress-bar5'),
-                $('.easyir-ani-options-bar6'),
-                $('.easyir-ani-ir595-menu-bar-pre2'),
-                $('.easyir-ani-checkbox-bar2')
+                fredNode.find('.easyir-ani-ir595-pre2'),
+                fredNode.find('.easyir-ani-progress-bar5'),
+                fredNode.find('.easyir-ani-options-bar6'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre2'),
+                fredNode.find('.easyir-ani-checkbox-bar2')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-ir595-pre3'),
-                $('.easyir-ani-progress-bar6'),
-                $('.easyir-ani-options-bar7'),
-                $('.easyir-ani-ir595-menu-bar-pre3'),
-                $('.easyir-ani-checkbox-bar3')
+                fredNode.find('.easyir-ani-ir595-pre3'),
+                fredNode.find('.easyir-ani-progress-bar6'),
+                fredNode.find('.easyir-ani-options-bar7'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre3'),
+                fredNode.find('.easyir-ani-checkbox-bar3')
             ]);
             $('.easyir-walkthrough-fred2-point2').removeClass(POINT_HIDDEN);
 
@@ -489,7 +493,7 @@
 
     var fred19 = function () {
         setTimeout(function () {
-            $('.easyir-ani-options-bar-half3').addClass(ANI_CLICK_GRAY_BTN);
+            fredNode.find('.easyir-ani-options-bar-half3').addClass(ANI_CLICK_GRAY_BTN);
 
             fred20();
         }, TIME_NEXT_SLIDE);
@@ -498,18 +502,18 @@
     var fred20 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-ir595-pre3'),
-                $('.easyir-ani-progress-bar6'),
-                $('.easyir-ani-options-bar7'),
-                $('.easyir-ani-ir595-menu-bar-pre3'),
-                $('.easyir-ani-checkbox-bar3')
+                fredNode.find('.easyir-ani-ir595-pre3'),
+                fredNode.find('.easyir-ani-progress-bar6'),
+                fredNode.find('.easyir-ani-options-bar7'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre3'),
+                fredNode.find('.easyir-ani-checkbox-bar3')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-ir595-pre4'),
-                $('.easyir-ani-progress-bar7'),
-                $('.easyir-ani-ir595-menu-bar-pre4'),
-                $('.easyir-ani-ir595-pre4-upload-button1')
+                fredNode.find('.easyir-ani-ir595-pre4'),
+                fredNode.find('.easyir-ani-progress-bar7'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre4'),
+                fredNode.find('.easyir-ani-ir595-pre4-upload-button1')
             ]);
 
             fred21();
@@ -519,15 +523,15 @@
     var fred21 = function () {
         setTimeout(function () {
             aniPrevSlide([
-                $('.easyir-ani-ir595-pre4'),
-                $('.easyir-ani-progress-bar7'),
-                $('.easyir-ani-ir595-menu-bar-pre4'),
-                $('.easyir-ani-ir595-pre4-upload-button1')
+                fredNode.find('.easyir-ani-ir595-pre4'),
+                fredNode.find('.easyir-ani-progress-bar7'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre4'),
+                fredNode.find('.easyir-ani-ir595-pre4-upload-button1')
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-ir595-pre5'),
-                $('.easyir-ani-ir595-menu-bar-pre5')
+                fredNode.find('.easyir-ani-ir595-pre5'),
+                fredNode.find('.easyir-ani-ir595-menu-bar-pre5')
             ]);
 
             $('.easyir-walkthrough-fred2-point3').removeClass(POINT_HIDDEN);
@@ -536,15 +540,15 @@
     };
 
     var fred22 = function () {
-        $('.easyir-ani-fred').html(fredStartTemplate);
-        $('.easyir-btn-fred').removeClass(BTN_DISABLED);
-        $('.easyir-btn-fred').removeClass(ANI_START_BTN_FRED1);
-        $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED2);
-        $('.easyir-btn-fred').find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
-        $('.easyir-btn-fred').find('.easyir-btn-text').html('Go Again!');
+        fredNode.html(fredStartTemplate);
+        fredBtn.removeClass(BTN_DISABLED);
+        fredBtn.removeClass(ANI_START_BTN_FRED1);
+        fredBtn.addClass(ANI_START_BTN_FRED2);
+        fredBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
+        fredBtn.find('.easyir-btn-text').html('Go Again!');
     };
 
-    $('.easyir-btn-start-fred-animation').on('click', fred1);
+    fredBtn.on('click', fred1);
 
     // ============================= Jane =============================
 
