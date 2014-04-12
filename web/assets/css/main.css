@@ -947,12 +947,18 @@ a {
   width: 685px;
 }
 /* line 35, ../sass/partials/modules/_animation-layout.scss */
-.easyir--section--animation-start .easyir-section--heading {
+.easyir--section--animation-start .easyir-section--content-animation-start-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 40, ../sass/partials/modules/_animation-layout.scss */
+.easyir--section--animation-start .easyir-section--content-animation-start-content .easyir-section--heading {
   width: 500px;
   margin-top: 80px;
 }
 
-/* line 41, ../sass/partials/modules/_animation-layout.scss */
+/* line 47, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-swipe-gesture {
   top: 0;
   left: 0;
@@ -977,7 +983,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 56, ../sass/partials/modules/_animation-layout.scss */
+/* line 62, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-iphone {
   position: relative;
   background: url("../images/00-iphone5s/iphone5s.png");
@@ -986,7 +992,7 @@ a {
   background-size: 287px 600px;
 }
 
-/* line 64, ../sass/partials/modules/_animation-layout.scss */
+/* line 70, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-overlay {
   position: absolute;
   left: 25px;
@@ -996,26 +1002,26 @@ a {
   overflow: hidden;
 }
 
-/* line 73, ../sass/partials/modules/_animation-layout.scss */
+/* line 79, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-open, .easyir-ani-registration, .easyir-ani-pre-1, .easyir-ani-header, .easyir-ani-registration .easyir-ani-menu-bar, .easyir-ani-menu-bar, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-options-bar {
   position: absolute;
   left: 0;
   width: 223px;
 }
 
-/* line 79, ../sass/partials/modules/_animation-layout.scss */
+/* line 85, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-registration-irdnumber, .easyir-ani-registration .easyir-ani-registration-password {
   color: #D4D4D4;
   font-size: 12px;
 }
 
-/* line 84, ../sass/partials/modules/_animation-layout.scss */
+/* line 90, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-open, .easyir-ani-registration, .easyir-ani-pre-1 {
   top: 0;
   height: 405px;
 }
 
-/* line 90, ../sass/partials/modules/_animation-layout.scss */
+/* line 96, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-header {
   background: url("../images/00-iphone5s/fixed-top-header.png");
   background-size: auto 100%;
@@ -1023,29 +1029,29 @@ a {
   height: 15px;
 }
 
-/* line 98, ../sass/partials/modules/_animation-layout.scss */
+/* line 104, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-open {
   background: url("../images/01-open-page/open-page.png");
   background-size: auto 100%;
 }
 
-/* line 104, ../sass/partials/modules/_animation-layout.scss */
+/* line 110, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-menu-bar, .easyir-ani-menu-bar {
   top: 11px;
   height: 31px;
 }
 
-/* line 112, ../sass/partials/modules/_animation-layout.scss */
+/* line 118, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration {
   background: url("../images/02-registration/bg.png");
   background-size: auto 100%;
 }
-/* line 117, ../sass/partials/modules/_animation-layout.scss */
+/* line 123, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-menu-bar {
   background: url("../images/02-registration/menu-bar-top.png");
   background-size: auto 100%;
 }
-/* line 123, ../sass/partials/modules/_animation-layout.scss */
+/* line 129, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-apply-button {
   bottom: 0;
   height: 38px;
@@ -1053,20 +1059,20 @@ a {
   color: white;
   font-size: 12px;
 }
-/* line 134, ../sass/partials/modules/_animation-layout.scss */
+/* line 140, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-registration-irdnumber {
   position: absolute;
   top: 128px;
   left: 10px;
 }
-/* line 141, ../sass/partials/modules/_animation-layout.scss */
+/* line 147, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-registration-password {
   position: absolute;
   top: 158px;
   left: 10px;
 }
 
-/* line 151, ../sass/partials/modules/_animation-layout.scss */
+/* line 157, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-app {
   position: relative;
   height: 100%;
@@ -1074,34 +1080,34 @@ a {
   right: -223px;
 }
 
-/* line 158, ../sass/partials/modules/_animation-layout.scss */
+/* line 164, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-table {
   display: table;
   width: 100%;
 }
 
-/* line 163, ../sass/partials/modules/_animation-layout.scss */
+/* line 169, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-cell {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
 }
 
-/* line 169, ../sass/partials/modules/_animation-layout.scss */
+/* line 175, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar {
   height: 159px;
   bottom: 0;
   background-color: #f6f6f6;
   border-top: 1px solid #979797;
 }
-/* line 176, ../sass/partials/modules/_animation-layout.scss */
+/* line 182, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar .easyir-ani-options-yes {
   color: #008b95;
   font-size: 20px;
   width: 50%;
   text-align: center;
 }
-/* line 183, ../sass/partials/modules/_animation-layout.scss */
+/* line 189, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar .easyir-ani-options-no {
   color: red;
   font-size: 20px;
@@ -1110,20 +1116,20 @@ a {
   border-left: 1px solid #979797;
 }
 
-/* line 194, ../sass/partials/modules/_animation-layout.scss */
+/* line 200, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre-1 {
   background: url("../images/03-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 201, ../sass/partials/modules/_animation-layout.scss */
+/* line 207, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar {
   background: url("../images/03-pre-1/menu-bar-top.png");
   background-size: 100% auto;
 }
 
-/* line 207, ../sass/partials/modules/_animation-layout.scss */
+/* line 213, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani {
   display: inline-block;
   background-repeat: no-repeat;
