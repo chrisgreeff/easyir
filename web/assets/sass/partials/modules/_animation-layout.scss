@@ -296,20 +296,28 @@ $ird-screen-height: 405px;
         border-width: 1px;
         border-style: solid;
 
+        &::before {
+            @include transition-property(opacity);
+            @include transition-duration(0.5s);
+            @include transition-timing-function(ease-in-out);
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            background-color: gray;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border-color: gray;
+            border-width: 1px;
+            border-style: solid;
+            opacity: 0;
+        }
+
         &.easyir-ani-options-bar-quater-checkbox-checked {
             &::before {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                left: 4px;
-                top: 4px;
-                background-color: gray;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                border-color: gray;
-                border-width: 1px;
-                border-style: solid;
+                opacity: 1;
             }
         }
     }
@@ -348,6 +356,11 @@ $ird-screen-height: 405px;
     }
 }
 
+.easyir-ani-checkbox-bar {
+    @extend %easyir-ani-default;
+    top: 7px;
+}
+
 .easyir-progress-checkbox {
     display: inline-block;
     position: absolute;;
@@ -358,6 +371,18 @@ $ird-screen-height: 405px;
     border-color: $ird-teal-default;
     border-width: 1px;
     border-style: solid;
+    top: 87px;
+    @include transition-property(background-color);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-progress-checkbox-left {
+    left: 96px;
+}
+
+.easyir-progress-checkbox-right {
+    left: 118px;
 }
 
 .easyir-progress-checkbox-checked {

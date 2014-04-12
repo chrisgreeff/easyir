@@ -197,12 +197,9 @@
         $('.easyir-walkthrough-fred1-point1').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-fred1-point2').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-fred1-point3').addClass(POINT_HIDDEN);
+        $('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
 
-        setTimeout(function() {
-            $('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
-
-            fred12();
-        }, TIME_CLICK);
+        fred12();
     };
 
     var fred12 = function () {
@@ -217,8 +214,19 @@
                 $('.easyir-ani-ir595-pre1'),
                 $('.easyir-ani-progress-bar4'),
                 $('.easyir-ani-options-bar5'),
-                $('.easyir-ani-ir595-menu-bar-pre1')
+                $('.easyir-ani-ir595-menu-bar-pre1'),
+                $('.easyir-ani-checkbox-bar1')
             ]);
+            fred13();
+
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var fred13 = function () {
+        setTimeout(function () {
+            $('.easyir-ani-options-bar-quater1').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-ani-options-bar-quater1').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            $('.easyir-progress-checkbox1').addClass('easyir-progress-checkbox-checked');
 
         }, TIME_NEXT_SLIDE);
     };
