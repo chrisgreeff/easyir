@@ -23,12 +23,15 @@
     width: 100%;
 }
 
+// =========================== Slide Buttons ===========================
+
 .easyir-slide-btn {
     position: absolute;
     top: 50%;
+    text-decoration: none;
+    color: $color-teal-text;
+    font-size: 80px;
 }
-
-// =========================== Slide Buttons ===========================
 
 .easyir-slide-btn-prev {
     left: -50px;
@@ -39,13 +42,13 @@
 }
 
 .easyir-slide-btn-prev-visible {
-    left: 210px;
+    left: 220px;
     opacity: 1;
     @include transition-delay(0.8s);
 }
 
 .easyir-slide-btn-next {
-    right: 10px;
+    right: 20px;
     opacity: 1;
     @include transition-property(all);
     @include transition-duration(0.5s);
@@ -84,6 +87,40 @@
         font-size: 14px;
         margin: 0 10px;
         vertical-align: middle;
+
+        &:hover:not(.active) span:after {
+            width: 100%;
+            background-color: lighten($color-teal-text, 20%);
+        }
+
+        span {
+            font-family: 'proxima_nova_blblack';
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            color: lighten($color-teal-text, 20%);
+            @include transition-property(all);
+            @include transition-duration(0.4s);
+            @include transition-timing-function(ease-in-out);
+
+            &:hover {
+                color: $color-teal-text;
+            }
+
+            &:after {
+                height: 2px;
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0%;
+                left: 0;
+                background-color: $color-teal-text;
+
+                @include transition-property(all);
+                @include transition-duration(0.4s);
+                @include transition-timing-function(ease-in-out);
+            }
+        }
     }
 }
 
@@ -102,6 +139,11 @@
 
     .easyir-story-side-bar-title {
         display: table-cell;
+        white-space: normal;
+        font-size: 48px;
+        font-family: 'proxima_nova_blblack';
+        color: $color-teal-text;
+        text-align: center;
     }
 }
 

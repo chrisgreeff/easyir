@@ -33,6 +33,58 @@
 @import "partials/modules/animation-layout";
 @import "partials/modules/animations";
 
-.easyir-fred-1 {
-    height: 100%;
+@font-face {
+    font-family:'proxima_nova_blblack';
+    src: url('../fonts/mark_simonson_-_proxima_nova_black-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_black-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_black-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_black-webfont.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-s7zo7i');
+    src:url('../fonts/icomoon.eot?#iefix-s7zo7i') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-s7zo7i') format('woff'),
+        url('../fonts/icomoon.ttf?-s7zo7i') format('truetype'),
+        url('../fonts/icomoon.svg?-s7zo7i#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-left:before {
+    content: "\e600";
+}
+.icon-chevron-right:before {
+    content: "\e601";
+}
+
+.easyir-fred-1,
+.easyir-fred-2 {
+    height: 650px;
+}
+
+.easyir-fred-3 {
+    height: 660px;
+}
+
+.easyir-fred-4 {
+    height: 450px;
 }
