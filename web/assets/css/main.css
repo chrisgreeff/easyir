@@ -1644,48 +1644,48 @@ a {
 @-webkit-keyframes fredBtn2 {
   /* line 58, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 400px;
+    top: 500px;
   }
 
   /* line 59, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 500px;
+    top: 400px;
   }
 }
 
 @-moz-keyframes fredBtn2 {
   /* line 62, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 400px;
+    top: 500px;
   }
 
   /* line 63, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 500px;
+    top: 400px;
   }
 }
 
 @-o-keyframes fredBtn2 {
   /* line 66, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 400px;
+    top: 500px;
   }
 
   /* line 67, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 500px;
+    top: 400px;
   }
 }
 
 @keyframes fredBtn2 {
   /* line 70, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 400px;
+    top: 500px;
   }
 
   /* line 71, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 500px;
+    top: 400px;
   }
 }
 
