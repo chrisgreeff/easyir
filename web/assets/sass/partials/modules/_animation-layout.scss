@@ -1,14 +1,41 @@
 $ird-screen-width: 223px;
 $ird-screen-height: 405px;
 
-.easyir-section--animation-start {
-    width: 300px;
-    vertical-align: middle;
+.easyir-btn {
+    background-color: $color-red-background;
+    color: $color-red-text;
+    text-transform: uppercase;
+    @include border-radius(5px);
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+
+    &:hover {
+        background-color: darken($color-red-background, 15%);
+    }
+}
+
+.easy-btn-fred {
+    position: absolute;
+    top: 300px;
+    padding: 3px 17px;
+    right: 200px;
 }
 
 .easyir-section--animation-view {
+    width: 275px;
     position: relative;
     vertical-align: middle;
+}
+
+.easyir--section--animation-start {
+    position: relative;
+    width: 685px;
+
+    .easyir-section--heading {
+        width: 500px;
+        margin-top: 80px;
+    }
 }
 
 .easyir-ani-swipe-gesture {
@@ -36,7 +63,7 @@ $ird-screen-height: 405px;
 
 .easyir-ani-overlay {
     position: absolute;
-    left: 218px;
+    left: 25px;
     top: 93px;
     height: $ird-screen-height;
     width: $ird-screen-width;

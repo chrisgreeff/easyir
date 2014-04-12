@@ -60,6 +60,7 @@
     text-align: left;
 
     .easyir-section--heading-primary {
+        text-transform: uppercase;
         font-family: 'proxima_nova_blblack';
         font-weight: $section-heading-font-weight;
         font-size: $section-heading-primary-font-size;
@@ -106,6 +107,14 @@
     width: 480px;
 }
 
+.easyir--content-cell-top {
+    vertical-align: top;
+}
+
+.easyir--content-cell-wide {
+    width: 100%;
+}
+
 .easyir-section--content-caption {
     vertical-align: top;
 }
@@ -117,6 +126,31 @@
 
 .easyir-image-container {
     height: 100%;
+}
+
+.easyir-image-container-left {
+    text-align: left;
+}
+
+.easyir-section-sub-heading-speech {
+    position: relative;
+    background-color: white;
+    padding: 12px 20px;
+    margin-top: 40px;
+
+    .easyir-speech-beak {
+        width: 0;
+        bottom: 0;
+        left: -40px;
+        position: absolute;
+        border-left: 40px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 40px solid white;
+    }
+
+    p {
+        margin: 0;
+    }
 }
 
 // INTRO
