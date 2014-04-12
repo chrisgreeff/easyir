@@ -1078,7 +1078,7 @@ a {
 .easyir-ani-ir595-menu-bar-pre2,
 .easyir-ani-ir595-menu-bar-pre3,
 .easyir-ani-ir595-menu-bar-pre4,
-.easyir-ani-ir595-menu-bar-pre5, .easyir-ani-progress-bar, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-options-bar, .easyir-ani-checkbox-bar {
+.easyir-ani-ir595-menu-bar-pre5, .easyir-ani-progress-bar, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-options-bar, .easyir-ani-checkbox-bar, .easyir-ani-ir595-pre4-upload-button {
   position: absolute;
   left: 0;
   width: 223px;
@@ -1481,17 +1481,27 @@ a {
 
 /* line 476, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4 {
-  background: url("../images/10-IR595-pre-4/bg.png");
+  background: url("../images/09-IR595-pre-4/bg.png");
   background-size: 100% auto;
+  top: 6px;
 }
 
-/* line 484, ../sass/partials/modules/_animation-layout.scss */
+/* line 483, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-ir595-pre4-upload-button {
+  background: url("../images/09-IR595-pre-4/uploadbutton.png");
+  background-size: 100% auto;
+  bottom: 0;
+  height: 36px;
+}
+
+/* line 493, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre5 {
-  background: url("../images/11-IR595-pre-5/bg.png");
-  background-size: 100% auto;
+  background: url("../images/09-IR595-pre-5/bg.png");
+  background-size: 102% auto;
+  width: 229px;
 }
 
-/* line 492, ../sass/partials/modules/_animation-layout.scss */
+/* line 502, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani {
   display: inline-block;
   background-repeat: no-repeat;

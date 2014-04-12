@@ -475,16 +475,26 @@ $ird-screen-height: 405px;
 
 .easyir-ani-ir595-pre4 {
     @extend %easyir-ani-full-screen;
-    background: url("../images/10-IR595-pre-4/bg.png");
+    background: url("../images/09-IR595-pre-4/bg.png");
     background-size: 100% auto;
+    top: 6px;
+}
+
+.easyir-ani-ir595-pre4-upload-button {
+    @extend %easyir-ani-default;
+    background: url("../images/09-IR595-pre-4/uploadbutton.png");
+    background-size: 100% auto;
+    bottom: 0;
+    height: 36px;
 }
 
 // =========================== IR595 Pre 5 ===========================
 
 .easyir-ani-ir595-pre5 {
     @extend %easyir-ani-full-screen;
-    background: url("../images/11-IR595-pre-5/bg.png");
-    background-size: 100% auto;
+    background: url("../images/09-IR595-pre-5/bg.png");
+    background-size: 102% auto;
+    width: 229px;
 }
 
 // =========================== This Stays At The Bottom ===========================

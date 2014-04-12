@@ -324,13 +324,31 @@
             ]);
 
             aniNextSlide([
-                $('.easyir-ani-ir595-pre3'),
-                $('.easyir-ani-progress-bar6'),
-                $('.easyir-ani-options-bar7'),
-                $('.easyir-ani-ir595-menu-bar-pre3')
+                $('.easyir-ani-ir595-pre4'),
+                $('.easyir-ani-progress-bar7'),
+                $('.easyir-ani-ir595-menu-bar-pre4'),
+                $('.easyir-ani-ir595-pre4-upload-button1')
             ]);
 
-            fred19();
+            fred21();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var fred21 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                $('.easyir-ani-ir595-pre4'),
+                $('.easyir-ani-progress-bar7'),
+                $('.easyir-ani-ir595-menu-bar-pre4'),
+                $('.easyir-ani-ir595-pre4-upload-button1')
+            ]);
+
+            aniNextSlide([
+                $('.easyir-ani-ir595-pre5'),
+                $('.easyir-ani-ir595-menu-bar-pre5')
+            ]);
+
+            // fred21();
         }, TIME_NEXT_SLIDE);
     };
 
