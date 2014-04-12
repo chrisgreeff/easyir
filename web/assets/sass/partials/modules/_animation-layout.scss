@@ -15,7 +15,8 @@ $ird-screen-height: 405px;
     }
 }
 
-.easy-btn-fred {
+.easy-btn-fred,
+.easy-btn-jane {
     position: absolute;
     top: 300px;
     padding: 3px 17px;
@@ -36,10 +37,11 @@ $ird-screen-height: 405px;
         position: relative;
         width: 100%;
         height: 100%;
+        padding-left: 62px;
 
         .easyir-section--heading {
             width: 500px;
-            margin-top: 80px;
+            margin-top: 123px;
         }
     }
 }

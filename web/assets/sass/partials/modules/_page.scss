@@ -36,8 +36,10 @@
     line-height: 2;
     min-width: 960px;
     @extend %easyir-centered-content;
-    height: 100%;
     white-space: normal;
+    position: relative;
+    top: 50%;
+    margin-top: -360px;
 }
 
 .easyir-section--content-footer {
@@ -120,7 +122,6 @@
 }
 
 .easyir-caption-container {
-    margin-top: 100px;
     padding: 20px;
 }
 

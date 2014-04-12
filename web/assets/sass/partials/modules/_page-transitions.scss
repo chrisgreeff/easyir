@@ -49,7 +49,7 @@
 .easyir-slide-btn-prev-visible {
     left: 220px;
     opacity: 1;
-    @include transition-delay(0.8s);
+    @include transition-delay(0.5s);
 }
 
 .easyir-slide-btn-next {
@@ -135,11 +135,18 @@
     }
 }
 
+.easyir-story-side-bar-pink {
+    background-color: $color-pink-background;
+}
+
+.easyir-story-side-bar-teal {
+    background-color: $color-teal-background;
+}
+
 .easyir-story-side-bar {
     height: 100%;
     width: 200px;
     position: absolute;
-    background-color: $color-teal-background;
     top: 0;
     left: -200px;
     @include transition-property(all);
@@ -182,6 +189,6 @@
 
 .easyir-story-side-bar-visible {
     left: 0px;
-    @include transition-delay(0.8s);
+    @include transition-delay(0.5s);
 }
 
