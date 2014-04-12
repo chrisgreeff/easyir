@@ -1,3 +1,33 @@
+// ========================== Start Btn ===========================
+
+@-webkit-keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+@-moz-keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+@-o-keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+@keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+
+.easyir-ani-bounce-arrow {
+    -webkit-animation: bounceArrow 1s ease infinite;
+    -moz-animation:    bounceArrow 1s ease infinite;
+    -o-animation:      bounceArrow 1s ease infinite;
+    animation:         bounceArrow 1s ease infinite;
+}
+
 // =========================== Open App ===========================
 
 @-webkit-keyframes openApp {
@@ -84,6 +114,38 @@
     animation:         clickGrayButton 0.4s ease;
 }
 
+// =========================== Show Help ===========================
+
+@-webkit-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@-moz-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@-o-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+
+.easyir-ani-show-help {
+    -webkit-animation: showHelp 0.8s ease;
+    -moz-animation:    showHelp 0.8s ease;
+    -o-animation:      showHelp 0.8s ease;
+    animation:         showHelp 0.8s ease;
+
+    top: -281px;
+}
+
 // =========================== Slide Frame ===========================
 
 @-webkit-keyframes slideNextFrame {
@@ -137,38 +199,6 @@
     
     left: auto;
     right: $ird-screen-width;
-}
-
-// =========================== Show Help ===========================
-
-@-webkit-keyframes showHelp {
-    0%   { top: 0; }
-    40%  { top: -330px; }
-    100% { top: -281px; }
-}
-@-moz-keyframes showHelp {
-    0%   { top: 0; }
-    40%  { top: -330px; }
-    100% { top: -281px; }
-}
-@-o-keyframes showHelp {
-    0%   { top: 0; }
-    40%  { top: -330px; }
-    100% { top: -281px; }
-}
-@keyframes showHelp {
-    0%   { top: 0; }
-    40%  { top: -330px; }
-    100% { top: -281px; }
-}
-
-.easyir-ani-show-help {
-    -webkit-animation: showHelp 0.8s ease;
-    -moz-animation:    showHelp 0.8s ease;
-    -o-animation:      showHelp 0.8s ease;
-    animation:         showHelp 0.8s ease;
-
-    top: -281px;
 }
 
 // =========================== Gestures ===========================

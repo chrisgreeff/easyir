@@ -13,6 +13,12 @@ $ird-screen-height: 405px;
     &:hover {
         background-color: darken($color-red-background, 15%);
     }
+
+    .easyir-btn-arrow {
+        position: relative;
+        top: 1px;
+        left: 1px;
+    }
 }
 
 .easy-btn-fred,
@@ -76,6 +82,7 @@ $ird-screen-height: 405px;
     height: $ird-screen-height;
     width: $ird-screen-width;
     overflow: hidden;
+    font-family: 'helvetica' !important;
 }
 
 %easyir-ani-default {
@@ -113,6 +120,22 @@ $ird-screen-height: 405px;
     @extend %easyir-ani-default;
     top: 11px;
     height: 31px;
+}
+
+%easyir-ani-progress-bar {
+    @extend %easyir-ani-default;
+    top: 42px;
+    height: 38px;
+    font-size: 12px;
+    background: white;
+    color: $ird-teal-default;
+    border-bottom: 1px solid $ird-app-button-border;
+
+    .easyir-ani-progress-bar-content {
+        position: absolute;
+        top: 8px;
+        width: 100%;
+    }
 }
 
 // =========================== Registration Page ===========================
@@ -156,11 +179,15 @@ $ird-screen-height: 405px;
 
 // =========================== App ===========================
 
+.easyir-ani-next {
+    right: -$ird-screen-width;
+    left: initial !important;
+}
+
 .easyir-ani-app {
     position: relative;
     height: 100%;
     width: 100%;
-    right: -$ird-screen-width;
 }
 
 .easyir-ani-options-table {
@@ -176,41 +203,83 @@ $ird-screen-height: 405px;
 
 .easyir-ani-options-bar {
     @extend %easyir-ani-default;
-    height: 159px;
+    height: 160px;
     bottom: 0;
     background-color: $ird-app-button;
     border-top: 1px solid $ird-app-button-border;
+}
 
-    .easyir-ani-options-yes {
-        color: $ird-teal-default;
-        font-size: 20px;
-        width: 50%;
-        text-align: center;
-    }
+.easyir-ani-options-yes {
+    color: $ird-teal-default;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
 
-    .easyir-ani-options-no {
-        color: red;
-        font-size: 20px;
-        width: 50%;
-        text-align: center;
-        border-left: 1px solid $ird-app-button-border;
-    }
+.easyir-ani-options-no {
+    color: red;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid $ird-app-button-border;
+}
+
+.easyir-ani-options-bar-half {
+    height: 80px;
+    border-bottom: 1px solid $ird-app-button-border;
+    @extend %easyir-middle-content;
+}
+
+.easyir-ani-options-bar-full {
+    height: 100%;
+    @extend %easyir-middle-content;
+}
+
+.easyir-ani-progress-bar {
+    @extend %easyir-ani-progress-bar;
 }
 
 // =========================== Pre 1 ===========================
 
-.easyir-ani-pre-1 {
+.easyir-ani-pre1 {
     @extend %easyir-ani-full-screen;
     background: url("../images/03-pre-1/bg.png");
     background-size: 100% auto;
     height: 1025px;
 }
 
-.easyir-ani-menu-bar {
+.easyir-ani-menu-bar-pre1,
+.easyir-ani-menu-bar-pre2 {
     @extend %easyir-ani-menu-bar;
     background: url("../images/03-pre-1/menu-bar-top.png");
     background-size: 100% auto;
 }
+
+// =========================== Pre 2 ===========================
+
+.easyir-ani-pre2 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/04-pre-2/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Pre 3 ===========================
+
+.easyir-ani-pre3 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/05-pre-3/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Pre 4 ===========================
+
+.easyir-ani-pre4 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/06-pre-4/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== This Stays At The Bottom ===========================
 
 .easyir-ani {
     display: inline-block;

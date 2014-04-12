@@ -298,38 +298,4 @@
     documentNode.keydown(keydownEventHandler);
     documentNode.on('mousewheel', mouseWheelEventHandler);
 
-    // ============================= Animations =============================
-
-    $('.easyir-btn-start-animation').on('click', function () {
-        $('.easyir-ani-open').addClass('easyir-ani-open-app');
-        setTimeout(function () {
-            $('.easyir-ani-apply-button').addClass('easyir-ani-click-teal-button');
-
-             setTimeout(function () {
-                $('.easyir-ani-app').addClass('easyir-ani-slide-next-frame');
-                $('.easyir-ani-registration').addClass('easyir-ani-slide-prev-frame');
-
-                setTimeout(function () {
-                    $('.easyir-ani-pre-1').addClass('easyir-ani-show-help');
-                    $('.easyir-ani-swipe-gesture').addClass('easyir-ani-gesture-show-help');
-
-                    setTimeout(function () {
-                        $('.easyir-ani-options-yes').addClass('easyir-ani-click-gray-button');
-                    }, 800);
-                }, 400);
-            }, 400);
-
-        }, 300);
-    });
-
-    $('.easyir-btn-reset-animation').on('click', function () {
-        $('.easyir-ani-open').removeClass('easyir-ani-open-app');
-        $('.easyir-ani-apply-button').removeClass('easyir-ani-click-teal-button');
-        $('.easyir-ani-app').removeClass('easyir-ani-slide-next-frame');
-        $('.easyir-ani-registration').removeClass('easyir-ani-slide-prev-frame');
-        $('.easyir-ani-pre-1').removeClass('easyir-ani-show-help');
-        $('.easyir-ani-swipe-gesture').removeClass('easyir-ani-gesture-show-help');
-        $('.easyir-ani-options-yes').removeClass('easyir-ani-click-gray-button');
-    });
-
 }(document));
