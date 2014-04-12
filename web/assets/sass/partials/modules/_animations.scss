@@ -55,54 +55,27 @@
 }
 
 @-webkit-keyframes fredBtn2 {
-    0%   { top: 500px; right: 200px; }
-    100% { top: 400px; right: 150px; }
+    0%   { top: 400px; }
+    100% { top: 500px; }
 }
 @-moz-keyframes fredBtn2 {
-    0%   { top: 500px; right: 200px; }
-    100% { top: 400px; right: 150px; }
+    0%   { top: 400px; }
+    100% { top: 500px; }
 }
 @-o-keyframes fredBtn2 {
-    0%   { top: 500px; right: 200px; }
-    100% { top: 400px; right: 150px; }
+    0%   { top: 400px; }
+    100% { top: 500px; }
 }
 @keyframes fredBtn2 {
-    0%   { top: 500px; right: 200px; }
-    100% { top: 400px; right: 150px; }
-}
-
-.easyir-ani-start-fred2 {
-    -webkit-animation: fredBtn2 1s ease;
-    -moz-animation:    fredBtn2 1s ease;
-    -o-animation:      fredBtn2 1s ease;
-    animation:         fredBtn2 1s ease;
-
-    top: 400px;
-    right: 150px;
-}
-
-@-webkit-keyframes fredBtn3 {
-    0%   { top: 400px; }
-    100% { top: 500px; }
-}
-@-moz-keyframes fredBtn3 {
-    0%   { top: 400px; }
-    100% { top: 500px; }
-}
-@-o-keyframes fredBtn3 {
-    0%   { top: 400px; }
-    100% { top: 500px; }
-}
-@keyframes fredBtn3 {
     0%   { top: 400px; }
     100% { top: 500px; }
 }
 
 .easyir-ani-start-fred3 {
-    -webkit-animation: fredBtn3 1s ease;
-    -moz-animation:    fredBtn3 1s ease;
-    -o-animation:      fredBtn3 1s ease;
-    animation:         fredBtn3 1s ease;
+    -webkit-animation: fredBtn2 1s ease;
+    -moz-animation:    fredBtn2 1s ease;
+    -o-animation:      fredBtn2 1s ease;
+    animation:         fredBtn2 1s ease;
 
     top: 500px;
 }

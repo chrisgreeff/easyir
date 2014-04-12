@@ -234,7 +234,11 @@
 
     // OPEN APP
     var fred1 = function () {
+        $('.easyir-walkthrough-fred2-point1').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-fred2-point2').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-fred2-point3').addClass(POINT_HIDDEN);
         $('.easyir-ani-fred').html(fredAniTemplate);
+        $('.easyir-btn-fred').removeClass(ANI_START_BTN_FRED2);
         $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED1);
         $('.easyir-btn-fred').addClass(BTN_DISABLED);
         $('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
@@ -362,28 +366,20 @@
 
             $('.easyir-walkthrough-fred1-point3').removeClass(POINT_HIDDEN);
 
-            $('.easyir-btn-fred').removeClass(BTN_DISABLED);
-            $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED2);
-            $('.easyir-btn-fred').addClass('part-2');
-            $('.easyir-btn-fred').find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
-            $('.easyir-btn-fred').find('.easyir-btn-text').html('Lets Continue!');
-
-            $('.easyir-btn-start-fred-animation').off('click');
-            $('.easyir-btn-start-fred-animation').on('click', fred11);
+            fred11();
         }, TIME_CLICK);
     };
 
     var fred11 = function () {
-        $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED3);
-        $('.easyir-btn-fred').addClass(BTN_DISABLED);
-        $('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
-        $('.easyir-walkthrough-fred1-point1').addClass(POINT_HIDDEN);
-        $('.easyir-walkthrough-fred1-point2').addClass(POINT_HIDDEN);
-        $('.easyir-walkthrough-fred1-point3').addClass(POINT_HIDDEN);
-        $('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
-        $('.easyir-walkthrough-fred2-point1').removeClass(POINT_HIDDEN);
+        setTimeout(function () {
+            $('.easyir-walkthrough-fred1-point1').addClass(POINT_HIDDEN);
+            $('.easyir-walkthrough-fred1-point2').addClass(POINT_HIDDEN);
+            $('.easyir-walkthrough-fred1-point3').addClass(POINT_HIDDEN);
+            $('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-walkthrough-fred2-point1').removeClass(POINT_HIDDEN);
 
-        fred12();
+            fred12();
+        }, TIME_READING_HELP);
     };
 
     var fred12 = function () {
@@ -540,21 +536,17 @@
     };
 
     var fred22 = function () {
-        setTimeout(function () {
-            $('.easyir-ani-fred').html(fredStartTemplate);
-            $('.easyir-btn-fred').removeClass(BTN_DISABLED);
-            $('.easyir-btn-fred').removeClass(ANI_START_BTN_FRED1);
-            $('.easyir-btn-fred').removeClass(ANI_START_BTN_FRED2);
-            $('.easyir-btn-fred').removeClass('part-2');
-            $('.easyir-btn-fred').find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
-            $('.easyir-btn-fred').find('.easyir-btn-text').html('Go Again!');
-
-            $('.easyir-btn-start-fred-animation').off('click');
-            $('.easyir-btn-start-fred-animation').on('click', fred1);
-        }, TIME_NEXT_SLIDE);
+        $('.easyir-ani-fred').html(fredStartTemplate);
+        $('.easyir-btn-fred').removeClass(BTN_DISABLED);
+        $('.easyir-btn-fred').removeClass(ANI_START_BTN_FRED1);
+        $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED2);
+        $('.easyir-btn-fred').find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
+        $('.easyir-btn-fred').find('.easyir-btn-text').html('Go Again!');
     };
 
     $('.easyir-btn-start-fred-animation').on('click', fred1);
 
-// ============================= Jane =============================
+    // ============================= Jane =============================
+
+
 }());

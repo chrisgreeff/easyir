@@ -997,7 +997,7 @@ a {
   position: absolute;
   top: 300px;
   padding: 3px 17px;
-  right: 200px;
+  right: 150px;
 }
 
 /* line 37, ../sass/partials/modules/_animation-layout.scss */
@@ -1644,175 +1644,109 @@ a {
 @-webkit-keyframes fredBtn2 {
   /* line 58, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 500px;
-    right: 200px;
+    top: 400px;
   }
 
   /* line 59, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 400px;
-    right: 150px;
+    top: 500px;
   }
 }
 
 @-moz-keyframes fredBtn2 {
   /* line 62, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 500px;
-    right: 200px;
+    top: 400px;
   }
 
   /* line 63, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 400px;
-    right: 150px;
+    top: 500px;
   }
 }
 
 @-o-keyframes fredBtn2 {
   /* line 66, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 500px;
-    right: 200px;
+    top: 400px;
   }
 
   /* line 67, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 400px;
-    right: 150px;
+    top: 500px;
   }
 }
 
 @keyframes fredBtn2 {
   /* line 70, ../sass/partials/modules/_animations.scss */
   0% {
-    top: 500px;
-    right: 200px;
+    top: 400px;
   }
 
   /* line 71, ../sass/partials/modules/_animations.scss */
   100% {
-    top: 400px;
-    right: 150px;
+    top: 500px;
   }
 }
 
 /* line 74, ../sass/partials/modules/_animations.scss */
-.easyir-ani-start-fred2 {
+.easyir-ani-start-fred3 {
   -webkit-animation: fredBtn2 1s ease;
   -moz-animation: fredBtn2 1s ease;
   -o-animation: fredBtn2 1s ease;
   animation: fredBtn2 1s ease;
-  top: 400px;
-  right: 150px;
-}
-
-@-webkit-keyframes fredBtn3 {
-  /* line 85, ../sass/partials/modules/_animations.scss */
-  0% {
-    top: 400px;
-  }
-
-  /* line 86, ../sass/partials/modules/_animations.scss */
-  100% {
-    top: 500px;
-  }
-}
-
-@-moz-keyframes fredBtn3 {
-  /* line 89, ../sass/partials/modules/_animations.scss */
-  0% {
-    top: 400px;
-  }
-
-  /* line 90, ../sass/partials/modules/_animations.scss */
-  100% {
-    top: 500px;
-  }
-}
-
-@-o-keyframes fredBtn3 {
-  /* line 93, ../sass/partials/modules/_animations.scss */
-  0% {
-    top: 400px;
-  }
-
-  /* line 94, ../sass/partials/modules/_animations.scss */
-  100% {
-    top: 500px;
-  }
-}
-
-@keyframes fredBtn3 {
-  /* line 97, ../sass/partials/modules/_animations.scss */
-  0% {
-    top: 400px;
-  }
-
-  /* line 98, ../sass/partials/modules/_animations.scss */
-  100% {
-    top: 500px;
-  }
-}
-
-/* line 101, ../sass/partials/modules/_animations.scss */
-.easyir-ani-start-fred3 {
-  -webkit-animation: fredBtn3 1s ease;
-  -moz-animation: fredBtn3 1s ease;
-  -o-animation: fredBtn3 1s ease;
-  animation: fredBtn3 1s ease;
   top: 500px;
 }
 
 @-webkit-keyframes openApp {
-  /* line 113, ../sass/partials/modules/_animations.scss */
+  /* line 86, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 114, ../sass/partials/modules/_animations.scss */
+  /* line 87, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes openApp {
-  /* line 117, ../sass/partials/modules/_animations.scss */
+  /* line 90, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 118, ../sass/partials/modules/_animations.scss */
+  /* line 91, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes openApp {
-  /* line 121, ../sass/partials/modules/_animations.scss */
+  /* line 94, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 122, ../sass/partials/modules/_animations.scss */
+  /* line 95, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes openApp {
-  /* line 125, ../sass/partials/modules/_animations.scss */
+  /* line 98, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 126, ../sass/partials/modules/_animations.scss */
+  /* line 99, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
-/* line 129, ../sass/partials/modules/_animations.scss */
+/* line 102, ../sass/partials/modules/_animations.scss */
 .easyir-ani-open-app {
   -webkit-animation: openApp 0.3s ease;
   -moz-animation: openApp 0.3s ease;
@@ -1822,74 +1756,74 @@ a {
 }
 
 @-webkit-keyframes clickTealButton {
-  /* line 141, ../sass/partials/modules/_animations.scss */
+  /* line 114, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 142, ../sass/partials/modules/_animations.scss */
+  /* line 115, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 143, ../sass/partials/modules/_animations.scss */
+  /* line 116, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
 @-moz-keyframes clickTealButton {
-  /* line 146, ../sass/partials/modules/_animations.scss */
+  /* line 119, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 147, ../sass/partials/modules/_animations.scss */
+  /* line 120, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 148, ../sass/partials/modules/_animations.scss */
+  /* line 121, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
 @-o-keyframes clickTealButton {
-  /* line 151, ../sass/partials/modules/_animations.scss */
+  /* line 124, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 152, ../sass/partials/modules/_animations.scss */
+  /* line 125, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 153, ../sass/partials/modules/_animations.scss */
+  /* line 126, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
 @keyframes clickTealButton {
-  /* line 156, ../sass/partials/modules/_animations.scss */
+  /* line 129, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 157, ../sass/partials/modules/_animations.scss */
+  /* line 130, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 158, ../sass/partials/modules/_animations.scss */
+  /* line 131, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
-/* line 161, ../sass/partials/modules/_animations.scss */
+/* line 134, ../sass/partials/modules/_animations.scss */
 .easyir-ani-click-teal-button {
   -webkit-animation: clickTealButton 0.4s ease;
   -moz-animation: clickTealButton 0.4s ease;
@@ -1898,74 +1832,74 @@ a {
 }
 
 @-webkit-keyframes clickGrayButton {
-  /* line 169, ../sass/partials/modules/_animations.scss */
+  /* line 142, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 170, ../sass/partials/modules/_animations.scss */
+  /* line 143, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 171, ../sass/partials/modules/_animations.scss */
+  /* line 144, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
 @-moz-keyframes clickGrayButton {
-  /* line 174, ../sass/partials/modules/_animations.scss */
+  /* line 147, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 175, ../sass/partials/modules/_animations.scss */
+  /* line 148, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 176, ../sass/partials/modules/_animations.scss */
+  /* line 149, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
 @-o-keyframes clickGrayButton {
-  /* line 179, ../sass/partials/modules/_animations.scss */
+  /* line 152, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 180, ../sass/partials/modules/_animations.scss */
+  /* line 153, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 181, ../sass/partials/modules/_animations.scss */
+  /* line 154, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
 @keyframes clickGrayButton {
-  /* line 184, ../sass/partials/modules/_animations.scss */
+  /* line 157, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 185, ../sass/partials/modules/_animations.scss */
+  /* line 158, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 186, ../sass/partials/modules/_animations.scss */
+  /* line 159, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
-/* line 189, ../sass/partials/modules/_animations.scss */
+/* line 162, ../sass/partials/modules/_animations.scss */
 .easyir-ani-click-gray-button {
   -webkit-animation: clickGrayButton 0.4s ease;
   -moz-animation: clickGrayButton 0.4s ease;
@@ -1974,74 +1908,74 @@ a {
 }
 
 @-webkit-keyframes showHelp {
-  /* line 199, ../sass/partials/modules/_animations.scss */
+  /* line 172, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 200, ../sass/partials/modules/_animations.scss */
+  /* line 173, ../sass/partials/modules/_animations.scss */
   50% {
     top: -330px;
   }
 
-  /* line 201, ../sass/partials/modules/_animations.scss */
+  /* line 174, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
 @-moz-keyframes showHelp {
-  /* line 204, ../sass/partials/modules/_animations.scss */
+  /* line 177, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 205, ../sass/partials/modules/_animations.scss */
+  /* line 178, ../sass/partials/modules/_animations.scss */
   50% {
     top: -330px;
   }
 
-  /* line 206, ../sass/partials/modules/_animations.scss */
+  /* line 179, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
 @-o-keyframes showHelp {
-  /* line 209, ../sass/partials/modules/_animations.scss */
+  /* line 182, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 210, ../sass/partials/modules/_animations.scss */
+  /* line 183, ../sass/partials/modules/_animations.scss */
   50% {
     top: -330px;
   }
 
-  /* line 211, ../sass/partials/modules/_animations.scss */
+  /* line 184, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
 @keyframes showHelp {
-  /* line 214, ../sass/partials/modules/_animations.scss */
+  /* line 187, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 215, ../sass/partials/modules/_animations.scss */
+  /* line 188, ../sass/partials/modules/_animations.scss */
   50% {
     top: -330px;
   }
 
-  /* line 216, ../sass/partials/modules/_animations.scss */
+  /* line 189, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
-/* line 219, ../sass/partials/modules/_animations.scss */
+/* line 192, ../sass/partials/modules/_animations.scss */
 .easyir-ani-show-help {
   -webkit-animation: showHelp 1.5s ease;
   -moz-animation: showHelp 1.5s ease;
@@ -2051,54 +1985,54 @@ a {
 }
 
 @-webkit-keyframes slideNextFrame {
-  /* line 231, ../sass/partials/modules/_animations.scss */
+  /* line 204, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 232, ../sass/partials/modules/_animations.scss */
+  /* line 205, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
 @-moz-keyframes slideNextFrame {
-  /* line 235, ../sass/partials/modules/_animations.scss */
+  /* line 208, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 236, ../sass/partials/modules/_animations.scss */
+  /* line 209, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
 @-o-keyframes slideNextFrame {
-  /* line 239, ../sass/partials/modules/_animations.scss */
+  /* line 212, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 240, ../sass/partials/modules/_animations.scss */
+  /* line 213, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
 @keyframes slideNextFrame {
-  /* line 243, ../sass/partials/modules/_animations.scss */
+  /* line 216, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 244, ../sass/partials/modules/_animations.scss */
+  /* line 217, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
-/* line 247, ../sass/partials/modules/_animations.scss */
+/* line 220, ../sass/partials/modules/_animations.scss */
 .easyir-ani-slide-next-frame {
   -webkit-animation: slideNextFrame 0.4s ease;
   -moz-animation: slideNextFrame 0.4s ease;
@@ -2108,54 +2042,54 @@ a {
 }
 
 @-webkit-keyframes slidePrevFrame {
-  /* line 257, ../sass/partials/modules/_animations.scss */
+  /* line 230, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 258, ../sass/partials/modules/_animations.scss */
+  /* line 231, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
 @-moz-keyframes slidePrevFrame {
-  /* line 261, ../sass/partials/modules/_animations.scss */
+  /* line 234, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 262, ../sass/partials/modules/_animations.scss */
+  /* line 235, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
 @-o-keyframes slidePrevFrame {
-  /* line 265, ../sass/partials/modules/_animations.scss */
+  /* line 238, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 266, ../sass/partials/modules/_animations.scss */
+  /* line 239, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
 @keyframes slidePrevFrame {
-  /* line 269, ../sass/partials/modules/_animations.scss */
+  /* line 242, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 270, ../sass/partials/modules/_animations.scss */
+  /* line 243, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
-/* line 273, ../sass/partials/modules/_animations.scss */
+/* line 246, ../sass/partials/modules/_animations.scss */
 .easyir-ani-slide-prev-frame {
   -webkit-animation: slidePrevFrame 0.4s ease;
   -moz-animation: slidePrevFrame 0.4s ease;
@@ -2166,94 +2100,94 @@ a {
 }
 
 @-webkit-keyframes gestureHelp {
-  /* line 286, ../sass/partials/modules/_animations.scss */
+  /* line 259, ../sass/partials/modules/_animations.scss */
   0% {
     top: 200px;
   }
 
-  /* line 289, ../sass/partials/modules/_animations.scss */
+  /* line 262, ../sass/partials/modules/_animations.scss */
   10% {
     opacity: 0.8;
   }
 
-  /* line 292, ../sass/partials/modules/_animations.scss */
+  /* line 265, ../sass/partials/modules/_animations.scss */
   90% {
     top: 20px;
   }
 
-  /* line 295, ../sass/partials/modules/_animations.scss */
+  /* line 268, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes gestureHelp {
-  /* line 300, ../sass/partials/modules/_animations.scss */
+  /* line 273, ../sass/partials/modules/_animations.scss */
   0% {
     top: 200px;
   }
 
-  /* line 303, ../sass/partials/modules/_animations.scss */
+  /* line 276, ../sass/partials/modules/_animations.scss */
   10% {
     opacity: 0.8;
   }
 
-  /* line 306, ../sass/partials/modules/_animations.scss */
+  /* line 279, ../sass/partials/modules/_animations.scss */
   90% {
     top: 20px;
   }
 
-  /* line 309, ../sass/partials/modules/_animations.scss */
+  /* line 282, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes gestureHelp {
-  /* line 314, ../sass/partials/modules/_animations.scss */
+  /* line 287, ../sass/partials/modules/_animations.scss */
   0% {
     top: 200px;
   }
 
-  /* line 317, ../sass/partials/modules/_animations.scss */
+  /* line 290, ../sass/partials/modules/_animations.scss */
   10% {
     opacity: 0.8;
   }
 
-  /* line 320, ../sass/partials/modules/_animations.scss */
+  /* line 293, ../sass/partials/modules/_animations.scss */
   90% {
     top: 20px;
   }
 
-  /* line 323, ../sass/partials/modules/_animations.scss */
+  /* line 296, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes gestureHelp {
-  /* line 328, ../sass/partials/modules/_animations.scss */
+  /* line 301, ../sass/partials/modules/_animations.scss */
   0% {
     top: 200px;
   }
 
-  /* line 331, ../sass/partials/modules/_animations.scss */
+  /* line 304, ../sass/partials/modules/_animations.scss */
   10% {
     opacity: 0.8;
   }
 
-  /* line 334, ../sass/partials/modules/_animations.scss */
+  /* line 307, ../sass/partials/modules/_animations.scss */
   90% {
     top: 20px;
   }
 
-  /* line 337, ../sass/partials/modules/_animations.scss */
+  /* line 310, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
-/* line 342, ../sass/partials/modules/_animations.scss */
+/* line 315, ../sass/partials/modules/_animations.scss */
 .easyir-ani-gesture-show-help {
   -webkit-animation: gestureHelp 1.5s ease;
   -moz-animation: gestureHelp 1.5s ease;
