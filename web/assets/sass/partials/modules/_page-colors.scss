@@ -16,13 +16,22 @@
     $text-color-sub: $color-gray-text-sub
 );
 
-// -------------------------- pink --------------------------
+// -------------------------- Pink --------------------------
 
 @include easyir-section(
     $name: pink,
     $background-color: $color-pink-background,
     $text-color: $color-pink-text,
     $text-color-sub: $color-pink-text-sub
+);
+
+// -------------------------- Blue --------------------------
+
+@include easyir-section(
+    $name: blue,
+    $background-color: $color-blue-background,
+    $text-color: $color-blue-text,
+    $text-color-sub: $color-blue-text-sub
 );
 
 // -------------------------- Teal 2 --------------------------
