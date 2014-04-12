@@ -37,6 +37,7 @@
     min-width: 960px;
     @extend %easyir-centered-content;
     height: 100%;
+    white-space: normal;
 }
 
 .easyir-section--content-footer {
@@ -56,11 +57,14 @@
     margin: 0;
     padding: 0;
     line-height: normal;
+    text-align: left;
 
     .easyir-section--heading-primary {
+        font-family: 'proxima_nova_blblack';
         font-weight: $section-heading-font-weight;
         font-size: $section-heading-primary-font-size;
         margin: $section-heading-margin;
+        border-bottom: 1px solid $color-teal-text;
     }
 
     .easyir-section--heading-secondary {
@@ -78,24 +82,37 @@
     .easyir-section--sub-heading {
         font-weight: $section-sub-heading-font-weight;
         font-size: $section-sub-heading-font-size;
-        line-height: 2;
+        line-height: 1.5;
+        font-style: italic;
+        font-size: 24px;
     }
 }
 
 .easyir-section--content-table {
     height: 100%;
-    width: 100%;
+    width: 960px;
     display: table;
+    table-layout: fixed;
 }
 
 .easyir-section--content-cell {
     display: table-cell;
     text-align: center;
     height: 100%;
+    width: 480px;
 }
 
 .easyir-section--content-caption {
     vertical-align: top;
+}
+
+.easyir-caption-container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.easyir-image-container {
+    height: 100%;
 }
 
 // INTRO
