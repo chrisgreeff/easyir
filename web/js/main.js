@@ -149,8 +149,16 @@
      *        The story to start.
      */
     startStory = function (story) {
+        var storyNode;
+
         setStory(story);
         setSlide(1);
+
+        storyNode = getStoryNode();
+
+        storyNode.find('.easyir-story-side-bar').removeClass('easyir-story-side-bar-visible');
+        storyNode.find('.easyir-slide-btn-prev').removeClass('easyir-slide-btn-prev-visible');
+        storyNode.find('.easyir-slide-btn-next').removeClass('easyir-slide-btn-next-hidden');
     };
 
     /**
