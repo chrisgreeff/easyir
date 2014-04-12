@@ -21,8 +21,13 @@ $ird-screen-height: 405px;
     }
 }
 
-.easy-btn-fred,
-.easy-btn-jane {
+.easyir-btn-disabled {
+    pointer-events: none;
+    background-color: lighten(#4a4a4a, 10%);
+}
+
+.easyir-btn-fred,
+.easyir-btn-jane {
     position: absolute;
     top: 300px;
     padding: 3px 17px;
@@ -135,6 +140,38 @@ $ird-screen-height: 405px;
         position: absolute;
         top: 8px;
         width: 100%;
+    }
+}
+
+.easyir-walkthrough {
+    text-align: left;
+    position: absolute;
+    top: 180px;
+    left: 375px;
+    width: 250px;
+    color: lighten($color-gray-text, 10%);
+
+    .easyir-walkthrough-point-hidden {
+        opacity: 0;
+    }
+
+    .easyir-walkthrough-point {
+        @include transition-property(opacity);
+        @include transition-duration(0.8s);
+        @include transition-timing-function(ease-in-out);
+        line-height: 1.5;
+        margin-bottom: 15px;
+        border-bottom: 1px solid;
+        list-style: none;
+        padding-bottom: 12px;
+        font-family: helvetica;
+        text-align: right;
+        font-size: 12px;
+        margin-top: 12px;
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
 }
 

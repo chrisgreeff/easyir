@@ -28,6 +28,32 @@
     animation:         bounceArrow 1s ease infinite;
 }
 
+@-webkit-keyframes fredBtnStartDown {
+    0%   { top: 300px; }
+    100% { top: 500px; }
+}
+@-moz-keyframes fredBtnStartDown {
+    0%   { top: 300px; }
+    100% { top: 500px; }
+}
+@-o-keyframes fredBtnStartDown {
+    0%   { top: 300px; }
+    100% { top: 500px; }
+}
+@keyframes fredBtnStartDown {
+    0%   { top: 300px; }
+    100% { top: 500px; }
+}
+
+.easyir-ani-start-btn-down-fred {
+    -webkit-animation: fredBtnStartDown 1s ease;
+    -moz-animation:    fredBtnStartDown 1s ease;
+    -o-animation:      fredBtnStartDown 1s ease;
+    animation:         fredBtnStartDown 1s ease;
+
+    top: 500px;
+}
+
 // =========================== Open App ===========================
 
 @-webkit-keyframes openApp {
@@ -118,30 +144,30 @@
 
 @-webkit-keyframes showHelp {
     0%   { top: 0; }
-    40%  { top: -330px; }
+    50%  { top: -330px; }
     100% { top: -281px; }
 }
 @-moz-keyframes showHelp {
     0%   { top: 0; }
-    40%  { top: -330px; }
+    50%  { top: -330px; }
     100% { top: -281px; }
 }
 @-o-keyframes showHelp {
     0%   { top: 0; }
-    40%  { top: -330px; }
+    50%  { top: -330px; }
     100% { top: -281px; }
 }
 @keyframes showHelp {
     0%   { top: 0; }
-    40%  { top: -330px; }
+    50%  { top: -330px; }
     100% { top: -281px; }
 }
 
 .easyir-ani-show-help {
-    -webkit-animation: showHelp 0.8s ease;
-    -moz-animation:    showHelp 0.8s ease;
-    -o-animation:      showHelp 0.8s ease;
-    animation:         showHelp 0.8s ease;
+    -webkit-animation: showHelp 1.5s ease;
+    -moz-animation:    showHelp 1.5s ease;
+    -o-animation:      showHelp 1.5s ease;
+    animation:         showHelp 1.5s ease;
 
     top: -281px;
 }
@@ -261,10 +287,10 @@
 }
 
 .easyir-ani-gesture-show-help {
-    -webkit-animation: gestureHelp 0.8s ease;
-    -moz-animation:    gestureHelp 0.8s ease;
-    -o-animation:      gestureHelp 0.8s ease;
-    animation:         gestureHelp 0.8s ease;
+    -webkit-animation: gestureHelp 1.5s ease;
+    -moz-animation:    gestureHelp 1.5s ease;
+    -o-animation:      gestureHelp 1.5s ease;
+    animation:         gestureHelp 1.5s ease;
 
     left: 95px;
 }

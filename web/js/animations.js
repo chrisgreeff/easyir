@@ -9,8 +9,13 @@
 
         ANI_SHOW_HELP = 'easyir-ani-show-help',
 
-        ANI_GESTURE_SHOW_HELP = 'easyir-ani-gesture-show-help';
+        ANI_GESTURE_SHOW_HELP = 'easyir-ani-gesture-show-help',
 
+        ANI_START_BTN_DOWN_FRED = 'easyir-ani-start-btn-down-fred',
+
+        BTN_DISABLED = 'easyir-btn-disabled',
+        BOUNCY_ARROW = 'easyir-ani-bounce-arrow',
+        POINT_HIDDEN = 'easyir-walkthrough-point-hidden';
 
     var aniNextSlide = function (nodes) {
         nodes.forEach(function (node) {
@@ -34,9 +39,17 @@
 
     // OPEN APP
     fred1 = function () {
-        $('.easyir-ani-open').addClass(ANI_OPEN_APP);
+        $('.easyir-btn-fred').addClass(ANI_START_BTN_DOWN_FRED);
+        $('.easyir-btn-fred').addClass(BTN_DISABLED);
+        $('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        $('.easyir-walkthrough-fred1-point1').removeClass(POINT_HIDDEN);
 
-        fred2();
+        setTimeout(function() {
+            $('.easyir-ani-open').addClass(ANI_OPEN_APP);
+
+            fred2();
+        }, 400);
+
     };
 
     // CLICK APPLY FOR IRD
@@ -45,7 +58,7 @@
             $('.easyir-ani-apply-button').addClass(ANI_CLICK_TEAL_BTN);
 
             fred3()
-        }, 400);
+        }, 2000);
     };
 
     // NEXT FRAME
@@ -53,6 +66,7 @@
         setTimeout(function () {
             aniNextSlide([$('.easyir-ani-app')]);
             aniPrevSlide([$('.easyir-ani-registration')]);
+            $('.easyir-walkthrough-fred1-point2').removeClass(POINT_HIDDEN);
 
             fred4();
         }, 400);
@@ -61,12 +75,15 @@
     // SHOW HELP
     fred4 = function () {
         setTimeout(function () {
-            $('.easyir-ani-pre1').addClass(ANI_SHOW_HELP);
-            $('.easyir-ani-progress-bar1').addClass(ANI_SHOW_HELP);
             $('.easyir-ani-swipe-gesture').addClass(ANI_GESTURE_SHOW_HELP);
 
-            fred5();
-        }, 400);
+            setTimeout(function () {
+                $('.easyir-ani-pre1').addClass(ANI_SHOW_HELP);
+                $('.easyir-ani-progress-bar1').addClass(ANI_SHOW_HELP);
+
+                fred5();
+            }, 800);
+        }, 2000);
     };
 
     // CLICK YES
@@ -75,8 +92,9 @@
             $('.easyir-ani-options-yes1').addClass(ANI_CLICK_GRAY_BTN);
 
             fred6();
-        }, 400);
+        }, 3000);
     };
+
 
     var fred6 = function () {
         setTimeout(function () {
@@ -102,7 +120,7 @@
         setTimeout(function () {
             $('.easyir-ani-options-bar-half1').addClass(ANI_CLICK_GRAY_BTN);
             fred8();
-        }, 400);
+        }, 2000);
     };
 
     var fred8 = function () {
@@ -129,7 +147,7 @@
         setTimeout(function () {
             $('.easyir-ani-options-bar-half2').addClass(ANI_CLICK_GRAY_BTN);
             fred10();
-        }, 400);
+        }, 2000);
     };
 
     var fred10 = function () {
@@ -146,6 +164,7 @@
                 $('.easyir-ani-options-bar4'),
                 $('.easyir-ani-menu-bar-pre4')
             ]);
+            $('.easyir-walkthrough-fred1-point3').removeClass(POINT_HIDDEN);
         }, 400);
     };
 
