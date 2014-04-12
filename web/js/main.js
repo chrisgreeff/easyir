@@ -110,7 +110,7 @@
             // Moving from last slide to something earlier
             if (nextSlide < totalSlides) {
                 storyNode.find('.easyir-slide-btn-next').removeClass('easyir-slide-btn-next-hidden');
-                storyNode.find('.easyir-story-side-bar-content').removeClass('easyir-story-side-bar-app-icon-visible');
+                storyNode.find('.easyir-story-side-bar-content').removeClass('easyir-story-side-bar-app-visible');
             }
 
             return true;
@@ -136,7 +136,7 @@
             // Last Slide
             if (nextSlide === totalSlides) {
                 storyNode.find('.easyir-slide-btn-next').addClass('easyir-slide-btn-next-hidden');
-                storyNode.find('.easyir-story-side-bar-content').addClass('easyir-story-side-bar-app-icon-visible');
+                storyNode.find('.easyir-story-side-bar-content').addClass('easyir-story-side-bar-app-visible');
             }
 
             return true;

@@ -156,11 +156,12 @@
         font-family: 'proxima_nova_blblack';
         color: $color-teal-text;
         text-align: center;
+        vertical-align: middle;
         @include transition-property(all);
         @include transition-duration(1s);
         @include transition-timing-function(ease-in-out);
 
-        .easyir-story-side-bar-app-icon {
+        .easyir-story-side-bar-app {
             display: inline-block;
             height: 100px;
             width: 100px;
@@ -171,8 +172,8 @@
             @include transition-timing-function(ease-in-out);
         }
 
-        &.easyir-story-side-bar-app-icon-visible {
-            .easyir-story-side-bar-app-icon {
+        &.easyir-story-side-bar-app-visible {
+            .easyir-story-side-bar-app {
                 opacity: 1;
             }
         }

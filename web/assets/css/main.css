@@ -851,6 +851,7 @@ a {
   font-family: 'proxima_nova_blblack';
   color: #414143;
   text-align: center;
+  vertical-align: middle;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -864,8 +865,8 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 163, ../sass/partials/modules/_page-transitions.scss */
-.easyir-story-side-bar .easyir-story-side-bar-content .easyir-story-side-bar-app-icon {
+/* line 164, ../sass/partials/modules/_page-transitions.scss */
+.easyir-story-side-bar .easyir-story-side-bar-content .easyir-story-side-bar-app {
   display: inline-block;
   height: 100px;
   width: 100px;
@@ -883,12 +884,12 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 175, ../sass/partials/modules/_page-transitions.scss */
-.easyir-story-side-bar .easyir-story-side-bar-content.easyir-story-side-bar-app-icon-visible .easyir-story-side-bar-app-icon {
+/* line 176, ../sass/partials/modules/_page-transitions.scss */
+.easyir-story-side-bar .easyir-story-side-bar-content.easyir-story-side-bar-app-visible .easyir-story-side-bar-app {
   opacity: 1;
 }
 
-/* line 182, ../sass/partials/modules/_page-transitions.scss */
+/* line 183, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar-visible {
   left: 0px;
   -webkit-transition-delay: 0.8s;
