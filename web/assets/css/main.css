@@ -676,12 +676,6 @@ a {
   text-decoration: none;
   color: #414143;
   font-size: 80px;
-}
-
-/* line 36, ../sass/partials/modules/_page-transitions.scss */
-.easyir-slide-btn-prev {
-  left: -50px;
-  opacity: 0;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -695,8 +689,22 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
+/* line 38, ../sass/partials/modules/_page-transitions.scss */
+.easyir-slide-btn:hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  color: #67676a;
+}
 
-/* line 44, ../sass/partials/modules/_page-transitions.scss */
+/* line 45, ../sass/partials/modules/_page-transitions.scss */
+.easyir-slide-btn-prev {
+  left: -50px;
+  opacity: 0;
+}
+
+/* line 50, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-prev-visible {
   left: 220px;
   opacity: 1;
@@ -706,31 +714,19 @@ a {
   transition-delay: 0.8s;
 }
 
-/* line 50, ../sass/partials/modules/_page-transitions.scss */
+/* line 56, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next {
   right: 20px;
   opacity: 1;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
-/* line 58, ../sass/partials/modules/_page-transitions.scss */
+/* line 61, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next-hidden {
   right: -50px;
   opacity: 0;
 }
 
-/* line 65, ../sass/partials/modules/_page-transitions.scss */
+/* line 68, ../sass/partials/modules/_page-transitions.scss */
 .easyir-header-visible {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
@@ -739,13 +735,13 @@ a {
   top: 0;
 }
 
-/* line 70, ../sass/partials/modules/_page-transitions.scss */
+/* line 73, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar-logo {
   right: initial;
   left: 0;
 }
 
-/* line 75, ../sass/partials/modules/_page-transitions.scss */
+/* line 78, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar {
   display: inline-block;
   position: absolute;
@@ -754,30 +750,30 @@ a {
   height: 100%;
   padding-right: 20px;
 }
-/* line 83, ../sass/partials/modules/_page-transitions.scss */
+/* line 86, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 90, ../sass/partials/modules/_page-transitions.scss */
+/* line 93, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav-logo {
   font-size: 20px !important;
 }
-/* line 94, ../sass/partials/modules/_page-transitions.scss */
+/* line 97, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav {
   text-decoration: none;
   font-size: 14px;
   margin: 0 20px;
   vertical-align: middle;
 }
-/* line 100, ../sass/partials/modules/_page-transitions.scss */
+/* line 103, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav:hover:not(.active) span:after {
   width: 100%;
   background-color: #414143;
 }
-/* line 105, ../sass/partials/modules/_page-transitions.scss */
+/* line 108, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav span {
   font-family: 'proxima_nova_blblack';
   text-transform: uppercase;
@@ -797,11 +793,11 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 115, ../sass/partials/modules/_page-transitions.scss */
+/* line 118, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav span:hover {
   color: #414143;
 }
-/* line 119, ../sass/partials/modules/_page-transitions.scss */
+/* line 122, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav span:after {
   height: 2px;
   content: '';
@@ -824,7 +820,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 136, ../sass/partials/modules/_page-transitions.scss */
+/* line 139, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar {
   height: 100%;
   width: 200px;
@@ -846,17 +842,53 @@ a {
   transition-timing-function: ease-in-out;
   display: table;
 }
-/* line 149, ../sass/partials/modules/_page-transitions.scss */
-.easyir-story-side-bar .easyir-story-side-bar-title {
+/* line 152, ../sass/partials/modules/_page-transitions.scss */
+.easyir-story-side-bar .easyir-story-side-bar-content {
   display: table-cell;
+  position: relative;
   white-space: normal;
   font-size: 48px;
   font-family: 'proxima_nova_blblack';
   color: #414143;
   text-align: center;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 164, ../sass/partials/modules/_page-transitions.scss */
+.easyir-story-side-bar .easyir-story-side-bar-content .easyir-story-side-bar-app-icon {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 176, ../sass/partials/modules/_page-transitions.scss */
+.easyir-story-side-bar .easyir-story-side-bar-content.easyir-story-side-bar-app-icon-visible .easyir-story-side-bar-app-icon {
+  opacity: 1;
 }
 
-/* line 159, ../sass/partials/modules/_page-transitions.scss */
+/* line 183, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar-visible {
   left: 0px;
   -webkit-transition-delay: 0.8s;

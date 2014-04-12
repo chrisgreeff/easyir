@@ -101,13 +101,16 @@
             nextSlide = currentSlide - 1;
             setSlide(nextSlide);
 
+            // First Slide
             if (nextSlide === 1) {
                 storyNode.find('.easyir-story-side-bar').removeClass('easyir-story-side-bar-visible');
                 storyNode.find('.easyir-slide-btn-prev').removeClass('easyir-slide-btn-prev-visible');
             }
 
+            // Moving from last slide to something earlier
             if (nextSlide < totalSlides) {
                 storyNode.find('.easyir-slide-btn-next').removeClass('easyir-slide-btn-next-hidden');
+                storyNode.find('.easyir-story-side-bar-content').removeClass('easyir-story-side-bar-app-icon-visible');
             }
 
             return true;
@@ -130,8 +133,10 @@
             storyNode.find('.easyir-story-side-bar').addClass('easyir-story-side-bar-visible');
             storyNode.find('.easyir-slide-btn-prev').addClass('easyir-slide-btn-prev-visible');
 
+            // Last Slide
             if (nextSlide === totalSlides) {
                 storyNode.find('.easyir-slide-btn-next').addClass('easyir-slide-btn-next-hidden');
+                storyNode.find('.easyir-story-side-bar-content').addClass('easyir-story-side-bar-app-icon-visible');
             }
 
             return true;

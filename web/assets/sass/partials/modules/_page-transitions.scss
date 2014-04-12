@@ -31,14 +31,20 @@
     text-decoration: none;
     color: $color-teal-text;
     font-size: 80px;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+
+    &:hover {
+
+        @include transition-delay(0s);
+        color: lighten($color-teal-text, 15%);
+    }
 }
 
 .easyir-slide-btn-prev {
     left: -50px;
     opacity: 0;
-    @include transition-property(all);
-    @include transition-duration(0.5s);
-    @include transition-timing-function(ease-in-out);
 }
 
 .easyir-slide-btn-prev-visible {
@@ -50,9 +56,6 @@
 .easyir-slide-btn-next {
     right: 20px;
     opacity: 1;
-    @include transition-property(all);
-    @include transition-duration(0.5s);
-    @include transition-timing-function(ease-in-out);
 }
 
 .easyir-slide-btn-next-hidden {
@@ -146,13 +149,34 @@
     @extend %easyir-middle-content;
     display: table;
 
-    .easyir-story-side-bar-title {
+    .easyir-story-side-bar-content {
         display: table-cell;
+        position: relative;
         white-space: normal;
         font-size: 48px;
         font-family: 'proxima_nova_blblack';
         color: $color-teal-text;
         text-align: center;
+        @include transition-property(all);
+        @include transition-duration(1s);
+        @include transition-timing-function(ease-in-out);
+
+        .easyir-story-side-bar-app-icon {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            opacity: 0;
+
+            @include transition-property(opacity);
+            @include transition-duration(1s);
+            @include transition-timing-function(ease-in-out);
+        }
+
+        &.easyir-story-side-bar-app-icon-visible {
+            .easyir-story-side-bar-app-icon {
+                opacity: 1;
+            }
+        }
     }
 }
 
