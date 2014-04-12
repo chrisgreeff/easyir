@@ -698,13 +698,13 @@ a {
   color: #67676a;
 }
 
-/* line 45, ../sass/partials/modules/_page-transitions.scss */
+/* line 44, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-prev {
   left: -50px;
   opacity: 0;
 }
 
-/* line 50, ../sass/partials/modules/_page-transitions.scss */
+/* line 49, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-prev-visible {
   left: 220px;
   opacity: 1;
@@ -714,19 +714,19 @@ a {
   transition-delay: 0.8s;
 }
 
-/* line 56, ../sass/partials/modules/_page-transitions.scss */
+/* line 55, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next {
   right: 20px;
   opacity: 1;
 }
 
-/* line 61, ../sass/partials/modules/_page-transitions.scss */
+/* line 60, ../sass/partials/modules/_page-transitions.scss */
 .easyir-slide-btn-next-hidden {
   right: -50px;
   opacity: 0;
 }
 
-/* line 68, ../sass/partials/modules/_page-transitions.scss */
+/* line 67, ../sass/partials/modules/_page-transitions.scss */
 .easyir-header-visible {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
@@ -735,13 +735,13 @@ a {
   top: 0;
 }
 
-/* line 73, ../sass/partials/modules/_page-transitions.scss */
+/* line 72, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar-logo {
   right: initial;
   left: 0;
 }
 
-/* line 78, ../sass/partials/modules/_page-transitions.scss */
+/* line 77, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar {
   display: inline-block;
   position: absolute;
@@ -750,30 +750,30 @@ a {
   height: 100%;
   padding-right: 20px;
 }
-/* line 86, ../sass/partials/modules/_page-transitions.scss */
+/* line 85, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 93, ../sass/partials/modules/_page-transitions.scss */
+/* line 92, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav-logo {
   font-size: 20px !important;
 }
-/* line 97, ../sass/partials/modules/_page-transitions.scss */
+/* line 96, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav {
   text-decoration: none;
   font-size: 14px;
   margin: 0 20px;
   vertical-align: middle;
 }
-/* line 103, ../sass/partials/modules/_page-transitions.scss */
+/* line 102, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav:hover:not(.active) span:after {
   width: 100%;
   background-color: #414143;
 }
-/* line 108, ../sass/partials/modules/_page-transitions.scss */
+/* line 107, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav span {
   font-family: 'proxima_nova_blblack';
   text-transform: uppercase;
@@ -793,11 +793,11 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 118, ../sass/partials/modules/_page-transitions.scss */
+/* line 117, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav span:hover {
   color: #414143;
 }
-/* line 122, ../sass/partials/modules/_page-transitions.scss */
+/* line 121, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav span:after {
   height: 2px;
   content: '';
@@ -820,7 +820,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 139, ../sass/partials/modules/_page-transitions.scss */
+/* line 138, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar {
   height: 100%;
   width: 200px;
@@ -842,7 +842,7 @@ a {
   transition-timing-function: ease-in-out;
   display: table;
 }
-/* line 152, ../sass/partials/modules/_page-transitions.scss */
+/* line 151, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar .easyir-story-side-bar-content {
   display: table-cell;
   position: relative;
@@ -864,7 +864,7 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 164, ../sass/partials/modules/_page-transitions.scss */
+/* line 163, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar .easyir-story-side-bar-content .easyir-story-side-bar-app-icon {
   display: inline-block;
   height: 100px;
@@ -883,12 +883,12 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 176, ../sass/partials/modules/_page-transitions.scss */
+/* line 175, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar .easyir-story-side-bar-content.easyir-story-side-bar-app-icon-visible .easyir-story-side-bar-app-icon {
   opacity: 1;
 }
 
-/* line 183, ../sass/partials/modules/_page-transitions.scss */
+/* line 182, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-side-bar-visible {
   left: 0px;
   -webkit-transition-delay: 0.8s;

@@ -36,7 +36,6 @@
     @include transition-timing-function(ease-in-out);
 
     &:hover {
-
         @include transition-delay(0s);
         color: lighten($color-teal-text, 15%);
     }
