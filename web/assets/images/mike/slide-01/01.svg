@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 203.6 500" enable-background="new 0 0 203.6 500" xml:space="preserve">
+<pattern  x="-148.1" y="-14" width="118" height="118" patternUnits="userSpaceOnUse" id="vertical2" viewBox="118.2 -236.1 118 118" overflow="visible">
+	<g>
+		<polygon fill="none" points="118.2,-236.1 236.2,-236.1 236.2,-118.1 118.2,-118.1 		"/>
+		<g>
+			<polygon fill="#FFFFFF" points="354.5,0 236,0 236,-118.5 354.5,-118.5 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="236.5,0 118,0 118,-118.5 236.5,-118.5 			"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="177.2" y1="-118.5" x2="177.2" y2="0"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="207.6" y1="-118.5" x2="207.6" y2="0"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="236.2" y1="-118.5" x2="236.2" y2="0"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="146.9" y1="-118.5" x2="146.9" y2="0"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="118.5,0 0,0 0,-118.5 118.5,-118.5 			"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="118.2" y1="-118.5" x2="118.2" y2="0"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="354.5,-118 236,-118 236,-236.5 354.5,-236.5 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="236.5,-118 118,-118 118,-236.5 236.5,-236.5 			"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="177.2" y1="-236.5" x2="177.2" y2="-118"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="207.6" y1="-236.5" x2="207.6" y2="-118"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="236.2" y1="-236.5" x2="236.2" y2="-118"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="146.9" y1="-236.5" x2="146.9" y2="-118"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="118.5,-118 0,-118 0,-236.5 118.5,-236.5 			"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="118.2" y1="-236.5" x2="118.2" y2="-118"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="354.5,-236 236,-236 236,-354.5 354.5,-354.5 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="236.5,-236 118,-236 118,-354.5 236.5,-354.5 			"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="177.2" y1="-354.5" x2="177.2" y2="-236"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="207.6" y1="-354.5" x2="207.6" y2="-236"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="236.2" y1="-354.5" x2="236.2" y2="-236"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="146.9" y1="-354.5" x2="146.9" y2="-236"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="118.5,-236 0,-236 0,-354.5 118.5,-354.5 			"/>
+			<line fill="none" stroke="#ACDAF3" stroke-miterlimit="10" x1="118.2" y1="-354.5" x2="118.2" y2="-236"/>
+		</g>
+	</g>
+</pattern>
+<g>
+	<ellipse fill="#94BDD1" cx="101.8" cy="478" rx="101.8" ry="22"/>
+	<g>
+		<g>
+			<polygon fill="#577188" points="69.2,470.3 79.5,470.3 69.2,357.9 			"/>
+			<polygon fill="#577188" points="116.3,470.3 127.4,470.3 116.3,353.6 			"/>
+			<path fill="#607C96" d="M134.4,250H69.2v107.9l10.3,112.4h7.8V302.7c0-7.9,6.4-14.3,14.3-14.3h0.3c7.9,0,14.3,6.4,14.3,14.3v50.9
+				l11.1,116.7h7V250z"/>
+		</g>
+		<g>
+			<g>
+				<defs>
+					<path id="SVGID_3_" d="M60,53.3l29.2-33.6c0,0,30.9-16.1,30.9,7.5S82,74.1,69.2,74.1L60,53.3z"/>
+				</defs>
+				<use xlink:href="#SVGID_3_"  overflow="visible" fill="#71553A"/>
+				<clipPath id="SVGID_1_">
+					<use xlink:href="#SVGID_3_"  overflow="visible"/>
+				</clipPath>
+				<g clip-path="url(#SVGID_1_)">
+					<path fill="#71553A" d="M101.8,130.9c-18,0-32.6-14.6-32.6-32.6V77.2c0-18,14.6-32.6,32.6-32.6s32.6,14.6,32.6,32.6v21.2
+						C134.4,116.4,119.8,130.9,101.8,130.9z"/>
+				</g>
+			</g>
+			<g>
+				<g opacity="0.1">
+					<path fill="#010101" d="M132.2,77.3c-20.3,0-52.6-13.8-52.6-59.6s52.6,12.2,52.6,12.2V77.3z"/>
+				</g>
+				<g>
+					<path fill="#71553A" d="M134.4,77.3c-20.3,0-52.6-13.8-52.6-59.6s52.6,12.2,52.6,12.2V77.3z"/>
+				</g>
+			</g>
+		</g>
+		<path fill="url(#vertical2)" d="M149.8,262.2h-96v-99c0-20.4,16.5-36.9,36.9-36.9h22.2c20.4,0,36.9,16.5,36.9,36.9V262.2z"/>
+		<g>
+			<path fill="#F6C6A7" d="M84.6,133c0.1,0.2,0.2,0.3,0.2,0.5l9,15.6c3.5,6.1,12.4,6.1,15.9,0l9-15.6c0.1-0.2,0.2-0.3,0.2-0.5
+				c-5,3.1-10.9,4.9-17.2,4.9S89.6,136.1,84.6,133z"/>
+			<path fill="#E8B99E" d="M110.8,119.6h-18c-6.9,0-11.3,7.3-8.2,13.3c5,3.1,10.9,4.9,17.2,4.9s12.2-1.8,17.2-4.9
+				C122.1,126.9,117.7,119.6,110.8,119.6z"/>
+		</g>
+		<g>
+			<path fill="#F6C6A7" d="M101.8,135.6c-18,0-32.6-14.6-32.6-32.6V81.9c0-18,14.6-32.6,32.6-32.6s32.6,14.6,32.6,32.6v21.2
+				C134.4,121.1,119.8,135.6,101.8,135.6z"/>
+		</g>
+		<g>
+			<circle fill="#A47B53" cx="88.8" cy="86.5" r="1.4"/>
+			<circle fill="#A47B53" cx="114.8" cy="86.5" r="1.4"/>
+		</g>
+		<circle fill="#F6C6A7" cx="134.4" cy="85.9" r="5.3"/>
+		<circle fill="#F6C6A7" cx="69.2" cy="85.9" r="5.3"/>
+		<g>
+			<path fill="#71553A" d="M104.6,109.4c-0.3,3.6-3.4,6.3-7,6c-3.6-0.3-15.8-1.1-15.8-1.1c4.5,0.3,8.9-12.6,16.7-12
+				C102.2,102.6,104.9,105.8,104.6,109.4z"/>
+			<g>
+				<g opacity="0.2">
+					<path fill="#010101" d="M98.1,110.1c0.5,3.6,3.8,6.1,7.4,5.5c3.6-0.5,15.7-2.2,15.7-2.2c-4.4,0.6-9.7-11.9-17.5-10.8
+						C100,103.3,97.5,106.6,98.1,110.1z"/>
+				</g>
+				<g>
+					<path fill="#71553A" d="M99,110.1c0.5,3.6,3.8,6.1,7.4,5.5c3.6-0.5,15.7-2.2,15.7-2.2c-4.4,0.6-9.7-11.9-17.5-10.8
+						C101,103.3,98.5,106.6,99,110.1z"/>
+				</g>
+			</g>
+		</g>
+		<path fill="#F6C6A7" d="M144.7,338.9h0.1c2.8,0,5-2.2,5-5V225.7h-10.1v108.1C139.7,336.6,141.9,338.9,144.7,338.9z"/>
+		<path fill="#F6C6A7" d="M58.8,338.9h0.1c2.8,0,5-2.2,5-5V225.7H53.8v108.1C53.8,336.6,56,338.9,58.8,338.9z"/>
+		<rect x="68.3" y="262.2" fill="#71553A" width="67.1" height="5.7"/>
+		<polygon fill="#71553A" points="149.8,482.6 116.3,482.6 116.3,470.3 134.4,470.3 138.4,473.8 149.8,475.2 		"/>
+		<polygon fill="#71553A" points="53.8,482.6 87.3,482.6 87.3,470.3 69.2,470.3 65.2,473.8 53.8,475.2 		"/>
+	</g>
+</g>
+</svg>
