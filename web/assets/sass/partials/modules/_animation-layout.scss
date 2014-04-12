@@ -493,8 +493,8 @@ $ird-screen-height: 405px;
 .easyir-ani-ir595-pre5 {
     @extend %easyir-ani-full-screen;
     background: url("../images/09-IR595-pre-5/bg.png");
-    background-size: 102% auto;
-    width: 229px;
+    background-size: 100% auto;
+    top: 10px;
 }
 
 // =========================== This Stays At The Bottom ===========================

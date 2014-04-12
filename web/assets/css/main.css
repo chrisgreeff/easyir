@@ -1497,8 +1497,8 @@ a {
 /* line 493, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre5 {
   background: url("../images/09-IR595-pre-5/bg.png");
-  background-size: 102% auto;
-  width: 229px;
+  background-size: 100% auto;
+  top: 10px;
 }
 
 /* line 502, ../sass/partials/modules/_animation-layout.scss */
