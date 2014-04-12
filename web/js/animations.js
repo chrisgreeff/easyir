@@ -1,5 +1,16 @@
 (function() {
-    var ANI_OPEN_APP = 'easyir-ani-open-app',
+
+    var TIME_CLICK = 1,
+        TIME_HELP = 1,
+        TIME_READING_HELP = 1,
+        TIME_NEXT_SLIDE = 1,
+
+        // TIME_CLICK = 400,
+        // TIME_HELP = 800,
+        // TIME_READING_HELP = 3000,
+        // TIME_NEXT_SLIDE = 2000,
+
+        ANI_OPEN_APP = 'easyir-ani-open-app',
 
         ANI_CLICK_TEAL_BTN = 'easyir-ani-click-teal-button',
         ANI_CLICK_GRAY_BTN = 'easyir-ani-click-gray-button',
@@ -17,17 +28,7 @@
 
         BTN_DISABLED = 'easyir-btn-disabled',
         BOUNCY_ARROW = 'easyir-ani-bounce-arrow',
-        POINT_HIDDEN = 'easyir-walkthrough-point-hidden',
-
-        // TIME_CLICK = 400,
-        // TIME_HELP = 800,
-        // TIME_READING_HELP = 3000,
-        // TIME_NEXT_SLIDE = 2000;
-
-        TIME_CLICK = 1,
-        TIME_HELP = 1,
-        TIME_READING_HELP = 1,
-        TIME_NEXT_SLIDE = 1;
+        POINT_HIDDEN = 'easyir-walkthrough-point-hidden';
 
     var aniNextSlide = function (nodes) {
         nodes.forEach(function (node) {
@@ -189,8 +190,7 @@
         }, TIME_CLICK);
     };
 
-    fred11 = function () {
-        console.log('sup');
+    var fred11 = function () {
         $('.easyir-btn-fred').addClass(ANI_START_BTN_FRED3);
         $('.easyir-btn-fred').addClass(BTN_DISABLED);
         $('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
@@ -199,8 +199,28 @@
         $('.easyir-walkthrough-fred1-point3').addClass(POINT_HIDDEN);
 
         setTimeout(function() {
-            
+            $('.easyir-ani-options-bar-full1').addClass(ANI_CLICK_GRAY_BTN);
+
+            fred12();
         }, TIME_CLICK);
+    };
+
+    var fred12 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                $('.easyir-ani-pre4'),
+                $('.easyir-ani-options-bar4'),
+                $('.easyir-ani-menu-bar-pre4')
+            ]);
+
+            aniNextSlide([
+                $('.easyir-ani-ir595-pre1'),
+                $('.easyir-ani-progress-bar4'),
+                $('.easyir-ani-options-bar5'),
+                $('.easyir-ani-ir595-menu-bar-pre1')
+            ]);
+
+        }, TIME_NEXT_SLIDE);
     };
 
     resetFredAnimation = function () {

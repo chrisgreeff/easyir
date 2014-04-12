@@ -261,6 +261,60 @@ $ird-screen-height: 405px;
     border-left: 1px solid $ird-app-button-border;
 }
 
+.easyir-ani-options-bar-quater {
+    position: relative;
+    color: $ird-app-text-color;
+    height: 40px;
+    border-bottom: 1px solid $ird-app-button-border;
+
+    .easyir-ani-options-bar-quater-content {
+        font-size: 11px;
+        text-align: left;
+        position: absolute;
+        left: 45px;
+        line-height: 1.5;
+    }
+
+    .easyir-ani-options-bar-quater-content-1 {
+        top: 13px;
+    }
+
+    .easyir-ani-options-bar-quater-content-2 {
+        top: 4px;
+    }
+
+    .easyir-ani-options-bar-quater-checkbox {
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 4px;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-color: gray;
+        border-width: 1px;
+        border-style: solid;
+
+        &.easyir-ani-options-bar-quater-checkbox-checked {
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 4px;
+                top: 4px;
+                background-color: gray;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border-color: gray;
+                border-width: 1px;
+                border-style: solid;
+            }
+        }
+    }
+}
+
 .easyir-ani-options-bar-half {
     color: $ird-app-text-color;
     height: 80px;
@@ -285,6 +339,29 @@ $ird-screen-height: 405px;
 
 .easyir-ani-progress-bar {
     @extend %easyir-ani-progress-bar;
+    
+    .easyir-ani-progress-bar-content-percentage {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: $ird-app-text-color;
+    }
+}
+
+.easyir-progress-checkbox {
+    display: inline-block;
+    position: absolute;;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border-color: $ird-teal-default;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.easyir-progress-checkbox-checked {
+    background-color: $ird-teal-default;
 }
 
 // =========================== Pre 1 ===========================
@@ -326,6 +403,39 @@ $ird-screen-height: 405px;
 .easyir-ani-pre4 {
     @extend %easyir-ani-full-screen;
     background: url("../images/06-pre-4/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 1 ===========================
+
+.easyir-ani-ir595-pre1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/07-IR595-pre-1/bg.png");
+    background-size: 100% auto;
+    height: 1025px;
+}
+
+.easyir-ani-ir595-menu-bar-pre1,
+.easyir-ani-ir595-menu-bar-pre2,
+.easyir-ani-ir595-menu-bar-pre3 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/07-IR595-pre-1/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 2 ===========================
+
+.easyir-ani-ir595-pre2 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/08-IR595-pre-2/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 3 ===========================
+
+.easyir-ani-ir595-pre3 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/09-IR595-pre-3/bg.png");
     background-size: 100% auto;
 }
 
