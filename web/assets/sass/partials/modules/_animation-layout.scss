@@ -225,14 +225,25 @@ $ird-screen-height: 405px;
 }
 
 .easyir-ani-options-bar-half {
+    color: $ird-app-text-color;
     height: 80px;
     border-bottom: 1px solid $ird-app-button-border;
     @extend %easyir-middle-content;
 }
 
 .easyir-ani-options-bar-full {
+    color: $ird-app-text-color;
     height: 100%;
     @extend %easyir-middle-content;
+}
+
+.easyir-ani-options-bar-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: auto;
+    right: 35px;
 }
 
 .easyir-ani-progress-bar {
@@ -249,7 +260,9 @@ $ird-screen-height: 405px;
 }
 
 .easyir-ani-menu-bar-pre1,
-.easyir-ani-menu-bar-pre2 {
+.easyir-ani-menu-bar-pre2,
+.easyir-ani-menu-bar-pre3,
+.easyir-ani-menu-bar-pre4 {
     @extend %easyir-ani-menu-bar;
     background: url("../images/03-pre-1/menu-bar-top.png");
     background-size: 100% auto;
