@@ -330,6 +330,11 @@ $ird-screen-height: 405px;
     @extend %easyir-middle-content;
 }
 
+.easyir-ani-options-bar-half-image {
+    width: 50px;
+    height: auto;
+}
+
 .easyir-ani-options-bar-full {
     color: $ird-app-text-color;
     height: 100%;
@@ -442,7 +447,9 @@ $ird-screen-height: 405px;
 
 .easyir-ani-ir595-menu-bar-pre1,
 .easyir-ani-ir595-menu-bar-pre2,
-.easyir-ani-ir595-menu-bar-pre3 {
+.easyir-ani-ir595-menu-bar-pre3,
+.easyir-ani-ir595-menu-bar-pre4,
+.easyir-ani-ir595-menu-bar-pre5 {
     @extend %easyir-ani-menu-bar;
     background: url("../images/07-IR595-pre-1/menu-bar-top.png");
     background-size: 100% auto;
@@ -461,6 +468,22 @@ $ird-screen-height: 405px;
 .easyir-ani-ir595-pre3 {
     @extend %easyir-ani-full-screen;
     background: url("../images/09-IR595-pre-3/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 4 ===========================
+
+.easyir-ani-ir595-pre4 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/10-IR595-pre-4/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 5 ===========================
+
+.easyir-ani-ir595-pre5 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/11-IR595-pre-5/bg.png");
     background-size: 100% auto;
 }
 

@@ -1071,12 +1071,14 @@ a {
 }
 
 /* line 93, ../sass/partials/modules/_animation-layout.scss */
-.easyir-ani-open, .easyir-ani-registration, .easyir-ani-pre1, .easyir-ani-pre2, .easyir-ani-pre3, .easyir-ani-pre4, .easyir-ani-ir595-pre1, .easyir-ani-ir595-pre2, .easyir-ani-ir595-pre3, .easyir-ani-header, .easyir-ani-registration .easyir-ani-menu-bar, .easyir-ani-menu-bar-pre1,
+.easyir-ani-open, .easyir-ani-registration, .easyir-ani-pre1, .easyir-ani-pre2, .easyir-ani-pre3, .easyir-ani-pre4, .easyir-ani-ir595-pre1, .easyir-ani-ir595-pre2, .easyir-ani-ir595-pre3, .easyir-ani-ir595-pre4, .easyir-ani-ir595-pre5, .easyir-ani-header, .easyir-ani-registration .easyir-ani-menu-bar, .easyir-ani-menu-bar-pre1,
 .easyir-ani-menu-bar-pre2,
 .easyir-ani-menu-bar-pre3,
 .easyir-ani-menu-bar-pre4, .easyir-ani-ir595-menu-bar-pre1,
 .easyir-ani-ir595-menu-bar-pre2,
-.easyir-ani-ir595-menu-bar-pre3, .easyir-ani-progress-bar, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-options-bar, .easyir-ani-checkbox-bar {
+.easyir-ani-ir595-menu-bar-pre3,
+.easyir-ani-ir595-menu-bar-pre4,
+.easyir-ani-ir595-menu-bar-pre5, .easyir-ani-progress-bar, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-options-bar, .easyir-ani-checkbox-bar {
   position: absolute;
   left: 0;
   width: 223px;
@@ -1089,7 +1091,7 @@ a {
 }
 
 /* line 104, ../sass/partials/modules/_animation-layout.scss */
-.easyir-ani-open, .easyir-ani-registration, .easyir-ani-pre1, .easyir-ani-pre2, .easyir-ani-pre3, .easyir-ani-pre4, .easyir-ani-ir595-pre1, .easyir-ani-ir595-pre2, .easyir-ani-ir595-pre3 {
+.easyir-ani-open, .easyir-ani-registration, .easyir-ani-pre1, .easyir-ani-pre2, .easyir-ani-pre3, .easyir-ani-pre4, .easyir-ani-ir595-pre1, .easyir-ani-ir595-pre2, .easyir-ani-ir595-pre3, .easyir-ani-ir595-pre4, .easyir-ani-ir595-pre5 {
   top: 0;
   height: 405px;
 }
@@ -1114,7 +1116,9 @@ a {
 .easyir-ani-menu-bar-pre3,
 .easyir-ani-menu-bar-pre4, .easyir-ani-ir595-menu-bar-pre1,
 .easyir-ani-ir595-menu-bar-pre2,
-.easyir-ani-ir595-menu-bar-pre3 {
+.easyir-ani-ir595-menu-bar-pre3,
+.easyir-ani-ir595-menu-bar-pre4,
+.easyir-ani-ir595-menu-bar-pre5 {
   top: 11px;
   height: 31px;
 }
@@ -1337,12 +1341,18 @@ a {
 }
 
 /* line 333, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-options-bar-half-image {
+  width: 50px;
+  height: auto;
+}
+
+/* line 338, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-full {
   color: #4a4a4a;
   height: 100%;
 }
 
-/* line 339, ../sass/partials/modules/_animation-layout.scss */
+/* line 344, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-arrow {
   position: absolute;
   top: 50%;
@@ -1352,7 +1362,7 @@ a {
   right: 35px;
 }
 
-/* line 351, ../sass/partials/modules/_animation-layout.scss */
+/* line 356, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-progress-bar .easyir-ani-progress-bar-content-percentage {
   position: absolute;
   top: 0;
@@ -1360,12 +1370,12 @@ a {
   color: #4a4a4a;
 }
 
-/* line 359, ../sass/partials/modules/_animation-layout.scss */
+/* line 364, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-checkbox-bar {
   top: 7px;
 }
 
-/* line 364, ../sass/partials/modules/_animation-layout.scss */
+/* line 369, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox {
   display: inline-block;
   position: absolute;
@@ -1391,29 +1401,29 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 380, ../sass/partials/modules/_animation-layout.scss */
+/* line 385, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-left {
   left: 96px;
 }
 
-/* line 384, ../sass/partials/modules/_animation-layout.scss */
+/* line 389, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-right {
   left: 118px;
 }
 
-/* line 388, ../sass/partials/modules/_animation-layout.scss */
+/* line 393, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-checked {
   background-color: #008b95;
 }
 
-/* line 394, ../sass/partials/modules/_animation-layout.scss */
+/* line 399, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre1 {
   background: url("../images/03-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 404, ../sass/partials/modules/_animation-layout.scss */
+/* line 409, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar-pre1,
 .easyir-ani-menu-bar-pre2,
 .easyir-ani-menu-bar-pre3,
@@ -1422,52 +1432,66 @@ a {
   background-size: 100% auto;
 }
 
-/* line 412, ../sass/partials/modules/_animation-layout.scss */
+/* line 417, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre2 {
   background: url("../images/04-pre-2/bg.png");
   background-size: 100% auto;
 }
 
-/* line 420, ../sass/partials/modules/_animation-layout.scss */
+/* line 425, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre3 {
   background: url("../images/05-pre-3/bg.png");
   background-size: 100% auto;
 }
 
-/* line 428, ../sass/partials/modules/_animation-layout.scss */
+/* line 433, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre4 {
   background: url("../images/06-pre-4/bg.png");
   background-size: 100% auto;
 }
 
-/* line 436, ../sass/partials/modules/_animation-layout.scss */
+/* line 441, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre1 {
   background: url("../images/07-IR595-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 445, ../sass/partials/modules/_animation-layout.scss */
+/* line 452, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-menu-bar-pre1,
 .easyir-ani-ir595-menu-bar-pre2,
-.easyir-ani-ir595-menu-bar-pre3 {
+.easyir-ani-ir595-menu-bar-pre3,
+.easyir-ani-ir595-menu-bar-pre4,
+.easyir-ani-ir595-menu-bar-pre5 {
   background: url("../images/07-IR595-pre-1/menu-bar-top.png");
   background-size: 100% auto;
 }
 
-/* line 453, ../sass/partials/modules/_animation-layout.scss */
+/* line 460, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre2 {
   background: url("../images/08-IR595-pre-2/bg.png");
   background-size: 100% auto;
 }
 
-/* line 461, ../sass/partials/modules/_animation-layout.scss */
+/* line 468, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre3 {
   background: url("../images/09-IR595-pre-3/bg.png");
   background-size: 100% auto;
 }
 
-/* line 469, ../sass/partials/modules/_animation-layout.scss */
+/* line 476, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-ir595-pre4 {
+  background: url("../images/10-IR595-pre-4/bg.png");
+  background-size: 100% auto;
+}
+
+/* line 484, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-ir595-pre5 {
+  background: url("../images/11-IR595-pre-5/bg.png");
+  background-size: 100% auto;
+}
+
+/* line 492, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani {
   display: inline-block;
   background-repeat: no-repeat;

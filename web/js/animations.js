@@ -228,6 +228,109 @@
             $('.easyir-ani-options-bar-quater1').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
             $('.easyir-progress-checkbox1').addClass('easyir-progress-checkbox-checked');
 
+            fred14();
+        }, TIME_CLICK);
+    };
+
+    var fred14 = function () {
+        setTimeout(function () {
+            $('.easyir-ani-options-bar-quater2').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-ani-options-bar-quater2').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            $('.easyir-progress-checkbox2').addClass('easyir-progress-checkbox-checked');
+
+            fred15();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var fred15 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                $('.easyir-ani-ir595-pre1'),
+                $('.easyir-ani-progress-bar4'),
+                $('.easyir-ani-options-bar5'),
+                $('.easyir-ani-ir595-menu-bar-pre1'),
+                $('.easyir-ani-checkbox-bar1')
+            ]);
+
+            aniNextSlide([
+                $('.easyir-ani-ir595-pre2'),
+                $('.easyir-ani-progress-bar5'),
+                $('.easyir-ani-options-bar6'),
+                $('.easyir-ani-ir595-menu-bar-pre2'),
+                $('.easyir-ani-checkbox-bar2')
+            ]);
+            fred16();
+
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var fred16 = function () {
+        setTimeout(function () {
+            $('.easyir-ani-options-bar-quater3').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-ani-options-bar-quater3').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            $('.easyir-progress-checkbox3').addClass('easyir-progress-checkbox-checked');
+
+            fred17();
+        }, TIME_CLICK);
+    };
+
+    var fred17 = function () {
+        setTimeout(function () {
+            $('.easyir-ani-options-bar-quater4').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-ani-options-bar-quater4').find('.easyir-ani-options-bar-quater-checkbox').addClass('easyir-ani-options-bar-quater-checkbox-checked');
+            $('.easyir-progress-checkbox4').addClass('easyir-progress-checkbox-checked');
+
+            fred18();
+        }, TIME_CLICK);
+    };
+
+    var fred18 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                $('.easyir-ani-ir595-pre2'),
+                $('.easyir-ani-progress-bar5'),
+                $('.easyir-ani-options-bar6'),
+                $('.easyir-ani-ir595-menu-bar-pre2'),
+                $('.easyir-ani-checkbox-bar2')
+            ]);
+
+            aniNextSlide([
+                $('.easyir-ani-ir595-pre3'),
+                $('.easyir-ani-progress-bar6'),
+                $('.easyir-ani-options-bar7'),
+                $('.easyir-ani-ir595-menu-bar-pre3'),
+                $('.easyir-ani-checkbox-bar3')
+            ]);
+
+            fred19();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var fred19 = function () {
+        setTimeout(function () {
+            $('.easyir-ani-options-bar-half3').addClass(ANI_CLICK_GRAY_BTN);
+            fred20();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var fred20 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                $('.easyir-ani-ir595-pre3'),
+                $('.easyir-ani-progress-bar6'),
+                $('.easyir-ani-options-bar7'),
+                $('.easyir-ani-ir595-menu-bar-pre3'),
+                $('.easyir-ani-checkbox-bar3')
+            ]);
+
+            aniNextSlide([
+                $('.easyir-ani-ir595-pre3'),
+                $('.easyir-ani-progress-bar6'),
+                $('.easyir-ani-options-bar7'),
+                $('.easyir-ani-ir595-menu-bar-pre3')
+            ]);
+
+            fred19();
         }, TIME_NEXT_SLIDE);
     };
 
