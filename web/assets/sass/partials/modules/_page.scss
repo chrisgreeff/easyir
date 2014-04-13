@@ -158,65 +158,107 @@
 
 .easyir-section-intro {
     height: 100%;
+    @include box-sizing(border-box);
+    padding-bottom: 190px;
 
     .easyir-section-intro-top {
         height: 100%;
         margin-bottom: -310px;
+        position: relative;
+        background: url("../images/introduction/intro-small.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .easyir-title-container {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        width: 185px;
+        color: white;
+        font-family: 'proxima_nova_blblack';
+        white-space: initial;
+
+        .easyir-intro-title {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .easyir-intro-subtitle {
+            margin-top: 10px;
+            font-family: 'proxima_nova_blblack';
+            font-size: 20px;
+        }
     }
 
     .easyir-section-intro-bottom {
         height: 310px;
     }
 
-    // IMAGE
-
-    .easyir-section-intro-image {
-        .easyir-section-intro-image-placeholder {
-            background-color: red;
-            height: 100%;
-        }
-    }
-
     // FEATURES
 
     .easyir-section-intro-features {
         position: absolute;
-        bottom: 70px;
+        bottom: 0;
         display: table;
         table-layout: fixed;
         width: 100%;
-        height: 240px;
+        height: 200px;
     }
 
     .easyir-section-intro-feature {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
+        background-color: $color-gray-background;
+        padding: 35px;
+        white-space: normal;
+        font-family: helvetica;
+        color: $color-gray-text;
     }
 
-    .easyir-section-intro-feature1 {
-        background-color: blue;
+    .easyir-intro-feature-icon {
+        width: 55px;
+        height: auto;
+        margin-bottom: 10px;
     }
 
-    .easyir-section-intro-feature2 {
-        background-color: green;
+    .easyir-intro-feature-title {
+        font-size: 15px;
+        border-bottom: 1px solid $color-gray-text;
+        text-transform: uppercase;
+        padding-bottom: 4px;
     }
 
-    .easyir-section-intro-feature3 {
-        background-color: maroon;
+    .easyir-intro-feature-description {
+        line-height: 1.5;
+        font-size: 14px;
+        margin-top: 6px;
+        font-style: italic;
     }
 
-    .easyir-section-intro-feature4 {
-        background-color: purple;
-    }
+    // Bottom Bar
 
-    // STORIES
-
-    .easyir-section-intro-stories {
+    .easyir-section-intro-bottom-bar {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 70px;
-        background-color: black;
+        height: 40px;
+        background-color: $color-gray-background;
+        text-align: center;
+    }
+
+    .easyir-next-container {
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+    .easyir-intro-next {
+        color: $color-gray-text;
     }
 }

@@ -532,3 +532,33 @@
     left: 97px;
     top: 316px;
 }
+
+// =========================== Page Animations ===========================
+
+@-webkit-keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+@-moz-keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+@-o-keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+@keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+
+.easyir-ani-bounce-intro-arrow {
+    -webkit-animation: bounceIntroArrow 1s ease infinite;
+    -moz-animation:    bounceIntroArrow 1s ease infinite;
+    -o-animation:      bounceIntroArrow 1s ease infinite;
+    animation:         bounceIntroArrow 1s ease infinite;
+}
