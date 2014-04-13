@@ -19,7 +19,7 @@ $spacing_values:  (n 0) (s 10px) (m 20px) (l 50px);
 }
 
 .easyir-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 %easyir-centered-content {

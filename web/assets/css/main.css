@@ -200,7 +200,7 @@
 
 /* line 21, ../sass/global/_surgical.scss */
 .easyir-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 /* line 25, ../sass/global/_surgical.scss */
@@ -243,7 +243,7 @@ a {
   height: 70px;
   position: fixed;
   top: -70px;
-  opacity: 0.8;
+  opacity: 1;
   width: 100%;
   background-color: white;
   z-index: 2;
@@ -3172,6 +3172,99 @@ a {
   animation: bounceIntroArrow 1s ease infinite;
 }
 
+/* line 1, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-header-ss {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  min-width: 960px;
+}
+/* line 8, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-header-ss .easyir-logo {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+/* line 19, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-header-ss .easyir-logo:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 28, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-banner {
+  background: url("../images/secret-sauce/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+/* line 37, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-heading {
+  text-transform: uppercase;
+}
+
+/* line 41, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-content {
+  top: initial;
+  margin-top: 0;
+  font-family: 'proxima_nova_light';
+  line-height: 1.5;
+}
+
+/* line 48, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-section--image {
+  width: 100%;
+}
+
+/* line 52, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-section--table {
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 57, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-section--table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+/* line 63, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-section--table-cell-img {
+  padding: 0 20px;
+}
+
+/* line 67, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-title-image {
+  width: 100px;
+  height: auto;
+}
+
+/* line 72, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-subheading {
+  margin: 0;
+  font-size: 20px !important;
+  line-height: 1 !important;
+}
+
+/* line 78, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-hr {
+  background-color: #eeeeee;
+  margin: 0 20px;
+}
+
 @font-face {
   font-family: 'proxima_nova_black';
   src: url("../fonts/mark_simonson_-_proxima_nova_black-webfont.eot");
@@ -3220,7 +3313,7 @@ a {
   font-style: normal;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -3234,108 +3327,108 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 116, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .icon-chevron-left:before {
   content: "\e600";
 }
 
-/* line 119, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .icon-chevron-right:before {
   content: "\e601";
 }
 
-/* line 123, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .easyir-image-1 {
   height: 500px;
 }
 
-/* line 125, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .easyir-fred-2 {
   height: 650px;
   margin-top: -50px;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .easyir-fred-3 {
   height: 550px;
   margin-top: 65px;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .easyir-fred-4 {
   height: 511px;
   margin-top: -50px;
   margin-left: -60px;
 }
 
-/* line 128, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .easyir-fred-heading {
   margin-top: 65px !important;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .easyir-fred-iphone {
   margin-top: -40px;
   margin-left: -40px;
 }
 
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .easyir-jane-2 {
   height: 500px;
   margin-top: -20px;
 }
 
-/* line 132, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .easyir-jane-3 {
   height: 450px;
   margin-top: 110px;
   margin-left: 60px;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .easyir-jane-4 {
   height: 360px;
   margin-top: 55px;
   margin-left: 40px;
 }
 
-/* line 134, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .easyir-jane-heading {
   margin-top: 65px !important;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .easyir-jane-iphone {
   margin-top: -40px;
   margin-left: -40px;
 }
 
-/* line 137, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .easyir-mike-2 {
   height: 525px;
   margin-top: -55px;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .easyir-mike-3 {
   height: 500px;
   margin-top: -34px;
   margin-left: -45px;
 }
 
-/* line 139, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .easyir-mike-4 {
   height: 360px;
   margin-top: 25px;
   margin-left: 40px;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .easyir-mike-heading {
   margin-top: 65px !important;
 }
 
-/* line 141, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .easyir-mike-iphone {
   margin-top: -40px;
   margin-left: -40px;
