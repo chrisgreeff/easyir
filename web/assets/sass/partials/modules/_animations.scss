@@ -30,19 +30,19 @@
 
 @-webkit-keyframes fredBtn1 {
     0%   { top: 300px; }
-    100% { top: 500px; }
+    100% { top: 400px; }
 }
 @-moz-keyframes fredBtn1 {
     0%   { top: 300px; }
-    100% { top: 500px; }
+    100% { top: 400px; }
 }
 @-o-keyframes fredBtn1 {
     0%   { top: 300px; }
-    100% { top: 500px; }
+    100% { top: 400px; }
 }
 @keyframes fredBtn1 {
     0%   { top: 300px; }
-    100% { top: 500px; }
+    100% { top: 400px; }
 }
 
 .easyir-ani-start-fred1,
@@ -52,34 +52,6 @@
     -moz-animation:    fredBtn1 1s ease;
     -o-animation:      fredBtn1 1s ease;
     animation:         fredBtn1 1s ease;
-
-    top: 500px;
-}
-
-@-webkit-keyframes fredBtn2 {
-    0%   { top: 500px; }
-    100% { top: 400px; }
-}
-@-moz-keyframes fredBtn2 {
-    0%   { top: 500px; }
-    100% { top: 400px; }
-}
-@-o-keyframes fredBtn2 {
-    0%   { top: 500px; }
-    100% { top: 400px; }
-}
-@keyframes fredBtn2 {
-    0%   { top: 500px; }
-    100% { top: 400px; }
-}
-
-.easyir-ani-start-fred2,
-.easyir-ani-start-jane2,
-.easyir-ani-start-mike2 {
-    -webkit-animation: fredBtn2 1s ease;
-    -moz-animation:    fredBtn2 1s ease;
-    -o-animation:      fredBtn2 1s ease;
-    animation:         fredBtn2 1s ease;
 
     top: 400px;
 }

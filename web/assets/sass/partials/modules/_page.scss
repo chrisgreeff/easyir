@@ -39,7 +39,7 @@
     white-space: normal;
     position: relative;
     top: 50%;
-    margin-top: -360px;
+    margin-top: -250px;
 }
 
 .easyir-section--content-footer {
@@ -63,7 +63,7 @@
 
     .easyir-section--heading-primary {
         text-transform: uppercase;
-        font-family: 'proxima_nova_blblack';
+        font-family: 'proxima_nova_black';
         font-weight: $section-heading-font-weight;
         font-size: $section-heading-primary-font-size;
         margin: $section-heading-margin;
@@ -177,7 +177,7 @@
         left: 60px;
         width: 185px;
         color: white;
-        font-family: 'proxima_nova_blblack';
+        font-family: 'proxima_nova_bold';
         white-space: initial;
 
         .easyir-intro-title {
@@ -188,7 +188,7 @@
 
         .easyir-intro-subtitle {
             margin-top: 10px;
-            font-family: 'proxima_nova_blblack';
+            font-family: 'proxima_nova_light';
             font-size: 20px;
         }
     }

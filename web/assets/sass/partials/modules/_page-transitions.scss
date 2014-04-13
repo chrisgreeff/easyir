@@ -91,6 +91,10 @@
 
     .easyir-story-nav-logo {
         font-size: 20px !important;
+
+        span {
+            font-family: 'proxima_nova_bold' !important;
+        }
     }
 
     .easyir-story-nav {
@@ -105,7 +109,7 @@
         }
 
         span {
-            font-family: 'proxima_nova_blblack';
+            font-family: 'proxima_nova_regular';
             text-transform: uppercase;
             display: inline-block;
             position: relative;
@@ -164,7 +168,7 @@
         position: relative;
         white-space: normal;
         font-size: 48px;
-        font-family: 'proxima_nova_blblack';
+        font-family: 'proxima_nova_black';
         color: $color-teal-text;
         text-align: center;
         vertical-align: middle;

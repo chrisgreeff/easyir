@@ -34,12 +34,56 @@
 @import "partials/modules/animations";
 
 @font-face {
-    font-family:'proxima_nova_blblack';
+    font-family:'proxima_nova_black';
     src: url('../fonts/mark_simonson_-_proxima_nova_black-webfont.eot');
     src: url('../fonts/mark_simonson_-_proxima_nova_black-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/mark_simonson_-_proxima_nova_black-webfont.woff') format('woff'),
          url('../fonts/mark_simonson_-_proxima_nova_black-webfont.ttf') format('truetype'),
          url('../fonts/mark_simonson_-_proxima_nova_black-webfont.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'proxima_nova_bold';
+    src: url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'proxima_nova_regular';
+    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'proxima_nova_light';
+    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'proxima_nova_light_italic';
+    src: url('../fonts/mark_simonson_-_proxima_nova_light_italic-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_light_italic-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_light_italic-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_light_italic-webfont.svg#proxima_nova_blblack') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -76,50 +120,10 @@
     content: "\e601";
 }
 
-.easyir-fred-1 {
-    height: 620px;
-}
+.easyir-image-1 { height: 500px; }
 
-.easyir-fred-2 {
-    height: 650px;
-}
-
-.easyir-fred-3 {
-    height: 660px;
-}
-
-.easyir-fred-4 {
-    height: 450px;
-}
-
-.easyir-jane-1 {
-    height: 620px;
-}
-
-.easyir-jane-2 {
-    height: 560px;
-}
-
-.easyir-jane-3 {
-    height: 620px;
-}
-
-.easyir-jane-4 {
-    height: 450px;
-}
-
-.easyir-mike-1 {
-    height: 620px;
-}
-
-.easyir-mike-2 {
-    height: 560px;
-}
-
-.easyir-mike-3 {
-    height: 620px;
-}
-
-.easyir-mike-4 {
-    height: 450px;
-}
+.easyir-fred-2 { height: 650px; margin-top: -50px; }
+.easyir-fred-3 { height: 550px; margin-top: 65px; }
+.easyir-fred-4 { height: 511px; margin-top: -50px; margin-left: -60px; }
+.easyir-fred-heading { margin-top: 65px !important; }
+.easyir-fred-iphone { margin-top: -40px; margin-left: -40px; }

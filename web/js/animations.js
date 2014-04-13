@@ -21,17 +21,11 @@
         ANI_SLIDE_PREV_FRAME = 'easyir-ani-slide-prev-frame',
 
         ANI_SHOW_HELP = 'easyir-ani-show-help',
-
         ANI_GESTURE_SHOW_HELP = 'easyir-ani-gesture-show-help',
 
         ANI_START_BTN_FRED1 = 'easyir-ani-start-fred1',
-        ANI_START_BTN_FRED2 = 'easyir-ani-start-fred2',
-
         ANI_START_BTN_JANE1 = 'easyir-ani-start-jane1',
-        ANI_START_BTN_JANE2 = 'easyir-ani-start-jane2',
-
         ANI_START_BTN_MIKE1 = 'easyir-ani-start-mike1',
-        ANI_START_BTN_MIKE2 = 'easyir-ani-start-mike2',
 
         BTN_DISABLED = 'easyir-btn-disabled',
         BOUNCY_ARROW = 'easyir-ani-bounce-arrow',
@@ -247,10 +241,9 @@
         $('.easyir-walkthrough-fred2-point3').addClass(POINT_HIDDEN);
         fredNode.html(fredAniTemplate);
         fredNode = $('.easyir-ani-fred');
-        fredBtn.removeClass(ANI_START_BTN_FRED2);
         fredBtn.addClass(ANI_START_BTN_FRED1);
         fredBtn.addClass(BTN_DISABLED);
-        fredNode.find('.easyir-btn-fred .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        fredBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-fred1-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
@@ -548,8 +541,6 @@
         setTimeout(function () {
             fredNode.html(fredStartTemplate);
             fredBtn.removeClass(BTN_DISABLED);
-            fredBtn.removeClass(ANI_START_BTN_FRED1);
-            fredBtn.addClass(ANI_START_BTN_FRED2);
             fredBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
             fredBtn.find('.easyir-btn-text').html('Go Again!');
         }, TIME_HELP);
@@ -649,11 +640,9 @@
         $('.easyir-walkthrough-jane-point3').addClass(POINT_HIDDEN);
         janeNode.html(janeAniTemplate);
         janeNode = $('.easyir-ani-jane');
-        janeBtn.removeClass(ANI_START_BTN_JANE2);
         janeBtn.addClass(ANI_START_BTN_JANE1);
         janeBtn.addClass(BTN_DISABLED);
         janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
-        janeNode.find('.easyir-btn-jane .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
 
         setTimeout(function() {
             janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
@@ -849,8 +838,6 @@
         setTimeout(function () {
             janeNode.html(janeStartTemplate);
             janeBtn.removeClass(BTN_DISABLED);
-            janeBtn.removeClass(ANI_START_BTN_JANE1);
-            janeBtn.addClass(ANI_START_BTN_JANE2);
             janeBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
             janeBtn.find('.easyir-btn-text').html('Go Again!');
         }, TIME_HELP);
@@ -889,11 +876,9 @@
         $('.easyir-walkthrough-mike-point3').addClass(POINT_HIDDEN);
         mikeNode.html(mikeAniTemplate);
         mikeNode = $('.easyir-ani-mike');
-        mikeBtn.removeClass(ANI_START_BTN_MIKE2);
         mikeBtn.addClass(ANI_START_BTN_MIKE1);
         mikeBtn.addClass(BTN_DISABLED);
         mikeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
-        mikeNode.find('.easyir-btn-mike .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-mike-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
@@ -978,8 +963,6 @@
     var mike7 = function () {
         setTimeout(function () {
             mikeBtn.removeClass(BTN_DISABLED);
-            mikeBtn.removeClass(ANI_START_BTN_MIKE1);
-            mikeBtn.addClass(ANI_START_BTN_MIKE2);
             mikeBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
             mikeBtn.find('.easyir-btn-text').html('Go Again!');
         }, TIME_HELP);

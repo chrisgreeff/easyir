@@ -38,7 +38,7 @@ $ird-screen-height: 405px;
 .easyir-section--animation-view {
     width: 275px;
     position: relative;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .easyir--section--animation-start {
@@ -49,7 +49,6 @@ $ird-screen-height: 405px;
         position: relative;
         width: 100%;
         height: 100%;
-        padding-left: 62px;
 
         .easyir-section--heading {
             width: 500px;
