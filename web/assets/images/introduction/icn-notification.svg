@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="28px" viewBox="0 0 40 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>icn-notification</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-2" sketch:type="MSArtboardGroup" transform="translate(-250.000000, -54.000000)">
+            <circle id="Oval-1" stroke="#4C4C4C" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup" cx="269.5" cy="67.5" r="12.5"></circle>
+            <circle id="Oval-2" fill="#F03148" sketch:type="MSShapeGroup" cx="278" cy="60" r="6"></circle>
+            <text id="4" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="9" font-weight="normal" sketch:alignment="middle" fill="#FFFFFF">
+                <tspan x="275.25" y="62.5">4</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
