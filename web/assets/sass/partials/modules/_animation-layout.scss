@@ -422,6 +422,22 @@ $ird-screen-height: 405px;
     left: 118px;
 }
 
+.easyir-progress-checkbox-quater-1 {
+    left: 78px;
+}
+
+.easyir-progress-checkbox-quater-2 {
+    left: 98px;
+}
+
+.easyir-progress-checkbox-quater-3 {
+    left: 118px
+}
+
+.easyir-progress-checkbox-quater-4 {
+    left: 138px
+}
+
 .easyir-progress-checkbox-checked {
     background-color: $ird-teal-default;
 }
@@ -537,6 +553,14 @@ $ird-screen-height: 405px;
     background-size: 100% auto;
 }
 
+.easyir-ani-menu-bar-verification1,
+.easyir-ani-menu-bar-verification2,
+.easyir-ani-menu-bar-verification3 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/jane-app/01-registration/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
 .easyir-ani-send-verification-btn {
     @extend %easyir-ani-default;
     @extend %easyir-ani-default-btn;
@@ -624,6 +648,12 @@ $ird-screen-height: 405px;
 .easyir-ani-verification3 {
     @extend %easyir-ani-full-screen;
     background: url("../images/jane-app/04-PIN-setup/bg.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-verification-menubar1 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/jane-app/04-PIN-setup/menu-bar-top.png");
     background-size: 100% auto;
 }
 

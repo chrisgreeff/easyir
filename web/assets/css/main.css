@@ -1081,7 +1081,9 @@ a {
 .easyir-ani-ir595-menu-bar-pre2,
 .easyir-ani-ir595-menu-bar-pre3,
 .easyir-ani-ir595-menu-bar-pre4,
-.easyir-ani-ir595-menu-bar-pre5, .easyir-ani-progress-bar, .easyir-ani-default-btn, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-registration .easyir-ani-registration-btn, .easyir-ani-options-bar, .easyir-ani-checkbox-bar, .easyir-ani-ir595-pre4-upload-button, .easyir-ani-send-verification-btn, .easyir-ani-verification-code-container, .easyir-ani-txt {
+.easyir-ani-ir595-menu-bar-pre5, .easyir-ani-menu-bar-verification1,
+.easyir-ani-menu-bar-verification2,
+.easyir-ani-menu-bar-verification3, .easyir-ani-verification-menubar1, .easyir-ani-progress-bar, .easyir-ani-default-btn, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-registration .easyir-ani-registration-btn, .easyir-ani-options-bar, .easyir-ani-checkbox-bar, .easyir-ani-ir595-pre4-upload-button, .easyir-ani-send-verification-btn, .easyir-ani-verification-code-container, .easyir-ani-txt {
   position: absolute;
   left: 0;
   width: 223px;
@@ -1121,7 +1123,9 @@ a {
 .easyir-ani-ir595-menu-bar-pre2,
 .easyir-ani-ir595-menu-bar-pre3,
 .easyir-ani-ir595-menu-bar-pre4,
-.easyir-ani-ir595-menu-bar-pre5 {
+.easyir-ani-ir595-menu-bar-pre5, .easyir-ani-menu-bar-verification1,
+.easyir-ani-menu-bar-verification2,
+.easyir-ani-menu-bar-verification3, .easyir-ani-verification-menubar1 {
   top: 11px;
   height: 31px;
 }
@@ -1449,18 +1453,38 @@ a {
 }
 
 /* line 425, ../sass/partials/modules/_animation-layout.scss */
+.easyir-progress-checkbox-quater-1 {
+  left: 78px;
+}
+
+/* line 429, ../sass/partials/modules/_animation-layout.scss */
+.easyir-progress-checkbox-quater-2 {
+  left: 98px;
+}
+
+/* line 433, ../sass/partials/modules/_animation-layout.scss */
+.easyir-progress-checkbox-quater-3 {
+  left: 118px;
+}
+
+/* line 437, ../sass/partials/modules/_animation-layout.scss */
+.easyir-progress-checkbox-quater-4 {
+  left: 138px;
+}
+
+/* line 441, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-checked {
   background-color: #008b95;
 }
 
-/* line 431, ../sass/partials/modules/_animation-layout.scss */
+/* line 447, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre1 {
   background: url("../images/fred-app/03-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 441, ../sass/partials/modules/_animation-layout.scss */
+/* line 457, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar-pre1,
 .easyir-ani-menu-bar-pre2,
 .easyir-ani-menu-bar-pre3,
@@ -1469,32 +1493,32 @@ a {
   background-size: 100% auto;
 }
 
-/* line 449, ../sass/partials/modules/_animation-layout.scss */
+/* line 465, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre2 {
   background: url("../images/fred-app/04-pre-2/bg.png");
   background-size: 100% auto;
 }
 
-/* line 457, ../sass/partials/modules/_animation-layout.scss */
+/* line 473, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre3 {
   background: url("../images/fred-app/05-pre-3/bg.png");
   background-size: 100% auto;
 }
 
-/* line 465, ../sass/partials/modules/_animation-layout.scss */
+/* line 481, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre4 {
   background: url("../images/fred-app/06-pre-4/bg.png");
   background-size: 100% auto;
 }
 
-/* line 473, ../sass/partials/modules/_animation-layout.scss */
+/* line 489, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre1 {
   background: url("../images/fred-app/07-IR595-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 484, ../sass/partials/modules/_animation-layout.scss */
+/* line 500, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-menu-bar-pre1,
 .easyir-ani-ir595-menu-bar-pre2,
 .easyir-ani-ir595-menu-bar-pre3,
@@ -1504,26 +1528,26 @@ a {
   background-size: 100% auto;
 }
 
-/* line 492, ../sass/partials/modules/_animation-layout.scss */
+/* line 508, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre2 {
   background: url("../images/fred-app/08-IR595-pre-2/bg.png");
   background-size: 100% auto;
 }
 
-/* line 500, ../sass/partials/modules/_animation-layout.scss */
+/* line 516, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre3 {
   background: url("../images/fred-app/09-IR595-pre-3/bg.png");
   background-size: 100% auto;
 }
 
-/* line 508, ../sass/partials/modules/_animation-layout.scss */
+/* line 524, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4 {
   background: url("../images/fred-app/09-IR595-pre-4/bg.png");
   background-size: 100% auto;
   top: 6px;
 }
 
-/* line 515, ../sass/partials/modules/_animation-layout.scss */
+/* line 531, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4-upload-button {
   background: url("../images/fred-app/09-IR595-pre-4/uploadbutton.png");
   background-size: 100% auto;
@@ -1531,73 +1555,81 @@ a {
   height: 36px;
 }
 
-/* line 525, ../sass/partials/modules/_animation-layout.scss */
+/* line 541, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre5 {
   background: url("../images/fred-app/09-IR595-pre-5/bg.png");
   background-size: 100% auto;
   top: 10px;
 }
 
-/* line 534, ../sass/partials/modules/_animation-layout.scss */
+/* line 550, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification1 {
   background: url("../images/jane-app/02-mobile-verification/bg.png");
   background-size: 100% auto;
 }
 
-/* line 540, ../sass/partials/modules/_animation-layout.scss */
+/* line 558, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-menu-bar-verification1,
+.easyir-ani-menu-bar-verification2,
+.easyir-ani-menu-bar-verification3 {
+  background: url("../images/jane-app/01-registration/menu-bar-top.png");
+  background-size: 100% auto;
+}
+
+/* line 564, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-send-verification-btn {
   top: 165px;
 }
 
-/* line 546, ../sass/partials/modules/_animation-layout.scss */
+/* line 570, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-mobile {
   position: absolute;
   top: 125px;
   left: 16px;
 }
 
-/* line 555, ../sass/partials/modules/_animation-layout.scss */
+/* line 579, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification2 {
   background: url("../images/jane-app/03-verification-code/bg.png");
   background-size: 100% auto;
 }
 
-/* line 561, ../sass/partials/modules/_animation-layout.scss */
+/* line 585, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-send-verification-submit {
   top: 160px;
 }
 
-/* line 565, ../sass/partials/modules/_animation-layout.scss */
+/* line 589, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-send-verification-resend {
   top: 189px;
 }
 
-/* line 569, ../sass/partials/modules/_animation-layout.scss */
+/* line 593, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-code-container {
   top: 125px;
 }
 
-/* line 574, ../sass/partials/modules/_animation-layout.scss */
+/* line 598, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-code {
   position: absolute;
   left: 16px;
   top: 0;
 }
 
-/* line 581, ../sass/partials/modules/_animation-layout.scss */
+/* line 605, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt {
   height: 70px;
   top: -80px;
   background-color: #414143;
 }
-/* line 587, ../sass/partials/modules/_animation-layout.scss */
+/* line 611, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-icon {
   position: absolute;
   left: 10px;
   height: 35px;
   top: 17px;
 }
-/* line 594, ../sass/partials/modules/_animation-layout.scss */
+/* line 618, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-heading {
   position: absolute;
   top: 14px;
@@ -1605,7 +1637,7 @@ a {
   color: white;
   font-size: 12px;
 }
-/* line 602, ../sass/partials/modules/_animation-layout.scss */
+/* line 626, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-message {
   position: absolute;
   top: 33px;
@@ -1613,7 +1645,7 @@ a {
   color: white;
   font-size: 10px;
 }
-/* line 610, ../sass/partials/modules/_animation-layout.scss */
+/* line 634, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-thumbnail {
   position: absolute;
   top: 56px;
@@ -1629,13 +1661,19 @@ a {
   background-color: gray;
 }
 
-/* line 624, ../sass/partials/modules/_animation-layout.scss */
+/* line 648, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification3 {
   background: url("../images/jane-app/04-PIN-setup/bg.png");
   background-size: 100% auto;
 }
 
-/* line 633, ../sass/partials/modules/_animation-layout.scss */
+/* line 654, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-verification-menubar1 {
+  background: url("../images/jane-app/04-PIN-setup/menu-bar-top.png");
+  background-size: 100% auto;
+}
+
+/* line 663, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani {
   display: inline-block;
   background-repeat: no-repeat;

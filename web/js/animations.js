@@ -628,12 +628,14 @@
         setTimeout(function () {
             aniPrevSlide([
                 janeNode.find('.easyir-ani-verification1'),
+                fredNode.find('.easyir-ani-menu-bar-verification1'),
                 janeNode.find('.easyir-ani-send-verification-btn'),
                 janeNode.find('.easyir-ani-verification-mobile')
             ]);
 
             aniNextSlide([
                 janeNode.find('.easyir-ani-verification2'),
+                fredNode.find('.easyir-ani-menu-bar-verification2'),
                 janeNode.find('.easyir-ani-txt'),
                 janeNode.find('.easyir-ani-send-verification-submit'),
                 janeNode.find('.easyir-ani-send-verification-resend'),
@@ -659,8 +661,52 @@
             janeNode.find('.easyir-ani-send-verification-submit').addClass(ANI_CLICK_GRAY_BTN);
             janeNode.find('.easyir-ani-txt').addClass('easyir-ani-hide-txt');
 
-            // jane10();
+            jane11();
         }, TIME_TYPING);
+    };
+
+    var jane11 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                janeNode.find('.easyir-ani-verification2'),
+                fredNode.find('.easyir-ani-menu-bar-verification2'),
+                janeNode.find('.easyir-ani-txt'),
+                janeNode.find('.easyir-ani-send-verification-submit'),
+                janeNode.find('.easyir-ani-send-verification-resend'),
+                janeNode.find('.easyir-ani-verification-code-container')
+            ]);
+
+            aniNextSlide([
+                janeNode.find('.easyir-ani-verification3'),
+                fredNode.find('.easyir-ani-menu-bar-verification3'),
+                janeNode.find('.easyir-ani-verification-menubar1'),
+                janeNode.find('.easyir-ani-checkbox-bar1')
+            ]);
+
+            jane12();
+        }, TIME_NEXT_SLIDE)
+    };
+
+    var jane12 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-progress-checkbox-quater-1').addClass('easyir-progress-checkbox-checked');
+
+            setTimeout(function () {
+                janeNode.find('.easyir-progress-checkbox-quater-2').addClass('easyir-progress-checkbox-checked');
+
+                setTimeout(function () {
+                    janeNode.find('.easyir-progress-checkbox-quater-3').addClass('easyir-progress-checkbox-checked');
+
+                    setTimeout(function () {
+
+                        janeNode.find('.easyir-progress-checkbox-quater-4').addClass('easyir-progress-checkbox-checked');
+                    }, TIME_CLICK);
+
+                }, TIME_CLICK);
+
+            }, TIME_CLICK);
+
+        }, TIME_CLICK);
     };
 
     janeBtn.on('click', jane1);
