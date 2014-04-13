@@ -863,12 +863,32 @@
     var mikeNode = $('.easyir-ani-mike');
     var mikeBtn = $('.easyir-btn-mike');
 
+    var mikeAniTemplate = '' +
+        '<div class="easyir-ani-app">' +
+            '<div class="easyir-ani-dashboard1"></div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-dashboard1"></div>' +
+            '<div class="easyir-ani easyir-ani-checkbox-bar easyir-ani-checkbox-bar1">' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-1 easyir-progress-checkbox-quater-first"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-2 easyir-progress-checkbox-quater-second"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-3 easyir-progress-checkbox-quater-third"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-4 easyir-progress-checkbox-quater-fourth"></div>' +
+            '</div>' +
+            '<div class="easyir-ani-dashboard-profile easyir-ani-next"></div>' +
+            '<div class="easyir-ani-dashboard2 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-dashboard-bottom easyir-ani-next"></div>' +
+            '<div class="easyir-ani-menu-bar-dashboard2 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-press-dashboard"></div>' +
+        '</div>' +
+        '<div class="easyir-ani easyir-ani-header"></div>' +
+        '<div class="easyir-ani easyir-ani-open"></div>' +
+        '<div class="easyir-ani-swipe-gesture"></div>';
+
     var mike1 = function () {
         $('.easyir-walkthrough-mike-point1').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-mike-point2').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-mike-point3').addClass(POINT_HIDDEN);
-        // mikeNode.html(mikeAniTemplate);
-        // mikeNode = $('.easyir-ani-mike');
+        mikeNode.html(mikeAniTemplate);
+        mikeNode = $('.easyir-ani-mike');
         mikeBtn.removeClass(ANI_START_BTN_MIKE2);
         mikeBtn.addClass(ANI_START_BTN_MIKE1);
         mikeBtn.addClass(BTN_DISABLED);
@@ -920,7 +940,46 @@
                 mikeNode.find('.easyir-ani-dashboard-profile'),
                 mikeNode.find('.easyir-ani-dashboard-bottom')
             ]);
-        });
+
+            mike4();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var mike4 = function () {
+        setTimeout(function () {
+            mikeNode.find('.easyir-ani-dashboard2').addClass('easyir-ani-open-dash-board');
+            mikeNode.find('.easyir-ani-dashboard-profile').addClass('easyir-ani-open-dash-board-profile');
+            mikeNode.find('.easyir-ani-dashboard-bottom').addClass('easyir-ani-open-dash-board-bottom');
+
+            mike5();
+        }, 1000);
+    };
+
+    var mike5 = function () {
+        setTimeout(function () {
+            mikeNode.find('.easyir-ani-press-dashboard').addClass('easyir-press-dashboard-button');
+
+            mike6();
+        }, 1000);
+    };
+
+    var mike6 = function () {
+        setTimeout(function () {
+            mikeNode.find('.easyir-ani-dashboard2').addClass('easyir-ani-open-dash-board2');
+            mikeNode.find('.easyir-ani-dashboard-profile').addClass('easyir-ani-open-dash-board-profile2');
+
+            mike7();
+        }, 600);
+    };
+
+    var mike7 = function () {
+        setTimeout(function () {
+            mikeBtn.removeClass(BTN_DISABLED);
+            mikeBtn.removeClass(ANI_START_BTN_MIKE1);
+            mikeBtn.addClass(ANI_START_BTN_MIKE2);
+            mikeBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
+            mikeBtn.find('.easyir-btn-text').html('Go Again!');
+        }, TIME_HELP);
     };
 
     mikeBtn.on('click', mike1);

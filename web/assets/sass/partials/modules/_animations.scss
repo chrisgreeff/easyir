@@ -235,6 +235,72 @@
     top: -281px;
 }
 
+// =========================== Open Dashboard ===========================
+
+.easyir-ani-open-dash-board {
+    top: 103px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board-profile {
+    top: -97px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board-bottom {
+    top: 305px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board2 {
+    top: -50px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board-profile2 {
+    top: -250px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+@-webkit-keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+@-o-keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+@keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+
+.easyir-press-dashboard-button {
+    -webkit-animation: pressDashboardButton 0.4s ease;
+    -moz-animation:    pressDashboardButton 0.4s ease;
+    -o-animation:      pressDashboardButton 0.4s ease;
+    animation:         pressDashboardButton 0.4s ease;
+}
+
+
 // =========================== Slide Frame ===========================
 
 @-webkit-keyframes slideNextFrame {
