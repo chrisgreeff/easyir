@@ -837,7 +837,7 @@
             janeBtn.removeClass(BTN_DISABLED);
             janeBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
             janeBtn.find('.easyir-btn-text').html('Go Again!');
-        }, TIME_HELP);
+        }, TIME_READING_HELP);
     };
 
     janeBtn.on('click', jane1);
