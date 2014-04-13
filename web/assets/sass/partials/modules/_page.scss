@@ -173,9 +173,9 @@
 
     .easyir-title-container {
         position: absolute;
-        top: 60px;
-        left: 60px;
-        width: 185px;
+        top: 140px;
+        left: 140px;
+        // width: 185px;
         color: white;
         font-family: 'proxima_nova_bold';
         white-space: initial;
@@ -197,6 +197,12 @@
         height: 310px;
     }
 
+    .bouncing-message {
+        font-family: proxima_nova_light;
+        color: $color-gray-text;
+        text-transform: uppercase;
+    }
+
     // FEATURES
 
     .easyir-section-intro-features {
@@ -210,23 +216,24 @@
 
     .easyir-section-intro-feature {
         display: table-cell;
-        vertical-align: middle;
+        // vertical-align: middle;
         text-align: center;
-        background-color: $color-gray-background;
-        padding: 35px;
+        background-color: #FFF;
+        padding: 35px 70px;
         white-space: normal;
-        font-family: helvetica;
+        font-family: proxima_nova_light;
         color: $color-gray-text;
     }
 
     .easyir-intro-feature-icon {
-        width: 55px;
-        height: auto;
+        width: auto;
+        height: 29px;
         margin-bottom: 10px;
     }
 
     .easyir-intro-feature-title {
         font-size: 15px;
+        font-family: 'proxima_nova_bold';
         border-bottom: 1px solid $color-gray-text;
         text-transform: uppercase;
         padding-bottom: 4px;
@@ -246,7 +253,7 @@
         bottom: 0;
         width: 100%;
         height: 40px;
-        background-color: $color-gray-background;
+        background-color: #FFF;
         text-align: center;
     }
 

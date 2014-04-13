@@ -446,9 +446,8 @@ a {
 /* line 174, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-title-container {
   position: absolute;
-  top: 60px;
-  left: 60px;
-  width: 185px;
+  top: 140px;
+  left: 140px;
   color: white;
   font-family: 'proxima_nova_bold';
   white-space: initial;
@@ -469,7 +468,13 @@ a {
 .easyir-section-intro .easyir-section-intro-bottom {
   height: 310px;
 }
-/* line 202, ../sass/partials/modules/_page.scss */
+/* line 200, ../sass/partials/modules/_page.scss */
+.easyir-section-intro .bouncing-message {
+  font-family: proxima_nova_light;
+  color: #414143;
+  text-transform: uppercase;
+}
+/* line 208, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-features {
   position: absolute;
   bottom: 0;
@@ -478,47 +483,47 @@ a {
   width: 100%;
   height: 200px;
 }
-/* line 211, ../sass/partials/modules/_page.scss */
+/* line 217, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-feature {
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
-  background-color: #eeeeee;
-  padding: 35px;
+  background-color: #FFF;
+  padding: 35px 70px;
   white-space: normal;
-  font-family: helvetica;
+  font-family: proxima_nova_light;
   color: #414143;
 }
-/* line 222, ../sass/partials/modules/_page.scss */
+/* line 228, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-intro-feature-icon {
-  width: 55px;
-  height: auto;
+  width: auto;
+  height: 29px;
   margin-bottom: 10px;
 }
-/* line 228, ../sass/partials/modules/_page.scss */
+/* line 234, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-intro-feature-title {
   font-size: 15px;
+  font-family: 'proxima_nova_bold';
   border-bottom: 1px solid #414143;
   text-transform: uppercase;
   padding-bottom: 4px;
 }
-/* line 235, ../sass/partials/modules/_page.scss */
+/* line 242, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-intro-feature-description {
   line-height: 1.5;
   font-size: 14px;
   margin-top: 6px;
   font-style: italic;
 }
-/* line 244, ../sass/partials/modules/_page.scss */
+/* line 251, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-section-intro-bottom-bar {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 40px;
-  background-color: #eeeeee;
+  background-color: #FFF;
   text-align: center;
 }
-/* line 253, ../sass/partials/modules/_page.scss */
+/* line 260, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-next-container {
   display: inline-block;
   -webkit-transform: rotate(90deg);
@@ -526,53 +531,53 @@ a {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 }
-/* line 261, ../sass/partials/modules/_page.scss */
+/* line 268, ../sass/partials/modules/_page.scss */
 .easyir-section-intro .easyir-intro-next {
   color: #414143;
 }
 
-/* line 268, ../sass/partials/modules/_page.scss */
+/* line 275, ../sass/partials/modules/_page.scss */
 .easyir-team-container {
   display: table;
   width: 100%;
 }
 
-/* line 273, ../sass/partials/modules/_page.scss */
+/* line 280, ../sass/partials/modules/_page.scss */
 .easyir-team {
   padding: 30px;
   display: table-cell;
 }
 
-/* line 278, ../sass/partials/modules/_page.scss */
+/* line 285, ../sass/partials/modules/_page.scss */
 .easyir-team-face {
   width: 110px;
   height: auto;
 }
 
-/* line 283, ../sass/partials/modules/_page.scss */
+/* line 290, ../sass/partials/modules/_page.scss */
 .easyir-team-name {
   font-size: 25px;
   font-family: 'proxima_nova_regular';
   border-bottom: 2px solid #d4d4d4;
 }
 
-/* line 289, ../sass/partials/modules/_page.scss */
+/* line 296, ../sass/partials/modules/_page.scss */
 .easyir-team-title {
   font-family: 'proxima_nova_light';
 }
 
-/* line 294, ../sass/partials/modules/_page.scss */
+/* line 301, ../sass/partials/modules/_page.scss */
 .easyir-team-twitter-img,
 .easyir-team-github-img {
   width: 30px;
 }
 
-/* line 298, ../sass/partials/modules/_page.scss */
+/* line 305, ../sass/partials/modules/_page.scss */
 .easyir-section--content-meet-team {
   padding-left: 30px;
 }
 
-/* line 302, ../sass/partials/modules/_page.scss */
+/* line 309, ../sass/partials/modules/_page.scss */
 .easyir-meet-team-heading {
   margin-top: -30px;
 }
@@ -895,7 +900,7 @@ a {
 }
 /* line 92, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav-logo {
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
 /* line 95, ../sass/partials/modules/_page-transitions.scss */
 .easyir-story-nav-bar .easyir-story-nav-logo span {
@@ -3437,7 +3442,7 @@ a {
 /* line 133, ../sass/main.scss */
 .easyir-jane-3 {
   height: 450px;
-  margin-top: 110px;
+  margin-top: 130px;
   margin-left: 60px;
 }
 
