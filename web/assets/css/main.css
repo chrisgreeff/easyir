@@ -3265,6 +3265,62 @@ a {
   margin: 0 20px;
 }
 
+/* line 85, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-iphone {
+  height: 500px;
+  background-size: auto 500px;
+}
+
+/* line 90, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-overlay {
+  position: absolute;
+  left: 120px;
+  top: 78px;
+  height: 337px;
+  width: 189px;
+  overflow: hidden;
+  font-family: 'helvetica' !important;
+}
+
+/* line 100, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-1, .easyir-ss-ani-2, .easyir-ss-ani-3, .easyir-ss-ani-4, .easyir-ss-ani-5 {
+  position: absolute;
+  left: 0;
+  width: 190px;
+  top: 0;
+  height: 405px;
+}
+
+/* line 108, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-1 {
+  background: url("../images/secret-sauce/IR595-1.png");
+  background-size: 100% auto;
+}
+
+/* line 114, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-2 {
+  background: url("../images/secret-sauce/IR595-2.png");
+  background-size: 100% auto;
+}
+
+/* line 120, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-3 {
+  background: url("../images/secret-sauce/IR595-3.png");
+  background-size: 100% auto;
+}
+
+/* line 126, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-4 {
+  background: url("../images/secret-sauce/IR595-4.png");
+  background-size: 100% auto;
+}
+
+/* line 132, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-5 {
+  background: url("../images/secret-sauce/IR595-5.png");
+  background-size: 100% auto;
+}
+
 @font-face {
   font-family: 'proxima_nova_black';
   src: url("../fonts/mark_simonson_-_proxima_nova_black-webfont.eot");
