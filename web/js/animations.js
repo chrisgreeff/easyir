@@ -894,6 +894,7 @@
         mikeBtn.addClass(BTN_DISABLED);
         mikeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         mikeNode.find('.easyir-btn-mike .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        $('.easyir-walkthrough-mike-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
             mikeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
@@ -940,6 +941,7 @@
                 mikeNode.find('.easyir-ani-dashboard-profile'),
                 mikeNode.find('.easyir-ani-dashboard-bottom')
             ]);
+            $('.easyir-walkthrough-mike-point2').removeClass(POINT_HIDDEN);
 
             mike4();
         }, TIME_NEXT_SLIDE);
@@ -958,6 +960,7 @@
     var mike5 = function () {
         setTimeout(function () {
             mikeNode.find('.easyir-ani-press-dashboard').addClass('easyir-press-dashboard-button');
+            $('.easyir-walkthrough-mike-point3').removeClass(POINT_HIDDEN);
 
             mike6();
         }, 1000);
