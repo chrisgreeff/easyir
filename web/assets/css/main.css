@@ -3327,92 +3327,151 @@ a {
 }
 
 /* line 128, ../sass/partials/modules/_secret-sauce.scss */
-.easyir-ss-ani-1, .easyir-ss-ani-2, .easyir-ss-ani-3, .easyir-ss-ani-4, .easyir-ss-ani-5, .easyir-ss-ani-6 {
+.easyir-ss-ani-1, .easyir-ss-ani-2, .easyir-ss-ani-3, .easyir-ss-ani-4, .easyir-ss-ani-5, .easyir-ss-ani-6, .easyir-ss-ani-6-menu-bar, .easyir-ss-ani-6-before-start, .easyir-ss-ani-header, .easyir-ss-ani-options-bar {
   position: absolute;
   left: 0;
   width: 152px;
+}
+
+/* line 134, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-1, .easyir-ss-ani-2, .easyir-ss-ani-3, .easyir-ss-ani-4, .easyir-ss-ani-5, .easyir-ss-ani-6 {
   top: 0;
   height: 270px;
 }
 
-/* line 136, ../sass/partials/modules/_secret-sauce.scss */
+/* line 140, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-1 {
   background: url("../images/secret-sauce/IR595-1.png");
   background-size: 100% auto;
 }
 
-/* line 142, ../sass/partials/modules/_secret-sauce.scss */
+/* line 146, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-2 {
   background: url("../images/secret-sauce/IR595-2.png");
   background-size: 100% auto;
 }
 
-/* line 148, ../sass/partials/modules/_secret-sauce.scss */
+/* line 152, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-3 {
   background: url("../images/secret-sauce/IR595-3.png");
   background-size: 100% auto;
 }
 
-/* line 154, ../sass/partials/modules/_secret-sauce.scss */
+/* line 158, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-4 {
   background: url("../images/secret-sauce/IR595-4.png");
   background-size: 100% auto;
 }
 
-/* line 160, ../sass/partials/modules/_secret-sauce.scss */
+/* line 164, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-5 {
   background: url("../images/secret-sauce/IR595-5.png");
   background-size: 100% auto;
 }
 
-/* line 166, ../sass/partials/modules/_secret-sauce.scss */
+/* line 170, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-6 {
+  background: url("../images/fred-app/03-pre-1/bg.png");
   background-size: 100% auto;
+  height: 1000px;
+  top: 0;
 }
 
-/* line 172, ../sass/partials/modules/_secret-sauce.scss */
+/* line 178, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-6-menu-bar {
+  background: url("../images/fred-app/03-pre-1/menu-bar-top.png");
+  background-size: 100% auto;
+  top: 8px;
+  height: 21px;
+}
+
+/* line 186, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-6-before-start {
+  background: url("../images/fred-app/03-pre-1/before-you-start.png");
+  background-size: 100% auto;
+  top: 29px;
+  height: 20px;
+}
+
+/* line 194, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-header {
-  position: absolute;
-  left: 0;
-  width: 152px;
   background: url("../images/generic-app/00-iphone5s/fixed-top-header.png");
   background-size: auto 100%;
   top: -1px;
-  height: 13px;
+  height: 10px;
+}
+
+/* line 202, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-options-bar {
+  height: 95px;
+  bottom: 0;
+  background-color: #f6f6f6;
+  border-top: 1px solid #d4d4d4;
+  font-size: 10px;
+}
+
+/* line 211, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-options-table {
+  display: table;
+  width: 100%;
+}
+
+/* line 216, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-options-cell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 222, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-options-yes {
+  color: #008b95;
+  font-size: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+/* line 229, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-options-no {
+  color: red;
+  font-size: 10px;
+  width: 50%;
+  text-align: center;
+  border-left: 1px solid #d4d4d4;
 }
 
 @-webkit-keyframes linearFlow1 {
-  /* line 185, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 240, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 186, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 241, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 187, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 242, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 188, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 243, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 189, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 244, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 190, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 245, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -3420,37 +3479,37 @@ a {
 }
 
 @-moz-keyframes linearFlow1 {
-  /* line 193, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 248, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 194, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 249, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 195, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 250, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 196, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 251, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 197, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 252, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 198, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 253, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -3458,37 +3517,37 @@ a {
 }
 
 @-o-keyframes linearFlow1 {
-  /* line 201, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 256, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 202, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 257, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 203, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 258, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 204, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 259, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 205, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 260, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 206, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 261, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -3496,83 +3555,83 @@ a {
 }
 
 @keyframes linearFlow1 {
-  /* line 209, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 264, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 210, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 265, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 211, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 266, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 212, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 267, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 213, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 268, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 214, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 269, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 1;
     left: 0;
   }
 }
 
-/* line 217, ../sass/partials/modules/_secret-sauce.scss */
+/* line 272, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-flow1 {
-  -webkit-animation: linearFlow1 8s 8s infinite;
-  -moz-animation: linearFlow1 8s 8s infinite;
-  -o-animation: linearFlow1 8s 8s infinite;
-  animation: linearFlow1 8s 8s infinite;
+  -webkit-animation: linearFlow1 8s infinite;
+  -moz-animation: linearFlow1 8s infinite;
+  -o-animation: linearFlow1 8s infinite;
+  animation: linearFlow1 8s infinite;
 }
 
 @-webkit-keyframes linearFlow2 {
-  /* line 225, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 280, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 226, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 281, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 227, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 282, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 228, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 283, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 229, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 284, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 230, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 285, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: -160px;
@@ -3580,37 +3639,37 @@ a {
 }
 
 @-moz-keyframes linearFlow2 {
-  /* line 233, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 288, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 234, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 289, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 235, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 290, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 236, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 291, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 237, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 292, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 238, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 293, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: -160px;
@@ -3618,37 +3677,37 @@ a {
 }
 
 @-o-keyframes linearFlow2 {
-  /* line 241, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 296, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 242, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 297, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 243, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 298, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 244, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 299, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 245, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 300, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 246, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 301, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: -160px;
@@ -3656,83 +3715,83 @@ a {
 }
 
 @keyframes linearFlow2 {
-  /* line 249, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 304, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 250, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 305, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 251, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 306, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 252, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 307, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 253, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 308, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 254, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 309, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: -160px;
   }
 }
 
-/* line 257, ../sass/partials/modules/_secret-sauce.scss */
+/* line 312, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-flow2 {
-  -webkit-animation: linearFlow2 8s 8s infinite;
-  -moz-animation: linearFlow2 8s 8s infinite;
-  -o-animation: linearFlow2 8s 8s infinite;
-  animation: linearFlow2 8s 8s infinite;
+  -webkit-animation: linearFlow2 8s infinite;
+  -moz-animation: linearFlow2 8s infinite;
+  -o-animation: linearFlow2 8s infinite;
+  animation: linearFlow2 8s infinite;
 }
 
 @-webkit-keyframes linearFlow3 {
-  /* line 265, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 320, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 266, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 321, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 267, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 322, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 268, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 323, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 269, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 324, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 270, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 325, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: -320px;
@@ -3740,37 +3799,37 @@ a {
 }
 
 @-moz-keyframes linearFlow3 {
-  /* line 273, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 328, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 274, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 329, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 275, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 330, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 276, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 331, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 277, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 332, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 278, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 333, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: -320px;
@@ -3778,37 +3837,37 @@ a {
 }
 
 @-o-keyframes linearFlow3 {
-  /* line 281, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 336, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 282, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 337, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 283, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 338, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 284, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 339, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 285, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 340, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 286, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 341, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: -320px;
@@ -3816,83 +3875,83 @@ a {
 }
 
 @keyframes linearFlow3 {
-  /* line 289, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 344, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 290, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 345, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 291, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 346, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 292, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 347, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 293, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 348, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 294, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 349, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: -320px;
   }
 }
 
-/* line 297, ../sass/partials/modules/_secret-sauce.scss */
+/* line 352, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-flow3 {
-  -webkit-animation: linearFlow3 8s 8s infinite;
-  -moz-animation: linearFlow3 8s 8s infinite;
-  -o-animation: linearFlow3 8s 8s infinite;
-  animation: linearFlow3 8s 8s infinite;
+  -webkit-animation: linearFlow3 8s infinite;
+  -moz-animation: linearFlow3 8s infinite;
+  -o-animation: linearFlow3 8s infinite;
+  animation: linearFlow3 8s infinite;
 }
 
 @-webkit-keyframes linearFlow4 {
-  /* line 305, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 360, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 306, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 361, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 307, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 362, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 308, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 363, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 309, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 364, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 310, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 365, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: 320px;
@@ -3900,37 +3959,37 @@ a {
 }
 
 @-moz-keyframes linearFlow4 {
-  /* line 313, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 368, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 314, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 369, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 315, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 370, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 316, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 371, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 317, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 372, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 318, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 373, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: 320px;
@@ -3938,37 +3997,37 @@ a {
 }
 
 @-o-keyframes linearFlow4 {
-  /* line 321, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 376, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 322, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 377, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 323, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 378, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 324, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 379, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 325, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 380, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 326, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 381, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: 320px;
@@ -3976,83 +4035,83 @@ a {
 }
 
 @keyframes linearFlow4 {
-  /* line 329, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 384, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 330, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 385, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 331, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 386, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 332, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 387, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 333, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 388, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 334, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 389, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0;
     left: 320px;
   }
 }
 
-/* line 337, ../sass/partials/modules/_secret-sauce.scss */
+/* line 392, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-flow4 {
-  -webkit-animation: linearFlow4 8s 8s infinite;
-  -moz-animation: linearFlow4 8s 8s infinite;
-  -o-animation: linearFlow4 8s 8s infinite;
-  animation: linearFlow4 8s 8s infinite;
+  -webkit-animation: linearFlow4 8s infinite;
+  -moz-animation: linearFlow4 8s infinite;
+  -o-animation: linearFlow4 8s infinite;
+  animation: linearFlow4 8s infinite;
 }
 
 @-webkit-keyframes linearFlow5 {
-  /* line 345, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 400, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 346, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 401, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 347, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 402, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 348, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 403, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 349, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 404, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 350, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 405, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: 160px;
@@ -4060,37 +4119,37 @@ a {
 }
 
 @-moz-keyframes linearFlow5 {
-  /* line 353, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 408, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 354, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 409, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 355, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 410, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 356, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 411, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 357, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 412, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 358, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 413, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: 160px;
@@ -4098,37 +4157,37 @@ a {
 }
 
 @-o-keyframes linearFlow5 {
-  /* line 361, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 416, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 362, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 417, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 363, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 418, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 364, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 419, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 365, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 420, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 366, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 421, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: 160px;
@@ -4136,49 +4195,321 @@ a {
 }
 
 @keyframes linearFlow5 {
-  /* line 369, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 424, ../sass/partials/modules/_secret-sauce.scss */
   0% {
     opacity: 0.6;
     left: 160px;
   }
 
-  /* line 370, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 425, ../sass/partials/modules/_secret-sauce.scss */
   20% {
     opacity: 1;
     left: 0;
   }
 
-  /* line 371, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 426, ../sass/partials/modules/_secret-sauce.scss */
   40% {
     opacity: 0.6;
     left: -160px;
   }
 
-  /* line 372, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 427, ../sass/partials/modules/_secret-sauce.scss */
   60% {
     opacity: 0;
     left: -320px;
   }
 
-  /* line 373, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 428, ../sass/partials/modules/_secret-sauce.scss */
   80% {
     opacity: 0;
     left: 320px;
   }
 
-  /* line 374, ../sass/partials/modules/_secret-sauce.scss */
+  /* line 429, ../sass/partials/modules/_secret-sauce.scss */
   100% {
     opacity: 0.6;
     left: 160px;
   }
 }
 
-/* line 377, ../sass/partials/modules/_secret-sauce.scss */
+/* line 432, ../sass/partials/modules/_secret-sauce.scss */
 .easyir-ss-ani-flow5 {
-  -webkit-animation: linearFlow5 8s 8s infinite;
-  -moz-animation: linearFlow5 8s 8s infinite;
-  -o-animation: linearFlow5 8s 8s infinite;
-  animation: linearFlow5 8s 8s infinite;
+  -webkit-animation: linearFlow5 8s infinite;
+  -moz-animation: linearFlow5 8s infinite;
+  -o-animation: linearFlow5 8s infinite;
+  animation: linearFlow5 8s infinite;
+}
+
+@-webkit-keyframes helpGestureToggle {
+  /* line 442, ../sass/partials/modules/_secret-sauce.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 443, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 150px;
+    opacity: 0.8;
+  }
+
+  /* line 444, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  /* line 445, ../sass/partials/modules/_secret-sauce.scss */
+  45% {
+    top: 50px;
+    opacity: 0;
+  }
+
+  /* line 446, ../sass/partials/modules/_secret-sauce.scss */
+  60% {
+    top: 50px;
+    opacity: 0.8;
+  }
+
+  /* line 447, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 150px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes helpGestureToggle {
+  /* line 450, ../sass/partials/modules/_secret-sauce.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 451, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 150px;
+    opacity: 0.8;
+  }
+
+  /* line 452, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  /* line 453, ../sass/partials/modules/_secret-sauce.scss */
+  45% {
+    top: 50px;
+    opacity: 0;
+  }
+
+  /* line 454, ../sass/partials/modules/_secret-sauce.scss */
+  60% {
+    top: 50px;
+    opacity: 0.8;
+  }
+
+  /* line 455, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 150px;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes helpGestureToggle {
+  /* line 458, ../sass/partials/modules/_secret-sauce.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 459, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 150px;
+    opacity: 0.8;
+  }
+
+  /* line 460, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  /* line 461, ../sass/partials/modules/_secret-sauce.scss */
+  45% {
+    top: 50px;
+    opacity: 0;
+  }
+
+  /* line 462, ../sass/partials/modules/_secret-sauce.scss */
+  60% {
+    top: 50px;
+    opacity: 0.8;
+  }
+
+  /* line 463, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 150px;
+    opacity: 0;
+  }
+}
+
+@keyframes helpGestureToggle {
+  /* line 466, ../sass/partials/modules/_secret-sauce.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 467, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 150px;
+    opacity: 0.8;
+  }
+
+  /* line 468, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: 20px;
+    opacity: 0;
+  }
+
+  /* line 469, ../sass/partials/modules/_secret-sauce.scss */
+  45% {
+    top: 50px;
+    opacity: 0;
+  }
+
+  /* line 470, ../sass/partials/modules/_secret-sauce.scss */
+  60% {
+    top: 50px;
+    opacity: 0.8;
+  }
+
+  /* line 471, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 150px;
+    opacity: 0;
+  }
+}
+
+/* line 474, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-gesture-help {
+  left: 65px;
+  position: absolute;
+  display: inline-block;
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-animation: helpGestureToggle 3s infinite;
+  -moz-animation: helpGestureToggle 3s infinite;
+  -o-animation: helpGestureToggle 3s infinite;
+  animation: helpGestureToggle 3s infinite;
+}
+
+@-webkit-keyframes helpToggle {
+  /* line 494, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 0;
+  }
+
+  /* line 495, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: -300px;
+  }
+
+  /* line 496, ../sass/partials/modules/_secret-sauce.scss */
+  70% {
+    top: -300px;
+  }
+
+  /* line 497, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 0;
+  }
+}
+
+@-moz-keyframes helpToggle {
+  /* line 500, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 0;
+  }
+
+  /* line 501, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: -300px;
+  }
+
+  /* line 502, ../sass/partials/modules/_secret-sauce.scss */
+  70% {
+    top: -300px;
+  }
+
+  /* line 503, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 0;
+  }
+}
+
+@-o-keyframes helpToggle {
+  /* line 506, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 0;
+  }
+
+  /* line 507, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: -300px;
+  }
+
+  /* line 508, ../sass/partials/modules/_secret-sauce.scss */
+  70% {
+    top: -300px;
+  }
+
+  /* line 509, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 0;
+  }
+}
+
+@keyframes helpToggle {
+  /* line 512, ../sass/partials/modules/_secret-sauce.scss */
+  10% {
+    top: 0;
+  }
+
+  /* line 513, ../sass/partials/modules/_secret-sauce.scss */
+  40% {
+    top: -300px;
+  }
+
+  /* line 514, ../sass/partials/modules/_secret-sauce.scss */
+  70% {
+    top: -300px;
+  }
+
+  /* line 515, ../sass/partials/modules/_secret-sauce.scss */
+  90% {
+    top: 0;
+  }
+}
+
+/* line 518, ../sass/partials/modules/_secret-sauce.scss */
+.easyir-ss-ani-help {
+  -webkit-animation: helpToggle 3s infinite;
+  -moz-animation: helpToggle 3s infinite;
+  -o-animation: helpToggle 3s infinite;
+  animation: helpToggle 3s infinite;
 }
 
 @font-face {
