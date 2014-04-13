@@ -5,6 +5,7 @@ $ird-screen-height: 405px;
     background-color: $color-red-background;
     color: $color-red-text;
     text-transform: uppercase;
+    padding: 3px 17px;
     @include border-radius(5px);
     @include transition-property(all);
     @include transition-duration(0.3s);
@@ -21,6 +22,13 @@ $ird-screen-height: 405px;
     }
 }
 
+.easyir-btn-secret-sauce {
+    background-color: $ird-teal-default;
+    &:hover {
+        background-color: darken($ird-teal-default, 15%);
+    }
+}
+
 .easyir-btn-disabled {
     pointer-events: none;
     background-color: lighten(#4a4a4a, 10%);
@@ -31,7 +39,6 @@ $ird-screen-height: 405px;
 .easyir-btn-mike {
     position: absolute;
     top: 300px;
-    padding: 3px 17px;
     right: 150px;
 }
 

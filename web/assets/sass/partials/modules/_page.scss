@@ -262,3 +262,43 @@
         color: $color-gray-text;
     }
 }
+
+// Meet the team
+
+.easyir-team-container {
+    display: table;
+    width: 100%;
+}
+
+.easyir-team {
+    padding: 30px;
+    display: table-cell;
+}
+
+.easyir-team-face {
+    width: 110px;
+    height: auto;
+}
+
+.easyir-team-name {
+    font-size: 25px;
+    font-family: 'proxima_nova_regular';
+    border-bottom: 2px solid #d4d4d4;
+}
+
+.easyir-team-title {
+    font-family: 'proxima_nova_light';
+}
+
+.easyir-team-twitter-img,
+.easyir-team-github-img {
+    width: 30px;
+}
+
+.easyir-section--content-meet-team {
+    padding-left: 30px;
+}
+
+.easyir-meet-team-heading {
+    margin-top: -30px;
+}
