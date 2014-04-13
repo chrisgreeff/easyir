@@ -5,8 +5,9 @@ $ird-screen-height: 405px;
     background-color: $color-red-background;
     color: $color-red-text;
     text-transform: uppercase;
-    padding: 3px 17px;
-    @include border-radius(5px);
+    padding: 10px 20px;
+    font-family: 'proxima_nova_regular';
+    @include border-radius(0px);
     @include transition-property(all);
     @include transition-duration(0.3s);
     @include transition-timing-function(ease-in-out);
@@ -27,6 +28,9 @@ $ird-screen-height: 405px;
     &:hover {
         background-color: darken($ird-teal-default, 15%);
     }
+    position: relative;
+    top: 20px;
+    left: -140px;
 }
 
 .easyir-btn-disabled {
@@ -186,14 +190,14 @@ $ird-screen-height: 405px;
         @include transition-duration(0.8s);
         @include transition-timing-function(ease-in-out);
         line-height: 1.5;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         list-style: none;
         padding-bottom: 12px;
-        font-family: helvetica;
+        // font-family: helvetica;
         text-align: right;
         font-size: 13px;
         background-color: white;
-        margin-top: 13px;
+        margin-top: 0px;
         border-left: 6px solid #028b95;
         padding: 10px;
 

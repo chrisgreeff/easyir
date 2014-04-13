@@ -63,7 +63,7 @@
 
     .easyir-section--heading-primary {
         text-transform: uppercase;
-        font-family: 'proxima_nova_black';
+        font-family: 'proxima_nova_bold';
         font-weight: $section-heading-font-weight;
         font-size: $section-heading-primary-font-size;
         margin: $section-heading-margin;
@@ -86,7 +86,7 @@
         font-weight: $section-sub-heading-font-weight;
         font-size: $section-sub-heading-font-size;
         line-height: 1.5;
-        font-style: italic;
+        // font-style: italic;
         font-size: 24px;
     }
 }
@@ -280,6 +280,8 @@
 .easyir-team {
     padding: 30px;
     display: table-cell;
+    position: relative;
+    top: 75px;
 }
 
 .easyir-team-face {
@@ -289,12 +291,14 @@
 
 .easyir-team-name {
     font-size: 25px;
-    font-family: 'proxima_nova_regular';
-    border-bottom: 2px solid #d4d4d4;
+    font-family: 'proxima_nova_bold';
 }
 
 .easyir-team-title {
     font-family: 'proxima_nova_light';
+    border-bottom: 2px solid #d4d4d4;
+    position: relative;
+    top: -15px;
 }
 
 .easyir-team-twitter-img,
