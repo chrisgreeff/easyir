@@ -9,6 +9,7 @@
         TIME_HELP = 800,
         TIME_READING_HELP = 3000,
         TIME_NEXT_SLIDE = 1700,
+        TIME_TYPING = 1000,
 
         ANI_OPEN_APP = 'easyir-ani-open-app',
 
@@ -24,7 +25,9 @@
 
         ANI_START_BTN_FRED1 = 'easyir-ani-start-fred1',
         ANI_START_BTN_FRED2 = 'easyir-ani-start-fred2',
-        ANI_START_BTN_FRED3 = 'easyir-ani-start-fred3',
+
+        ANI_START_BTN_JANE1 = 'easyir-ani-start-jane1',
+        ANI_START_BTN_JANE2 = 'easyir-ani-start-jane2',
 
         BTN_DISABLED = 'easyir-btn-disabled',
         BOUNCY_ARROW = 'easyir-ani-bounce-arrow',
@@ -236,7 +239,6 @@
 
     // OPEN APP
     var fred1 = function () {
-        console.log('sup');
         $('.easyir-walkthrough-fred2-point1').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-fred2-point2').addClass(POINT_HIDDEN);
         $('.easyir-walkthrough-fred2-point3').addClass(POINT_HIDDEN);
@@ -540,17 +542,173 @@
     };
 
     var fred22 = function () {
-        fredNode.html(fredStartTemplate);
-        fredBtn.removeClass(BTN_DISABLED);
-        fredBtn.removeClass(ANI_START_BTN_FRED1);
-        fredBtn.addClass(ANI_START_BTN_FRED2);
-        fredBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
-        fredBtn.find('.easyir-btn-text').html('Go Again!');
+        setTimeout(function () {
+            fredNode.html(fredStartTemplate);
+            fredBtn.removeClass(BTN_DISABLED);
+            fredBtn.removeClass(ANI_START_BTN_FRED1);
+            fredBtn.addClass(ANI_START_BTN_FRED2);
+            fredBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
+            fredBtn.find('.easyir-btn-text').html('Go Again!');
+        }, TIME_HELP);
     };
 
     fredBtn.on('click', fred1);
 
     // ============================= Jane =============================
+    var janeNode = $('.easyir-ani-jane');
+    var janeBtn = $('.easyir-btn-jane');
 
+    var jane1 = function () {
+        // janeNode.html(janeAniTemplate);
+        // janeNode = $('.easyir-ani-jane');
+        janeBtn.removeClass(ANI_START_BTN_JANE2);
+        janeBtn.addClass(ANI_START_BTN_JANE1);
+        janeBtn.addClass(BTN_DISABLED);
+        janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        janeNode.find('.easyir-btn-jane .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        $('.easyir-walkthrough-jane1-point1').removeClass(POINT_HIDDEN);
+
+        setTimeout(function() {
+            janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
+
+            jane2();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var jane2 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-registration-irdnumber').html('<span class="easyir-typing">12345678<span class="easyir-ani-typing">&nbsp;</span></span>');
+
+            jane3();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var jane3 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-registration-password').html('<span class="easyir-typing">••••••••<span class="easyir-ani-typing">&nbsp;</span></span>');
+
+            jane4();
+        }, TIME_TYPING);
+    };
+
+    var jane4 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-registration-btn').addClass(ANI_CLICK_GRAY_BTN);
+
+            jane5();
+        }, TIME_TYPING);
+    };
+
+    var jane5 = function () {
+        setTimeout(function () {
+            aniPrevSlide([janeNode.find('.easyir-ani-registration')]);
+            aniNextSlide([janeNode.find('.easyir-ani-app')]);
+
+            jane6();
+        }, TIME_CLICK);
+    };
+
+    var jane6 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-verification-mobile').html('<span class="easyir-typing">+6421543678<span class="easyir-ani-typing">&nbsp;</span></span>');
+
+            jane7();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var jane7 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-send-verification-btn').addClass(ANI_CLICK_GRAY_BTN);
+
+            jane8();
+        }, TIME_TYPING);
+    };
+
+    var jane8 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                janeNode.find('.easyir-ani-verification1'),
+                fredNode.find('.easyir-ani-menu-bar-verification1'),
+                janeNode.find('.easyir-ani-send-verification-btn'),
+                janeNode.find('.easyir-ani-verification-mobile')
+            ]);
+
+            aniNextSlide([
+                janeNode.find('.easyir-ani-verification2'),
+                fredNode.find('.easyir-ani-menu-bar-verification2'),
+                janeNode.find('.easyir-ani-txt'),
+                janeNode.find('.easyir-ani-send-verification-submit'),
+                janeNode.find('.easyir-ani-send-verification-resend'),
+                janeNode.find('.easyir-ani-verification-code-container')
+            ]);
+            janeNode.find('.easyir-ani-txt').addClass('easyir-ani-show-txt');
+
+            jane9();
+        }, TIME_CLICK);
+    };
+
+    var jane9 = function () {
+
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-verification-code').html('<span class="easyir-typing">C68HAS<span class="easyir-ani-typing">&nbsp;</span></span>');
+
+            jane10();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var jane10 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-send-verification-submit').addClass(ANI_CLICK_GRAY_BTN);
+            janeNode.find('.easyir-ani-txt').addClass('easyir-ani-hide-txt');
+
+            jane11();
+        }, TIME_TYPING);
+    };
+
+    var jane11 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                janeNode.find('.easyir-ani-verification2'),
+                fredNode.find('.easyir-ani-menu-bar-verification2'),
+                janeNode.find('.easyir-ani-txt'),
+                janeNode.find('.easyir-ani-send-verification-submit'),
+                janeNode.find('.easyir-ani-send-verification-resend'),
+                janeNode.find('.easyir-ani-verification-code-container')
+            ]);
+
+            aniNextSlide([
+                janeNode.find('.easyir-ani-verification3'),
+                fredNode.find('.easyir-ani-menu-bar-verification3'),
+                janeNode.find('.easyir-ani-verification-menubar1'),
+                janeNode.find('.easyir-ani-checkbox-bar1')
+            ]);
+
+            jane12();
+        }, TIME_NEXT_SLIDE)
+    };
+
+    var jane12 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-progress-checkbox-quater-1').addClass('easyir-progress-checkbox-checked');
+
+            setTimeout(function () {
+                janeNode.find('.easyir-progress-checkbox-quater-2').addClass('easyir-progress-checkbox-checked');
+
+                setTimeout(function () {
+                    janeNode.find('.easyir-progress-checkbox-quater-3').addClass('easyir-progress-checkbox-checked');
+
+                    setTimeout(function () {
+
+                        janeNode.find('.easyir-progress-checkbox-quater-4').addClass('easyir-progress-checkbox-checked');
+                    }, TIME_CLICK);
+
+                }, TIME_CLICK);
+
+            }, TIME_CLICK);
+
+        }, TIME_CLICK);
+    };
+
+    janeBtn.on('click', jane1);
 
 }());
