@@ -69,10 +69,10 @@
             '</div>' +
             '<div class="easyir-ani-options-table easyir-ani-options-bar easyir-ani-options-bar1">' +
                 '<div class="easyir-ani-options-cell easyir-ani-options-yes easyir-ani-options-yes1">' +
-                    'YES' +
+                    'Yes' +
                 '</div>' +
                 '<div class="easyir-ani-options-cell easyir-ani-options-no">' +
-                    'NO' +
+                    'No' +
                 '</div>' +
             '</div>' +
             '<div class="easyir-ani easyir-ani-menu-bar-pre1"></div>' +
@@ -84,10 +84,10 @@
             '</div>' +
             '<div class="easyir-ani-options-bar easyir-ani-options-bar2 easyir-ani-next">' +
                 '<div class="easyir-ani-options-bar-half easyir-ani-options-bar-half1">' +
-                    'Individual' +
+                    '<span class="easyir-ani-options-bar-half-single">Individual</span>' +
                 '</div>' +
                 '<div class="easyir-ani-options-bar-half">' +
-                    'Non-individual' +
+                    '<span class="easyir-ani-options-bar-half-single">Non-individual</span>' +
                 '</div>' +
             '</div>' +
             '<div class="easyir-ani easyir-ani-menu-bar-pre2 easyir-ani-next"></div>' +
@@ -99,10 +99,10 @@
             '</div>' +
             '<div class="easyir-ani-options-bar easyir-ani-options-bar3 easyir-ani-next">' +
                 '<div class="easyir-ani-options-bar-half easyir-ani-options-bar-half2">' +
-                    'Myself' +
+                    '<span class="easyir-ani-options-bar-half-single">Myself</span>' +
                 '</div>' +
                 '<div class="easyir-ani-options-bar-half">' +
-                    'For a child in my care who is under 16 years old' +
+                    '<span class="easyir-ani-options-bar-half-double">For a child in my care who is under 16 years old</span>' +
                 '</div>' +
             '</div>' +
             '<div class="easyir-ani easyir-ani-menu-bar-pre3 easyir-ani-next"></div>' +
@@ -245,12 +245,8 @@
         fredBtn.addClass(BTN_DISABLED);
         fredBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-fred1-point1').removeClass(POINT_HIDDEN);
-
-        setTimeout(function() {
-            fredNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
-
-            fred2();
-        }, TIME_NEXT_SLIDE);
+        fredNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
+        fred2();
     };
 
     // CLICK APPLY FOR IRD
@@ -258,8 +254,8 @@
         setTimeout(function () {
             fredNode.find('.easyir-ani-apply-button').addClass(ANI_CLICK_TEAL_BTN);
 
-            fred3()
-        }, TIME_NEXT_SLIDE);
+            fred3();
+        }, 2000);
     };
 
     // NEXT FRAME
@@ -270,7 +266,7 @@
             $('.easyir-walkthrough-fred1-point2').removeClass(POINT_HIDDEN);
 
             fred4();
-        }, TIME_CLICK);
+        }, 600);
     };
 
     // SHOW HELP
@@ -283,7 +279,7 @@
                 fredNode.find('.easyir-ani-progress-bar1').addClass(ANI_SHOW_HELP);
 
                 fred5();
-            }, TIME_HELP);
+            }, TIME_CLICK);
         }, TIME_NEXT_SLIDE);
     };
 
@@ -421,7 +417,7 @@
             fredNode.find('.easyir-progress-checkbox2').addClass('easyir-progress-checkbox-checked');
 
             fred15();
-        }, TIME_CLICK);
+        }, 600);
     };
 
     var fred15 = function () {
@@ -443,7 +439,7 @@
             ]);
             fred16();
 
-        }, TIME_CLICK);
+        }, 600);
     };
 
     var fred16 = function () {
@@ -463,7 +459,7 @@
             fredNode.find('.easyir-progress-checkbox4').addClass('easyir-progress-checkbox-checked');
 
             fred18();
-        }, TIME_CLICK);
+        }, 600);
     };
 
     var fred18 = function () {
@@ -486,7 +482,7 @@
             $('.easyir-walkthrough-fred2-point2').removeClass(POINT_HIDDEN);
 
             fred19();
-        }, TIME_CLICK);
+        }, 600);
     };
 
     var fred19 = function () {
@@ -534,7 +530,7 @@
 
             $('.easyir-walkthrough-fred2-point3').removeClass(POINT_HIDDEN);
             fred22();
-        }, TIME_NEXT_SLIDE);
+        }, 2000);
     };
 
     var fred22 = function () {
@@ -706,14 +702,14 @@
         setTimeout(function () {
             aniPrevSlide([
                 janeNode.find('.easyir-ani-verification1'),
-                fredNode.find('.easyir-ani-menu-bar-verification1'),
+                janeNode.find('.easyir-ani-menu-bar-verification1'),
                 janeNode.find('.easyir-ani-send-verification-btn'),
                 janeNode.find('.easyir-ani-verification-mobile')
             ]);
 
             aniNextSlide([
                 janeNode.find('.easyir-ani-verification2'),
-                fredNode.find('.easyir-ani-menu-bar-verification2'),
+                janeNode.find('.easyir-ani-menu-bar-verification2'),
                 janeNode.find('.easyir-ani-txt'),
                 janeNode.find('.easyir-ani-send-verification-submit'),
                 janeNode.find('.easyir-ani-send-verification-resend'),
@@ -747,7 +743,7 @@
         setTimeout(function () {
             aniPrevSlide([
                 janeNode.find('.easyir-ani-verification2'),
-                fredNode.find('.easyir-ani-menu-bar-verification2'),
+                janeNode.find('.easyir-ani-menu-bar-verification2'),
                 janeNode.find('.easyir-ani-txt'),
                 janeNode.find('.easyir-ani-send-verification-submit'),
                 janeNode.find('.easyir-ani-send-verification-resend'),
@@ -756,7 +752,7 @@
 
             aniNextSlide([
                 janeNode.find('.easyir-ani-verification3'),
-                fredNode.find('.easyir-ani-menu-bar-verification3'),
+                janeNode.find('.easyir-ani-menu-bar-verification3'),
                 janeNode.find('.easyir-ani-verification-menubar1'),
                 janeNode.find('.easyir-ani-checkbox-bar1')
             ]);
@@ -794,7 +790,7 @@
         setTimeout(function () {
             aniPrevSlide([
                 janeNode.find('.easyir-ani-verification3'),
-                fredNode.find('.easyir-ani-menu-bar-verification3'),
+                janeNode.find('.easyir-ani-menu-bar-verification3'),
                 janeNode.find('.easyir-ani-verification-menubar1'),
                 janeNode.find('.easyir-ani-checkbox-bar1')
             ]);

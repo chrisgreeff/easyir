@@ -76,10 +76,10 @@
 }
 
 .easyir-ani-open-app {
-    -webkit-animation: openApp 0.3s ease;
-    -moz-animation:    openApp 0.3s ease;
-    -o-animation:      openApp 0.3s ease;
-    animation:         openApp 0.3s ease;
+    -webkit-animation: openApp 0.5s ease;
+    -moz-animation:    openApp 0.5s ease;
+    -o-animation:      openApp 0.5s ease;
+    animation:         openApp 0.5s ease;
 
     opacity: 0;
 }
@@ -141,10 +141,10 @@
 }
 
 .easyir-ani-click-teal-button {
-    -webkit-animation: clickTealButton 0.4s ease;
-    -moz-animation:    clickTealButton 0.4s ease;
-    -o-animation:      clickTealButton 0.4s ease;
-    animation:         clickTealButton 0.4s ease;
+    -webkit-animation: clickTealButton 0.6s ease;
+    -moz-animation:    clickTealButton 0.6s ease;
+    -o-animation:      clickTealButton 0.6s ease;
+    animation:         clickTealButton 0.6s ease;
 }
 
 @-webkit-keyframes clickGrayButton {
@@ -179,22 +179,22 @@
 
 @-webkit-keyframes showHelp {
     0%   { top: 0; }
-    50%  { top: -330px; }
+    40%  { top: -330px; }
     100% { top: -281px; }
 }
 @-moz-keyframes showHelp {
     0%   { top: 0; }
-    50%  { top: -330px; }
+    40%  { top: -330px; }
     100% { top: -281px; }
 }
 @-o-keyframes showHelp {
     0%   { top: 0; }
-    50%  { top: -330px; }
+    40%  { top: -330px; }
     100% { top: -281px; }
 }
 @keyframes showHelp {
     0%   { top: 0; }
-    50%  { top: -330px; }
+    40%  { top: -330px; }
     100% { top: -281px; }
 }
 
@@ -293,10 +293,10 @@
 }
 
 .easyir-ani-slide-next-frame {
-    -webkit-animation: slideNextFrame 0.4s ease;
-    -moz-animation:    slideNextFrame 0.4s ease;
-    -o-animation:      slideNextFrame 0.4s ease;
-    animation:         slideNextFrame 0.4s ease;
+    -webkit-animation: slideNextFrame 0.5s ease;
+    -moz-animation:    slideNextFrame 0.5s ease;
+    -o-animation:      slideNextFrame 0.5s ease;
+    animation:         slideNextFrame 0.5s ease;
 
     right: 0;
 }
@@ -319,10 +319,10 @@
 }
 
 .easyir-ani-slide-prev-frame {
-    -webkit-animation: slidePrevFrame 0.4s ease;
-    -moz-animation:    slidePrevFrame 0.4s ease;
-    -o-animation:      slidePrevFrame 0.4s ease;
-    animation:         slidePrevFrame 0.4s ease;
+    -webkit-animation: slidePrevFrame 0.5s ease;
+    -moz-animation:    slidePrevFrame 0.5s ease;
+    -o-animation:      slidePrevFrame 0.5s ease;
+    animation:         slidePrevFrame 0.5s ease;
 
     left: auto;
     right: $ird-screen-width;

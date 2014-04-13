@@ -278,18 +278,19 @@ $ird-screen-height: 405px;
     bottom: 0;
     background-color: $ird-app-button;
     border-top: 1px solid $ird-app-button-border;
+    font-size: 14px;
 }
 
 .easyir-ani-options-yes {
     color: $ird-teal-default;
-    font-size: 20px;
+    font-size: 18px;
     width: 50%;
     text-align: center;
 }
 
 .easyir-ani-options-no {
     color: red;
-    font-size: 20px;
+    font-size: 18px;
     width: 50%;
     text-align: center;
     border-left: 1px solid $ird-app-button-border;
@@ -358,10 +359,26 @@ $ird-screen-height: 405px;
 }
 
 .easyir-ani-options-bar-half {
+    position: relative;
     color: $ird-app-text-color;
     height: 80px;
     border-bottom: 1px solid $ird-app-button-border;
-    @extend %easyir-middle-content;
+}
+
+.easyir-ani-options-bar-half-single {
+    width: 100%;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+
+.easyir-ani-options-bar-half-double {
+    line-height: 1.5;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 193px;
+    padding: 0 15px;
 }
 
 .easyir-ani-options-bar-half-image {
@@ -391,7 +408,7 @@ $ird-screen-height: 405px;
         position: absolute;
         top: 0;
         right: 10px;
-        color: $ird-app-text-color;
+        color: $ird-app-text-color-lighter;
     }
 }
 
