@@ -643,6 +643,7 @@
         janeBtn.addClass(ANI_START_BTN_JANE1);
         janeBtn.addClass(BTN_DISABLED);
         janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        $('.easyir-walkthrough-jane-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
             janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
