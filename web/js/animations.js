@@ -877,12 +877,8 @@
         mikeBtn.addClass(BTN_DISABLED);
         mikeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-mike-point1').removeClass(POINT_HIDDEN);
-
-        setTimeout(function() {
-            mikeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
-
-            mike2();
-        }, TIME_NEXT_SLIDE);
+        mikeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
+        mike2();
     };
 
     var mike2 = function () {
@@ -926,7 +922,7 @@
             $('.easyir-walkthrough-mike-point2').removeClass(POINT_HIDDEN);
 
             mike4();
-        }, TIME_NEXT_SLIDE);
+        }, TIME_HELP);
     };
 
     var mike4 = function () {
