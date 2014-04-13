@@ -30,6 +30,9 @@
         ANI_START_BTN_JANE1 = 'easyir-ani-start-jane1',
         ANI_START_BTN_JANE2 = 'easyir-ani-start-jane2',
 
+        ANI_START_BTN_MIKE1 = 'easyir-ani-start-mike1',
+        ANI_START_BTN_MIKE2 = 'easyir-ani-start-mike2',
+
         BTN_DISABLED = 'easyir-btn-disabled',
         BOUNCY_ARROW = 'easyir-ani-bounce-arrow',
         POINT_HIDDEN = 'easyir-walkthrough-point-hidden';
@@ -651,8 +654,6 @@
         janeBtn.addClass(BTN_DISABLED);
         janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         janeNode.find('.easyir-btn-jane .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
-        $('.easyir-walkthrough-jane1-point1').removeClass(POINT_HIDDEN);
-        $('.easyir-walkthrough-jane-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
             janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
@@ -846,7 +847,7 @@
 
     var jane16 = function () {
         setTimeout(function () {
-            // janeNode.html(janeStartTemplate);
+            janeNode.html(janeStartTemplate);
             janeBtn.removeClass(BTN_DISABLED);
             janeBtn.removeClass(ANI_START_BTN_JANE1);
             janeBtn.addClass(ANI_START_BTN_JANE2);
@@ -857,4 +858,70 @@
 
     janeBtn.on('click', jane1);
 
+    // ============================= Mike =============================
+
+    var mikeNode = $('.easyir-ani-mike');
+    var mikeBtn = $('.easyir-btn-mike');
+
+    var mike1 = function () {
+        $('.easyir-walkthrough-mike-point1').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-mike-point2').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-mike-point3').addClass(POINT_HIDDEN);
+        // mikeNode.html(mikeAniTemplate);
+        // mikeNode = $('.easyir-ani-mike');
+        mikeBtn.removeClass(ANI_START_BTN_MIKE2);
+        mikeBtn.addClass(ANI_START_BTN_MIKE1);
+        mikeBtn.addClass(BTN_DISABLED);
+        mikeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+        mikeNode.find('.easyir-btn-mike .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
+
+        setTimeout(function() {
+            mikeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
+
+            mike2();
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var mike2 = function () {
+        setTimeout(function () {
+            mikeNode.find('.easyir-progress-checkbox-quater-1').addClass('easyir-progress-checkbox-checked');
+            mikeNode.find('.easyir-ani-swipe-gesture').addClass('easyir-ani-gesture-press-zero');
+
+            setTimeout(function () {
+                mikeNode.find('.easyir-progress-checkbox-quater-2').addClass('easyir-progress-checkbox-checked');
+
+                setTimeout(function () {
+                    mikeNode.find('.easyir-progress-checkbox-quater-3').addClass('easyir-progress-checkbox-checked');
+
+                    setTimeout(function () {
+                        mikeNode.find('.easyir-progress-checkbox-quater-4').addClass('easyir-progress-checkbox-checked');
+
+                        mike3();
+                    }, TIME_CLICK);
+
+                }, TIME_CLICK);
+
+            }, TIME_CLICK);
+
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var mike3 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                mikeNode.find('.easyir-ani-dashboard1'),
+                mikeNode.find('.easyir-ani-menu-bar-dashboard1'),
+                mikeNode.find('.easyir-ani-checkbox-bar1')
+            ]);
+
+            aniNextSlide([
+                mikeNode.find('.easyir-ani-dashboard2'),
+                mikeNode.find('.easyir-ani-menu-bar-dashboard2'),
+                mikeNode.find('.easyir-ani-dashboard-profile'),
+                mikeNode.find('.easyir-ani-dashboard-bottom')
+            ]);
+        });
+    };
+
+    mikeBtn.on('click', mike1);
 }());

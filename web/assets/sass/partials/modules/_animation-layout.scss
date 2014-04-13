@@ -27,7 +27,8 @@ $ird-screen-height: 405px;
 }
 
 .easyir-btn-fred,
-.easyir-btn-jane {
+.easyir-btn-jane,
+.easyir-btn-mike {
     position: absolute;
     top: 300px;
     padding: 3px 17px;
@@ -562,7 +563,8 @@ $ird-screen-height: 405px;
 
 .easyir-ani-menu-bar-verification3,
 .easyir-ani-menu-bar-verification4,
-.easyir-ani-menu-bar-verification5 {
+.easyir-ani-menu-bar-verification5,
+.easyir-ani-menu-bar-dashboard1 {
     @extend %easyir-ani-menu-bar;
     background: url("../images/jane-app/04-PIN-setup/menu-bar-top.png");
     background-size: 100% auto;
@@ -690,6 +692,46 @@ $ird-screen-height: 405px;
     @extend %easyir-ani-full-screen;
     background: url("../images/jane-app/06-login/bg.png");
     background-size: 100% auto;
+}
+
+// =========================== Dashboard 1 ===========================
+
+.easyir-ani-dashboard1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/mike-app/01-login/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Dashboard 2 ===========================
+
+.easyir-ani-dashboard2 {
+    @extend %easyir-ani-default;
+    background: url("../images/mike-app/02-home/01.png");
+    background-size: 100% auto;
+    height: 305px;
+    top: 242px;
+}
+
+.easyir-ani-menu-bar-dashboard2 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/mike-app/02-home/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-dashboard-profile {
+    @extend %easyir-ani-default;
+    background: url("../images/mike-app/02-home/profile.png");
+    background-size: 100% auto;
+    top: 42px;
+    height: 200px;
+}
+
+.easyir-ani-dashboard-bottom {
+    @extend %easyir-ani-default;
+    background: url("../images/mike-app/02-home/02.png");
+    background-size: 100% auto;
+    bottom: 460px;
+    height: 100px;
 }
 
 // =========================== This Stays At The Bottom ===========================
