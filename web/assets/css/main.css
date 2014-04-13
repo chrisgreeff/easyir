@@ -1137,7 +1137,7 @@ a {
 .easyir-ani-menu-bar-verification2, .easyir-ani-menu-bar-verification3,
 .easyir-ani-menu-bar-verification4,
 .easyir-ani-menu-bar-verification5,
-.easyir-ani-menu-bar-dashboard1, .easyir-ani-menu-bar-dashboard2, .easyir-ani-progress-bar, .easyir-ani-default-btn, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-registration .easyir-ani-registration-btn, .easyir-ani-options-bar, .easyir-ani-checkbox-bar, .easyir-ani-ir595-pre4-upload-button, .easyir-ani-send-verification-btn, .easyir-ani-verification-code-container, .easyir-ani-txt, .easyir-ani-verification-getstarted, .easyir-ani-dashboard2, .easyir-ani-dashboard-profile, .easyir-ani-dashboard-bottom, .easyir-ani-press-dashboard {
+.easyir-ani-menu-bar-dashboard1, .easyir-ani-menu-bar-dashboard2, .easyir-ani-progress-bar, .easyir-ani-default-btn, .easyir-ani-registration .easyir-ani-apply-button, .easyir-ani-registration .easyir-ani-registration-btn, .easyir-ani-options-bar, .easyir-ani-checkbox-bar, .easyir-ani-ir595-pre4-upload-button, .easyir-ani-send-verification-btn, .easyir-ani-verification-mobile-container, .easyir-ani-verification-code-container, .easyir-ani-txt, .easyir-ani-verification-getstarted, .easyir-ani-dashboard2, .easyir-ani-dashboard-profile, .easyir-ani-dashboard-bottom, .easyir-ani-press-dashboard {
   position: absolute;
   left: 0;
   width: 223px;
@@ -1205,7 +1205,7 @@ a {
 /* line 147, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-registration-btn, .easyir-ani-send-verification-btn,
 .easyir-ani-default-btn {
-  height: 28px;
+  height: 30px;
   background-color: white;
   color: #008b95;
   border-top: 1px solid #d4d4d4;
@@ -1301,43 +1301,44 @@ a {
 }
 /* line 238, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-registration .easyir-ani-registration-btn {
-  top: 198px;
+  top: 196px;
+  height: 30px;
 }
 
-/* line 245, ../sass/partials/modules/_animation-layout.scss */
+/* line 246, ../sass/partials/modules/_animation-layout.scss */
 .easyir-typing {
   color: black !important;
   letter-spacing: 1px;
   font-size: 13px;
 }
 
-/* line 253, ../sass/partials/modules/_animation-layout.scss */
+/* line 254, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-next {
   right: -223px;
   left: initial !important;
 }
 
-/* line 258, ../sass/partials/modules/_animation-layout.scss */
+/* line 259, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-app {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-/* line 264, ../sass/partials/modules/_animation-layout.scss */
+/* line 265, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-table {
   display: table;
   width: 100%;
 }
 
-/* line 269, ../sass/partials/modules/_animation-layout.scss */
+/* line 270, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-cell {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
 }
 
-/* line 275, ../sass/partials/modules/_animation-layout.scss */
+/* line 276, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar {
   height: 160px;
   bottom: 0;
@@ -1346,7 +1347,7 @@ a {
   font-size: 14px;
 }
 
-/* line 284, ../sass/partials/modules/_animation-layout.scss */
+/* line 285, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-yes {
   color: #008b95;
   font-size: 18px;
@@ -1354,7 +1355,7 @@ a {
   text-align: center;
 }
 
-/* line 291, ../sass/partials/modules/_animation-layout.scss */
+/* line 292, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-no {
   color: red;
   font-size: 18px;
@@ -1363,14 +1364,14 @@ a {
   border-left: 1px solid #d4d4d4;
 }
 
-/* line 299, ../sass/partials/modules/_animation-layout.scss */
+/* line 300, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater {
   position: relative;
   color: #4a4a4a;
   height: 40px;
   border-bottom: 1px solid #d4d4d4;
 }
-/* line 305, ../sass/partials/modules/_animation-layout.scss */
+/* line 306, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater .easyir-ani-options-bar-quater-content {
   font-size: 11px;
   text-align: left;
@@ -1378,15 +1379,15 @@ a {
   left: 45px;
   line-height: 1.5;
 }
-/* line 313, ../sass/partials/modules/_animation-layout.scss */
+/* line 314, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater .easyir-ani-options-bar-quater-content-1 {
   top: 13px;
 }
-/* line 317, ../sass/partials/modules/_animation-layout.scss */
+/* line 318, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater .easyir-ani-options-bar-quater-content-2 {
   top: 4px;
 }
-/* line 321, ../sass/partials/modules/_animation-layout.scss */
+/* line 322, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater .easyir-ani-options-bar-quater-checkbox {
   display: inline-block;
   position: absolute;
@@ -1400,7 +1401,7 @@ a {
   border-width: 1px;
   border-style: solid;
 }
-/* line 334, ../sass/partials/modules/_animation-layout.scss */
+/* line 335, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater .easyir-ani-options-bar-quater-checkbox::before {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -1428,12 +1429,12 @@ a {
   border-style: solid;
   opacity: 0;
 }
-/* line 354, ../sass/partials/modules/_animation-layout.scss */
+/* line 355, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-quater .easyir-ani-options-bar-quater-checkbox.easyir-ani-options-bar-quater-checkbox-checked::before {
   opacity: 1;
 }
 
-/* line 361, ../sass/partials/modules/_animation-layout.scss */
+/* line 362, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-half {
   position: relative;
   color: #4a4a4a;
@@ -1441,7 +1442,7 @@ a {
   border-bottom: 1px solid #d4d4d4;
 }
 
-/* line 368, ../sass/partials/modules/_animation-layout.scss */
+/* line 369, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-half-single {
   width: 100%;
   position: absolute;
@@ -1449,7 +1450,7 @@ a {
   left: 0;
 }
 
-/* line 375, ../sass/partials/modules/_animation-layout.scss */
+/* line 376, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-half-double {
   line-height: 1.5;
   position: absolute;
@@ -1459,19 +1460,19 @@ a {
   padding: 0 15px;
 }
 
-/* line 384, ../sass/partials/modules/_animation-layout.scss */
+/* line 385, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-half-image {
   width: 50px;
   height: auto;
 }
 
-/* line 389, ../sass/partials/modules/_animation-layout.scss */
+/* line 390, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-full {
   color: #4a4a4a;
   height: 100%;
 }
 
-/* line 395, ../sass/partials/modules/_animation-layout.scss */
+/* line 396, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-options-bar-arrow {
   position: absolute;
   top: 50%;
@@ -1481,7 +1482,7 @@ a {
   right: 35px;
 }
 
-/* line 407, ../sass/partials/modules/_animation-layout.scss */
+/* line 408, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-progress-bar .easyir-ani-progress-bar-content-percentage {
   position: absolute;
   top: 0;
@@ -1489,12 +1490,12 @@ a {
   color: #979797;
 }
 
-/* line 415, ../sass/partials/modules/_animation-layout.scss */
+/* line 416, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-checkbox-bar {
   top: 7px;
 }
 
-/* line 420, ../sass/partials/modules/_animation-layout.scss */
+/* line 421, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox {
   display: inline-block;
   position: absolute;
@@ -1520,49 +1521,49 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 436, ../sass/partials/modules/_animation-layout.scss */
+/* line 437, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-left {
   left: 96px;
 }
 
-/* line 440, ../sass/partials/modules/_animation-layout.scss */
+/* line 441, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-right {
   left: 118px;
 }
 
-/* line 444, ../sass/partials/modules/_animation-layout.scss */
+/* line 445, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-quater-first {
   left: 78px;
 }
 
-/* line 448, ../sass/partials/modules/_animation-layout.scss */
+/* line 449, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-quater-second {
   left: 98px;
 }
 
-/* line 452, ../sass/partials/modules/_animation-layout.scss */
+/* line 453, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-quater-third {
   left: 118px;
 }
 
-/* line 456, ../sass/partials/modules/_animation-layout.scss */
+/* line 457, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-quater-fourth {
   left: 138px;
 }
 
-/* line 460, ../sass/partials/modules/_animation-layout.scss */
+/* line 461, ../sass/partials/modules/_animation-layout.scss */
 .easyir-progress-checkbox-checked {
   background-color: #008b95;
 }
 
-/* line 466, ../sass/partials/modules/_animation-layout.scss */
+/* line 467, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre1 {
   background: url("../images/fred-app/03-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 476, ../sass/partials/modules/_animation-layout.scss */
+/* line 477, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar-pre1,
 .easyir-ani-menu-bar-pre2,
 .easyir-ani-menu-bar-pre3,
@@ -1571,32 +1572,32 @@ a {
   background-size: 100% auto;
 }
 
-/* line 484, ../sass/partials/modules/_animation-layout.scss */
+/* line 485, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre2 {
   background: url("../images/fred-app/04-pre-2/bg.png");
   background-size: 100% auto;
 }
 
-/* line 492, ../sass/partials/modules/_animation-layout.scss */
+/* line 493, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre3 {
   background: url("../images/fred-app/05-pre-3/bg.png");
   background-size: 100% auto;
 }
 
-/* line 500, ../sass/partials/modules/_animation-layout.scss */
+/* line 501, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-pre4 {
   background: url("../images/fred-app/06-pre-4/bg.png");
   background-size: 100% auto;
 }
 
-/* line 508, ../sass/partials/modules/_animation-layout.scss */
+/* line 509, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre1 {
   background: url("../images/fred-app/07-IR595-pre-1/bg.png");
   background-size: 100% auto;
   height: 1025px;
 }
 
-/* line 519, ../sass/partials/modules/_animation-layout.scss */
+/* line 520, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-menu-bar-pre1,
 .easyir-ani-ir595-menu-bar-pre2,
 .easyir-ani-ir595-menu-bar-pre3,
@@ -1606,26 +1607,26 @@ a {
   background-size: 100% auto;
 }
 
-/* line 527, ../sass/partials/modules/_animation-layout.scss */
+/* line 528, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre2 {
   background: url("../images/fred-app/08-IR595-pre-2/bg.png");
   background-size: 100% auto;
 }
 
-/* line 535, ../sass/partials/modules/_animation-layout.scss */
+/* line 536, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre3 {
   background: url("../images/fred-app/09-IR595-pre-3/bg.png");
   background-size: 100% auto;
 }
 
-/* line 543, ../sass/partials/modules/_animation-layout.scss */
+/* line 544, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4 {
   background: url("../images/fred-app/09-IR595-pre-4/bg.png");
   background-size: 100% auto;
   top: 6px;
 }
 
-/* line 550, ../sass/partials/modules/_animation-layout.scss */
+/* line 551, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre4-upload-button {
   background: url("../images/fred-app/09-IR595-pre-4/uploadbutton.png");
   background-size: 100% auto;
@@ -1633,27 +1634,27 @@ a {
   height: 36px;
 }
 
-/* line 560, ../sass/partials/modules/_animation-layout.scss */
+/* line 561, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-ir595-pre5 {
   background: url("../images/fred-app/09-IR595-pre-5/bg.png");
   background-size: 100% auto;
   top: 10px;
 }
 
-/* line 569, ../sass/partials/modules/_animation-layout.scss */
+/* line 570, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification1 {
   background: url("../images/jane-app/02-mobile-verification/bg.png");
   background-size: 100% auto;
 }
 
-/* line 576, ../sass/partials/modules/_animation-layout.scss */
+/* line 577, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar-verification1,
 .easyir-ani-menu-bar-verification2 {
   background: url("../images/jane-app/01-registration/menu-bar-top.png");
   background-size: 100% auto;
 }
 
-/* line 585, ../sass/partials/modules/_animation-layout.scss */
+/* line 586, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar-verification3,
 .easyir-ani-menu-bar-verification4,
 .easyir-ani-menu-bar-verification5,
@@ -1662,60 +1663,65 @@ a {
   background-size: 100% auto;
 }
 
-/* line 591, ../sass/partials/modules/_animation-layout.scss */
+/* line 592, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-send-verification-btn {
   top: 165px;
 }
 
-/* line 597, ../sass/partials/modules/_animation-layout.scss */
-.easyir-ani-verification-mobile {
-  position: absolute;
+/* line 598, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-verification-mobile-container {
   top: 125px;
-  left: 16px;
 }
 
-/* line 606, ../sass/partials/modules/_animation-layout.scss */
+/* line 603, ../sass/partials/modules/_animation-layout.scss */
+.easyir-ani-verification-mobile {
+  position: absolute;
+  left: 16px;
+  top: 0;
+}
+
+/* line 612, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification2 {
   background: url("../images/jane-app/03-verification-code/bg.png");
   background-size: 100% auto;
 }
 
-/* line 612, ../sass/partials/modules/_animation-layout.scss */
+/* line 618, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-send-verification-submit {
   top: 160px;
 }
 
-/* line 616, ../sass/partials/modules/_animation-layout.scss */
+/* line 622, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-send-verification-resend {
   top: 189px;
 }
 
-/* line 620, ../sass/partials/modules/_animation-layout.scss */
+/* line 626, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-code-container {
   top: 125px;
 }
 
-/* line 625, ../sass/partials/modules/_animation-layout.scss */
+/* line 631, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-code {
   position: absolute;
   left: 16px;
   top: 0;
 }
 
-/* line 632, ../sass/partials/modules/_animation-layout.scss */
+/* line 638, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt {
   height: 70px;
   top: -80px;
   background-color: #414143;
 }
-/* line 638, ../sass/partials/modules/_animation-layout.scss */
+/* line 644, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-icon {
   position: absolute;
   left: 10px;
   height: 35px;
   top: 17px;
 }
-/* line 645, ../sass/partials/modules/_animation-layout.scss */
+/* line 651, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-heading {
   position: absolute;
   top: 14px;
@@ -1723,7 +1729,7 @@ a {
   color: white;
   font-size: 12px;
 }
-/* line 653, ../sass/partials/modules/_animation-layout.scss */
+/* line 659, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-message {
   position: absolute;
   top: 33px;
@@ -1731,7 +1737,7 @@ a {
   color: white;
   font-size: 10px;
 }
-/* line 661, ../sass/partials/modules/_animation-layout.scss */
+/* line 667, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-txt .easyir-ani-txt-thumbnail {
   position: absolute;
   top: 56px;
@@ -1747,19 +1753,19 @@ a {
   background-color: gray;
 }
 
-/* line 675, ../sass/partials/modules/_animation-layout.scss */
+/* line 681, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification3 {
   background: url("../images/jane-app/04-PIN-setup/bg.png");
   background-size: 100% auto;
 }
 
-/* line 683, ../sass/partials/modules/_animation-layout.scss */
+/* line 689, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification4 {
   background: url("../images/jane-app/05-successful/bg.png");
   background-size: 100% auto;
 }
 
-/* line 689, ../sass/partials/modules/_animation-layout.scss */
+/* line 695, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-getstarted {
   bottom: 0;
   height: 38px;
@@ -1767,7 +1773,7 @@ a {
   color: white;
   font-size: 12px;
 }
-/* line 699, ../sass/partials/modules/_animation-layout.scss */
+/* line 705, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification-getstarted .easyir-ani-verification-getstarted-arrow {
   position: absolute;
   right: 6px;
@@ -1775,19 +1781,19 @@ a {
   top: 8px;
 }
 
-/* line 709, ../sass/partials/modules/_animation-layout.scss */
+/* line 715, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-verification5 {
   background: url("../images/jane-app/06-login/bg.png");
   background-size: 100% auto;
 }
 
-/* line 717, ../sass/partials/modules/_animation-layout.scss */
+/* line 723, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-dashboard1 {
   background: url("../images/mike-app/01-login/bg.png");
   background-size: 100% auto;
 }
 
-/* line 725, ../sass/partials/modules/_animation-layout.scss */
+/* line 731, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-dashboard2 {
   background: url("../images/mike-app/02-home/01.png");
   background-size: 100% auto;
@@ -1795,13 +1801,13 @@ a {
   top: 242px;
 }
 
-/* line 733, ../sass/partials/modules/_animation-layout.scss */
+/* line 739, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-menu-bar-dashboard2 {
   background: url("../images/mike-app/02-home/menu-bar-top.png");
   background-size: 100% auto;
 }
 
-/* line 739, ../sass/partials/modules/_animation-layout.scss */
+/* line 745, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-dashboard-profile {
   background: url("../images/mike-app/02-home/profile.png");
   background-size: 100% auto;
@@ -1809,7 +1815,7 @@ a {
   height: 200px;
 }
 
-/* line 747, ../sass/partials/modules/_animation-layout.scss */
+/* line 753, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-dashboard-bottom {
   background: url("../images/mike-app/02-home/02.png");
   background-size: 100% auto;
@@ -1817,7 +1823,7 @@ a {
   height: 100px;
 }
 
-/* line 755, ../sass/partials/modules/_animation-layout.scss */
+/* line 761, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani-press-dashboard {
   height: 50px;
   background-color: gray;
@@ -1825,7 +1831,7 @@ a {
   opacity: 0;
 }
 
-/* line 765, ../sass/partials/modules/_animation-layout.scss */
+/* line 771, ../sass/partials/modules/_animation-layout.scss */
 .easyir-ani {
   display: inline-block;
   background-repeat: no-repeat;
@@ -2082,81 +2088,113 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-animation: typing 1s steps(8, end);
-  -moz-animation: typing 1s steps(8, end);
-  -o-animation: typing 1s steps(8, end);
-  animation: typing 1s steps(8, end);
+  -webkit-animation: typing 0.8s steps(8, end);
+  -moz-animation: typing 0.8s steps(8, end);
+  -o-animation: typing 0.8s steps(8, end);
+  animation: typing 0.8s steps(8, end);
+}
+
+/* line 120, ../sass/partials/modules/_animations.scss */
+.easyir-ani-typing-11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-animation: typing 0.8s steps(11, end);
+  -moz-animation: typing 0.8s steps(11, end);
+  -o-animation: typing 0.8s steps(11, end);
+  animation: typing 0.8s steps(11, end);
+}
+
+/* line 134, ../sass/partials/modules/_animations.scss */
+.easyir-ani-typing-6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-animation: typing 0.8s steps(6, end);
+  -moz-animation: typing 0.8s steps(6, end);
+  -o-animation: typing 0.8s steps(6, end);
+  animation: typing 0.8s steps(6, end);
 }
 
 @-webkit-keyframes clickTealButton {
-  /* line 123, ../sass/partials/modules/_animations.scss */
+  /* line 151, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 124, ../sass/partials/modules/_animations.scss */
+  /* line 152, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 125, ../sass/partials/modules/_animations.scss */
+  /* line 153, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
 @-moz-keyframes clickTealButton {
-  /* line 128, ../sass/partials/modules/_animations.scss */
+  /* line 156, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 129, ../sass/partials/modules/_animations.scss */
+  /* line 157, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 130, ../sass/partials/modules/_animations.scss */
+  /* line 158, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
 @-o-keyframes clickTealButton {
-  /* line 133, ../sass/partials/modules/_animations.scss */
+  /* line 161, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 134, ../sass/partials/modules/_animations.scss */
+  /* line 162, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 135, ../sass/partials/modules/_animations.scss */
+  /* line 163, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
 @keyframes clickTealButton {
-  /* line 138, ../sass/partials/modules/_animations.scss */
+  /* line 166, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #008b95;
   }
 
-  /* line 139, ../sass/partials/modules/_animations.scss */
+  /* line 167, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #005b62;
   }
 
-  /* line 140, ../sass/partials/modules/_animations.scss */
+  /* line 168, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #008b95;
   }
 }
 
-/* line 143, ../sass/partials/modules/_animations.scss */
+/* line 171, ../sass/partials/modules/_animations.scss */
 .easyir-ani-click-teal-button {
   -webkit-animation: clickTealButton 0.6s ease;
   -moz-animation: clickTealButton 0.6s ease;
@@ -2165,74 +2203,74 @@ a {
 }
 
 @-webkit-keyframes clickGrayButton {
-  /* line 151, ../sass/partials/modules/_animations.scss */
+  /* line 179, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 152, ../sass/partials/modules/_animations.scss */
+  /* line 180, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 153, ../sass/partials/modules/_animations.scss */
+  /* line 181, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
 @-moz-keyframes clickGrayButton {
-  /* line 156, ../sass/partials/modules/_animations.scss */
+  /* line 184, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 157, ../sass/partials/modules/_animations.scss */
+  /* line 185, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 158, ../sass/partials/modules/_animations.scss */
+  /* line 186, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
 @-o-keyframes clickGrayButton {
-  /* line 161, ../sass/partials/modules/_animations.scss */
+  /* line 189, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 162, ../sass/partials/modules/_animations.scss */
+  /* line 190, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 163, ../sass/partials/modules/_animations.scss */
+  /* line 191, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
 @keyframes clickGrayButton {
-  /* line 166, ../sass/partials/modules/_animations.scss */
+  /* line 194, ../sass/partials/modules/_animations.scss */
   0% {
     background-color: #f6f6f6;
   }
 
-  /* line 167, ../sass/partials/modules/_animations.scss */
+  /* line 195, ../sass/partials/modules/_animations.scss */
   50% {
     background-color: #dddddd;
   }
 
-  /* line 168, ../sass/partials/modules/_animations.scss */
+  /* line 196, ../sass/partials/modules/_animations.scss */
   100% {
     background-color: #f6f6f6;
   }
 }
 
-/* line 171, ../sass/partials/modules/_animations.scss */
+/* line 199, ../sass/partials/modules/_animations.scss */
 .easyir-ani-click-gray-button {
   -webkit-animation: clickGrayButton 0.4s ease;
   -moz-animation: clickGrayButton 0.4s ease;
@@ -2241,74 +2279,74 @@ a {
 }
 
 @-webkit-keyframes showHelp {
-  /* line 181, ../sass/partials/modules/_animations.scss */
+  /* line 209, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 182, ../sass/partials/modules/_animations.scss */
+  /* line 210, ../sass/partials/modules/_animations.scss */
   40% {
     top: -330px;
   }
 
-  /* line 183, ../sass/partials/modules/_animations.scss */
+  /* line 211, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
 @-moz-keyframes showHelp {
-  /* line 186, ../sass/partials/modules/_animations.scss */
+  /* line 214, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 187, ../sass/partials/modules/_animations.scss */
+  /* line 215, ../sass/partials/modules/_animations.scss */
   40% {
     top: -330px;
   }
 
-  /* line 188, ../sass/partials/modules/_animations.scss */
+  /* line 216, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
 @-o-keyframes showHelp {
-  /* line 191, ../sass/partials/modules/_animations.scss */
+  /* line 219, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 192, ../sass/partials/modules/_animations.scss */
+  /* line 220, ../sass/partials/modules/_animations.scss */
   40% {
     top: -330px;
   }
 
-  /* line 193, ../sass/partials/modules/_animations.scss */
+  /* line 221, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
 @keyframes showHelp {
-  /* line 196, ../sass/partials/modules/_animations.scss */
+  /* line 224, ../sass/partials/modules/_animations.scss */
   0% {
     top: 0;
   }
 
-  /* line 197, ../sass/partials/modules/_animations.scss */
+  /* line 225, ../sass/partials/modules/_animations.scss */
   40% {
     top: -330px;
   }
 
-  /* line 198, ../sass/partials/modules/_animations.scss */
+  /* line 226, ../sass/partials/modules/_animations.scss */
   100% {
     top: -281px;
   }
 }
 
-/* line 201, ../sass/partials/modules/_animations.scss */
+/* line 229, ../sass/partials/modules/_animations.scss */
 .easyir-ani-show-help {
   -webkit-animation: showHelp 1.5s ease;
   -moz-animation: showHelp 1.5s ease;
@@ -2317,7 +2355,7 @@ a {
   top: -281px;
 }
 
-/* line 212, ../sass/partials/modules/_animations.scss */
+/* line 240, ../sass/partials/modules/_animations.scss */
 .easyir-ani-open-dash-board {
   top: 103px;
   -webkit-transition-property: all;
@@ -2334,7 +2372,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 219, ../sass/partials/modules/_animations.scss */
+/* line 247, ../sass/partials/modules/_animations.scss */
 .easyir-ani-open-dash-board-profile {
   top: -97px;
   -webkit-transition-property: all;
@@ -2351,7 +2389,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 226, ../sass/partials/modules/_animations.scss */
+/* line 254, ../sass/partials/modules/_animations.scss */
 .easyir-ani-open-dash-board-bottom {
   top: 305px;
   -webkit-transition-property: all;
@@ -2368,7 +2406,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 233, ../sass/partials/modules/_animations.scss */
+/* line 261, ../sass/partials/modules/_animations.scss */
 .easyir-ani-open-dash-board2 {
   top: -50px;
   -webkit-transition-property: all;
@@ -2385,7 +2423,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/* line 240, ../sass/partials/modules/_animations.scss */
+/* line 268, ../sass/partials/modules/_animations.scss */
 .easyir-ani-open-dash-board-profile2 {
   top: -250px;
   -webkit-transition-property: all;
@@ -2403,74 +2441,74 @@ a {
 }
 
 @-webkit-keyframes pressDashboardButton {
-  /* line 248, ../sass/partials/modules/_animations.scss */
+  /* line 276, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 249, ../sass/partials/modules/_animations.scss */
+  /* line 277, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0.4;
   }
 
-  /* line 250, ../sass/partials/modules/_animations.scss */
+  /* line 278, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes pressDashboardButton {
-  /* line 253, ../sass/partials/modules/_animations.scss */
+  /* line 281, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 254, ../sass/partials/modules/_animations.scss */
+  /* line 282, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0.4;
   }
 
-  /* line 255, ../sass/partials/modules/_animations.scss */
+  /* line 283, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes pressDashboardButton {
-  /* line 258, ../sass/partials/modules/_animations.scss */
+  /* line 286, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 259, ../sass/partials/modules/_animations.scss */
+  /* line 287, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0.4;
   }
 
-  /* line 260, ../sass/partials/modules/_animations.scss */
+  /* line 288, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes pressDashboardButton {
-  /* line 263, ../sass/partials/modules/_animations.scss */
+  /* line 291, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 264, ../sass/partials/modules/_animations.scss */
+  /* line 292, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0.4;
   }
 
-  /* line 265, ../sass/partials/modules/_animations.scss */
+  /* line 293, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
-/* line 268, ../sass/partials/modules/_animations.scss */
+/* line 296, ../sass/partials/modules/_animations.scss */
 .easyir-press-dashboard-button {
   -webkit-animation: pressDashboardButton 0.4s ease;
   -moz-animation: pressDashboardButton 0.4s ease;
@@ -2479,54 +2517,54 @@ a {
 }
 
 @-webkit-keyframes slideNextFrame {
-  /* line 279, ../sass/partials/modules/_animations.scss */
+  /* line 307, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 280, ../sass/partials/modules/_animations.scss */
+  /* line 308, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
 @-moz-keyframes slideNextFrame {
-  /* line 283, ../sass/partials/modules/_animations.scss */
+  /* line 311, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 284, ../sass/partials/modules/_animations.scss */
+  /* line 312, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
 @-o-keyframes slideNextFrame {
-  /* line 287, ../sass/partials/modules/_animations.scss */
+  /* line 315, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 288, ../sass/partials/modules/_animations.scss */
+  /* line 316, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
 @keyframes slideNextFrame {
-  /* line 291, ../sass/partials/modules/_animations.scss */
+  /* line 319, ../sass/partials/modules/_animations.scss */
   0% {
     right: -223px;
   }
 
-  /* line 292, ../sass/partials/modules/_animations.scss */
+  /* line 320, ../sass/partials/modules/_animations.scss */
   100% {
     right: 0;
   }
 }
 
-/* line 295, ../sass/partials/modules/_animations.scss */
+/* line 323, ../sass/partials/modules/_animations.scss */
 .easyir-ani-slide-next-frame {
   -webkit-animation: slideNextFrame 0.5s ease;
   -moz-animation: slideNextFrame 0.5s ease;
@@ -2536,54 +2574,54 @@ a {
 }
 
 @-webkit-keyframes slidePrevFrame {
-  /* line 305, ../sass/partials/modules/_animations.scss */
+  /* line 333, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 306, ../sass/partials/modules/_animations.scss */
+  /* line 334, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
 @-moz-keyframes slidePrevFrame {
-  /* line 309, ../sass/partials/modules/_animations.scss */
+  /* line 337, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 310, ../sass/partials/modules/_animations.scss */
+  /* line 338, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
 @-o-keyframes slidePrevFrame {
-  /* line 313, ../sass/partials/modules/_animations.scss */
+  /* line 341, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 314, ../sass/partials/modules/_animations.scss */
+  /* line 342, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
 @keyframes slidePrevFrame {
-  /* line 317, ../sass/partials/modules/_animations.scss */
+  /* line 345, ../sass/partials/modules/_animations.scss */
   0% {
     right: 0;
   }
 
-  /* line 318, ../sass/partials/modules/_animations.scss */
+  /* line 346, ../sass/partials/modules/_animations.scss */
   100% {
     right: 223px;
   }
 }
 
-/* line 321, ../sass/partials/modules/_animations.scss */
+/* line 349, ../sass/partials/modules/_animations.scss */
 .easyir-ani-slide-prev-frame {
   -webkit-animation: slidePrevFrame 0.5s ease;
   -moz-animation: slidePrevFrame 0.5s ease;
@@ -2594,54 +2632,54 @@ a {
 }
 
 @-webkit-keyframes showTxt {
-  /* line 334, ../sass/partials/modules/_animations.scss */
+  /* line 362, ../sass/partials/modules/_animations.scss */
   0% {
     top: -80px;
   }
 
-  /* line 335, ../sass/partials/modules/_animations.scss */
+  /* line 363, ../sass/partials/modules/_animations.scss */
   100% {
     top: -5px;
   }
 }
 
 @-moz-keyframes showTxt {
-  /* line 338, ../sass/partials/modules/_animations.scss */
+  /* line 366, ../sass/partials/modules/_animations.scss */
   0% {
     top: -80px;
   }
 
-  /* line 339, ../sass/partials/modules/_animations.scss */
+  /* line 367, ../sass/partials/modules/_animations.scss */
   100% {
     top: -5px;
   }
 }
 
 @-o-keyframes showTxt {
-  /* line 342, ../sass/partials/modules/_animations.scss */
+  /* line 370, ../sass/partials/modules/_animations.scss */
   0% {
     top: -80px;
   }
 
-  /* line 343, ../sass/partials/modules/_animations.scss */
+  /* line 371, ../sass/partials/modules/_animations.scss */
   100% {
     top: -5px;
   }
 }
 
 @keyframes showTxt {
-  /* line 346, ../sass/partials/modules/_animations.scss */
+  /* line 374, ../sass/partials/modules/_animations.scss */
   0% {
     top: -80px;
   }
 
-  /* line 347, ../sass/partials/modules/_animations.scss */
+  /* line 375, ../sass/partials/modules/_animations.scss */
   100% {
     top: -5px;
   }
 }
 
-/* line 350, ../sass/partials/modules/_animations.scss */
+/* line 378, ../sass/partials/modules/_animations.scss */
 .easyir-ani-show-txt {
   -webkit-animation: showTxt 0.4s ease;
   -moz-animation: showTxt 0.4s ease;
@@ -2651,54 +2689,54 @@ a {
 }
 
 @-webkit-keyframes hideTxt {
-  /* line 360, ../sass/partials/modules/_animations.scss */
+  /* line 388, ../sass/partials/modules/_animations.scss */
   0% {
     top: -5px;
   }
 
-  /* line 361, ../sass/partials/modules/_animations.scss */
+  /* line 389, ../sass/partials/modules/_animations.scss */
   100% {
     top: -80px;
   }
 }
 
 @-moz-keyframes hideTxt {
-  /* line 364, ../sass/partials/modules/_animations.scss */
+  /* line 392, ../sass/partials/modules/_animations.scss */
   0% {
     top: -5px;
   }
 
-  /* line 365, ../sass/partials/modules/_animations.scss */
+  /* line 393, ../sass/partials/modules/_animations.scss */
   100% {
     top: -80px;
   }
 }
 
 @-o-keyframes hideTxt {
-  /* line 368, ../sass/partials/modules/_animations.scss */
+  /* line 396, ../sass/partials/modules/_animations.scss */
   0% {
     top: -5px;
   }
 
-  /* line 369, ../sass/partials/modules/_animations.scss */
+  /* line 397, ../sass/partials/modules/_animations.scss */
   100% {
     top: -80px;
   }
 }
 
 @keyframes hideTxt {
-  /* line 372, ../sass/partials/modules/_animations.scss */
+  /* line 400, ../sass/partials/modules/_animations.scss */
   0% {
     top: -5px;
   }
 
-  /* line 373, ../sass/partials/modules/_animations.scss */
+  /* line 401, ../sass/partials/modules/_animations.scss */
   100% {
     top: -80px;
   }
 }
 
-/* line 376, ../sass/partials/modules/_animations.scss */
+/* line 404, ../sass/partials/modules/_animations.scss */
 .easyir-ani-hide-txt {
   -webkit-animation: hideTxt 0.4s ease;
   -moz-animation: hideTxt 0.4s ease;
@@ -2708,50 +2746,6 @@ a {
 }
 
 @-webkit-keyframes gestureHelp {
-  /* line 388, ../sass/partials/modules/_animations.scss */
-  0% {
-    top: 200px;
-  }
-
-  /* line 391, ../sass/partials/modules/_animations.scss */
-  10% {
-    opacity: 0.8;
-  }
-
-  /* line 394, ../sass/partials/modules/_animations.scss */
-  90% {
-    top: 20px;
-  }
-
-  /* line 397, ../sass/partials/modules/_animations.scss */
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes gestureHelp {
-  /* line 402, ../sass/partials/modules/_animations.scss */
-  0% {
-    top: 200px;
-  }
-
-  /* line 405, ../sass/partials/modules/_animations.scss */
-  10% {
-    opacity: 0.8;
-  }
-
-  /* line 408, ../sass/partials/modules/_animations.scss */
-  90% {
-    top: 20px;
-  }
-
-  /* line 411, ../sass/partials/modules/_animations.scss */
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes gestureHelp {
   /* line 416, ../sass/partials/modules/_animations.scss */
   0% {
     top: 200px;
@@ -2773,7 +2767,7 @@ a {
   }
 }
 
-@keyframes gestureHelp {
+@-moz-keyframes gestureHelp {
   /* line 430, ../sass/partials/modules/_animations.scss */
   0% {
     top: 200px;
@@ -2795,7 +2789,51 @@ a {
   }
 }
 
-/* line 444, ../sass/partials/modules/_animations.scss */
+@-o-keyframes gestureHelp {
+  /* line 444, ../sass/partials/modules/_animations.scss */
+  0% {
+    top: 200px;
+  }
+
+  /* line 447, ../sass/partials/modules/_animations.scss */
+  10% {
+    opacity: 0.8;
+  }
+
+  /* line 450, ../sass/partials/modules/_animations.scss */
+  90% {
+    top: 20px;
+  }
+
+  /* line 453, ../sass/partials/modules/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gestureHelp {
+  /* line 458, ../sass/partials/modules/_animations.scss */
+  0% {
+    top: 200px;
+  }
+
+  /* line 461, ../sass/partials/modules/_animations.scss */
+  10% {
+    opacity: 0.8;
+  }
+
+  /* line 464, ../sass/partials/modules/_animations.scss */
+  90% {
+    top: 20px;
+  }
+
+  /* line 467, ../sass/partials/modules/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+/* line 472, ../sass/partials/modules/_animations.scss */
 .easyir-ani-gesture-show-help {
   -webkit-animation: gestureHelp 1.5s ease;
   -moz-animation: gestureHelp 1.5s ease;
@@ -2805,194 +2843,194 @@ a {
 }
 
 @-webkit-keyframes pressZero {
-  /* line 454, ../sass/partials/modules/_animations.scss */
+  /* line 482, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 455, ../sass/partials/modules/_animations.scss */
+  /* line 483, ../sass/partials/modules/_animations.scss */
   12.5% {
     opacity: 1;
   }
 
-  /* line 456, ../sass/partials/modules/_animations.scss */
+  /* line 484, ../sass/partials/modules/_animations.scss */
   25% {
     opacity: 0;
   }
 
-  /* line 457, ../sass/partials/modules/_animations.scss */
+  /* line 485, ../sass/partials/modules/_animations.scss */
   37.5% {
     opacity: 1;
   }
 
-  /* line 458, ../sass/partials/modules/_animations.scss */
+  /* line 486, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 459, ../sass/partials/modules/_animations.scss */
+  /* line 487, ../sass/partials/modules/_animations.scss */
   62.5% {
     opacity: 1;
   }
 
-  /* line 460, ../sass/partials/modules/_animations.scss */
+  /* line 488, ../sass/partials/modules/_animations.scss */
   75% {
     opacity: 0;
   }
 
-  /* line 461, ../sass/partials/modules/_animations.scss */
+  /* line 489, ../sass/partials/modules/_animations.scss */
   87.5% {
     opacity: 1;
   }
 
-  /* line 462, ../sass/partials/modules/_animations.scss */
+  /* line 490, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes pressZero {
-  /* line 465, ../sass/partials/modules/_animations.scss */
+  /* line 493, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 466, ../sass/partials/modules/_animations.scss */
+  /* line 494, ../sass/partials/modules/_animations.scss */
   12.5% {
     opacity: 1;
   }
 
-  /* line 467, ../sass/partials/modules/_animations.scss */
+  /* line 495, ../sass/partials/modules/_animations.scss */
   25% {
     opacity: 0;
   }
 
-  /* line 468, ../sass/partials/modules/_animations.scss */
+  /* line 496, ../sass/partials/modules/_animations.scss */
   37.5% {
     opacity: 1;
   }
 
-  /* line 469, ../sass/partials/modules/_animations.scss */
+  /* line 497, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 470, ../sass/partials/modules/_animations.scss */
+  /* line 498, ../sass/partials/modules/_animations.scss */
   62.5% {
     opacity: 1;
   }
 
-  /* line 471, ../sass/partials/modules/_animations.scss */
+  /* line 499, ../sass/partials/modules/_animations.scss */
   75% {
     opacity: 0;
   }
 
-  /* line 472, ../sass/partials/modules/_animations.scss */
+  /* line 500, ../sass/partials/modules/_animations.scss */
   87.5% {
     opacity: 1;
   }
 
-  /* line 473, ../sass/partials/modules/_animations.scss */
+  /* line 501, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes pressZero {
-  /* line 476, ../sass/partials/modules/_animations.scss */
+  /* line 504, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 477, ../sass/partials/modules/_animations.scss */
+  /* line 505, ../sass/partials/modules/_animations.scss */
   12.5% {
     opacity: 1;
   }
 
-  /* line 478, ../sass/partials/modules/_animations.scss */
+  /* line 506, ../sass/partials/modules/_animations.scss */
   25% {
     opacity: 0;
   }
 
-  /* line 479, ../sass/partials/modules/_animations.scss */
+  /* line 507, ../sass/partials/modules/_animations.scss */
   37.5% {
     opacity: 1;
   }
 
-  /* line 480, ../sass/partials/modules/_animations.scss */
+  /* line 508, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 481, ../sass/partials/modules/_animations.scss */
+  /* line 509, ../sass/partials/modules/_animations.scss */
   62.5% {
     opacity: 1;
   }
 
-  /* line 482, ../sass/partials/modules/_animations.scss */
+  /* line 510, ../sass/partials/modules/_animations.scss */
   75% {
     opacity: 0;
   }
 
-  /* line 483, ../sass/partials/modules/_animations.scss */
+  /* line 511, ../sass/partials/modules/_animations.scss */
   87.5% {
     opacity: 1;
   }
 
-  /* line 484, ../sass/partials/modules/_animations.scss */
+  /* line 512, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes pressZero {
-  /* line 487, ../sass/partials/modules/_animations.scss */
+  /* line 515, ../sass/partials/modules/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 488, ../sass/partials/modules/_animations.scss */
+  /* line 516, ../sass/partials/modules/_animations.scss */
   12.5% {
     opacity: 1;
   }
 
-  /* line 489, ../sass/partials/modules/_animations.scss */
+  /* line 517, ../sass/partials/modules/_animations.scss */
   25% {
     opacity: 0;
   }
 
-  /* line 490, ../sass/partials/modules/_animations.scss */
+  /* line 518, ../sass/partials/modules/_animations.scss */
   37.5% {
     opacity: 1;
   }
 
-  /* line 491, ../sass/partials/modules/_animations.scss */
+  /* line 519, ../sass/partials/modules/_animations.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 492, ../sass/partials/modules/_animations.scss */
+  /* line 520, ../sass/partials/modules/_animations.scss */
   62.5% {
     opacity: 1;
   }
 
-  /* line 493, ../sass/partials/modules/_animations.scss */
+  /* line 521, ../sass/partials/modules/_animations.scss */
   75% {
     opacity: 0;
   }
 
-  /* line 494, ../sass/partials/modules/_animations.scss */
+  /* line 522, ../sass/partials/modules/_animations.scss */
   87.5% {
     opacity: 1;
   }
 
-  /* line 495, ../sass/partials/modules/_animations.scss */
+  /* line 523, ../sass/partials/modules/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
-/* line 498, ../sass/partials/modules/_animations.scss */
+/* line 526, ../sass/partials/modules/_animations.scss */
 .easyir-ani-gesture-press-zero {
   -webkit-animation: pressZero 1.6s ease;
   -moz-animation: pressZero 1.6s ease;
@@ -3003,74 +3041,74 @@ a {
 }
 
 @-webkit-keyframes bounceIntroArrow {
-  /* line 511, ../sass/partials/modules/_animations.scss */
+  /* line 539, ../sass/partials/modules/_animations.scss */
   0% {
     margin-top: 0;
   }
 
-  /* line 512, ../sass/partials/modules/_animations.scss */
+  /* line 540, ../sass/partials/modules/_animations.scss */
   50% {
     margin-top: 6px;
   }
 
-  /* line 513, ../sass/partials/modules/_animations.scss */
+  /* line 541, ../sass/partials/modules/_animations.scss */
   100% {
     margin-top: 0;
   }
 }
 
 @-moz-keyframes bounceIntroArrow {
-  /* line 516, ../sass/partials/modules/_animations.scss */
+  /* line 544, ../sass/partials/modules/_animations.scss */
   0% {
     margin-top: 0;
   }
 
-  /* line 517, ../sass/partials/modules/_animations.scss */
+  /* line 545, ../sass/partials/modules/_animations.scss */
   50% {
     margin-top: 6px;
   }
 
-  /* line 518, ../sass/partials/modules/_animations.scss */
+  /* line 546, ../sass/partials/modules/_animations.scss */
   100% {
     margin-top: 0;
   }
 }
 
 @-o-keyframes bounceIntroArrow {
-  /* line 521, ../sass/partials/modules/_animations.scss */
+  /* line 549, ../sass/partials/modules/_animations.scss */
   0% {
     margin-top: 0;
   }
 
-  /* line 522, ../sass/partials/modules/_animations.scss */
+  /* line 550, ../sass/partials/modules/_animations.scss */
   50% {
     margin-top: 6px;
   }
 
-  /* line 523, ../sass/partials/modules/_animations.scss */
+  /* line 551, ../sass/partials/modules/_animations.scss */
   100% {
     margin-top: 0;
   }
 }
 
 @keyframes bounceIntroArrow {
-  /* line 526, ../sass/partials/modules/_animations.scss */
+  /* line 554, ../sass/partials/modules/_animations.scss */
   0% {
     margin-top: 0;
   }
 
-  /* line 527, ../sass/partials/modules/_animations.scss */
+  /* line 555, ../sass/partials/modules/_animations.scss */
   50% {
     margin-top: 6px;
   }
 
-  /* line 528, ../sass/partials/modules/_animations.scss */
+  /* line 556, ../sass/partials/modules/_animations.scss */
   100% {
     margin-top: 0;
   }
 }
 
-/* line 531, ../sass/partials/modules/_animations.scss */
+/* line 559, ../sass/partials/modules/_animations.scss */
 .easyir-ani-bounce-intro-arrow {
   -webkit-animation: bounceIntroArrow 1s ease infinite;
   -moz-animation: bounceIntroArrow 1s ease infinite;

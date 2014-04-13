@@ -569,10 +569,12 @@
             '<div class="easyir-ani-send-verification-btn">' +
                 'Send Verification Code' +
             '</div>' +
-            '<span class="easyir-ani-verification-mobile">' +
-                'Mobile Number' +
-            '</span>' +
-            '<div class="easyir-ani easyir-ani-menu-bar-verification1 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-verification-mobile-container">' +
+                '<span class="easyir-ani-verification-mobile">' +
+                    'Mobile Number' +
+                '</span>' +
+            '</div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification1"></div>' +
             '<div class="easyir-ani-verification2 easyir-ani-next"></div>' +
             '<div class="easyir-ani-default-btn easyir-ani-send-verification-submit easyir-ani-next">' +
                 'Submit' +
@@ -640,12 +642,8 @@
         janeBtn.addClass(BTN_DISABLED);
         janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-jane-point1').removeClass(POINT_HIDDEN);
-
-        setTimeout(function() {
-            janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
-
-            jane2();
-        }, TIME_NEXT_SLIDE);
+        janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
+        jane2();
     };
 
     var jane2 = function () {
@@ -653,7 +651,7 @@
             janeNode.find('.easyir-ani-registration-irdnumber').html('<span class="easyir-typing">12345678<span class="easyir-ani-typing">&nbsp;</span></span>');
 
             jane3();
-        }, TIME_NEXT_SLIDE);
+        }, 2000);
     };
 
     var jane3 = function () {
@@ -683,7 +681,7 @@
 
     var jane6 = function () {
         setTimeout(function () {
-            janeNode.find('.easyir-ani-verification-mobile').html('<span class="easyir-typing">+6421543678<span class="easyir-ani-typing">&nbsp;</span></span>');
+            janeNode.find('.easyir-ani-verification-mobile').html('<span class="easyir-typing">+6421543678<span class="easyir-ani-typing-11">&nbsp;</span></span>');
 
             jane7();
         }, TIME_NEXT_SLIDE);
@@ -704,7 +702,7 @@
                 janeNode.find('.easyir-ani-verification1'),
                 janeNode.find('.easyir-ani-menu-bar-verification1'),
                 janeNode.find('.easyir-ani-send-verification-btn'),
-                janeNode.find('.easyir-ani-verification-mobile')
+                janeNode.find('.easyir-ani-verification-mobile-container')
             ]);
 
             aniNextSlide([
@@ -715,16 +713,18 @@
                 janeNode.find('.easyir-ani-send-verification-resend'),
                 janeNode.find('.easyir-ani-verification-code-container')
             ]);
-            janeNode.find('.easyir-ani-txt').addClass('easyir-ani-show-txt');
 
-            jane9();
+            setTimeout(function () {
+                janeNode.find('.easyir-ani-txt').addClass('easyir-ani-show-txt');
+                jane9();
+            }, 400);
+
         }, TIME_CLICK);
     };
 
     var jane9 = function () {
-
         setTimeout(function () {
-            janeNode.find('.easyir-ani-verification-code').html('<span class="easyir-typing">C68HAS<span class="easyir-ani-typing">&nbsp;</span></span>');
+            janeNode.find('.easyir-ani-verification-code').html('<span class="easyir-typing">C68HAS<span class="easyir-ani-typing easyir-ani-typing-6">&nbsp;</span></span>');
 
             jane10();
         }, TIME_NEXT_SLIDE);
@@ -736,7 +736,7 @@
             janeNode.find('.easyir-ani-txt').addClass('easyir-ani-hide-txt');
 
             jane11();
-        }, TIME_TYPING);
+        }, 1500);
     };
 
     var jane11 = function () {
@@ -802,7 +802,7 @@
             ]);
 
             jane14();
-        }, TIME_CLICK)
+        }, 600)
     };
 
     var jane14 = function () {

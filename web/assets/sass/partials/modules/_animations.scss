@@ -111,10 +111,38 @@
     background: white;
     @include box-sizing(border-box);
 
-    -webkit-animation: typing 1s steps(8, end);
-    -moz-animation:    typing 1s steps(8, end);
-    -o-animation:      typing 1s steps(8, end);
-    animation:         typing 1s steps(8, end);
+    -webkit-animation: typing 0.8s steps(8, end);
+    -moz-animation:    typing 0.8s steps(8, end);
+    -o-animation:      typing 0.8s steps(8, end);
+    animation:         typing 0.8s steps(8, end);
+}
+
+.easyir-ani-typing-11 {
+    position: absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white;
+    @include box-sizing(border-box);
+
+    -webkit-animation: typing 0.8s steps(11, end);
+    -moz-animation:    typing 0.8s steps(11, end);
+    -o-animation:      typing 0.8s steps(11, end);
+    animation:         typing 0.8s steps(11, end);
+}
+
+.easyir-ani-typing-6 {
+    position: absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white;
+    @include box-sizing(border-box);
+
+    -webkit-animation: typing 0.8s steps(6, end);
+    -moz-animation:    typing 0.8s steps(6, end);
+    -o-animation:      typing 0.8s steps(6, end);
+    animation:         typing 0.8s steps(6, end);
 }
 
 // =========================== Click Teal Button ===========================

@@ -145,7 +145,7 @@ $ird-screen-height: 405px;
 
 %easyir-ani-default-btn,
 .easyir-ani-default-btn {
-    height: 28px;
+    height: 30px;
     background-color: white;
     color: $ird-teal-default;
     border-top: 1px solid $ird-app-button-border;
@@ -238,7 +238,8 @@ $ird-screen-height: 405px;
     .easyir-ani-registration-btn {
         @extend %easyir-ani-default;
         @extend %easyir-ani-default-btn;
-        top: 198px;
+        top: 196px;
+        height: 30px;
     }
 }
 
@@ -594,11 +595,16 @@ $ird-screen-height: 405px;
     top: 165px;
 }
 
+.easyir-ani-verification-mobile-container {
+    @extend %easyir-ani-default;
+    top: 125px;
+}
+
 .easyir-ani-verification-mobile {
     @extend %easyir-ani-placeholder-text;
     position: absolute;
-    top: 125px;
     left: 16px;
+    top: 0;
 }
 
 // =========================== Verification 2 ===========================
