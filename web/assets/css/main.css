@@ -229,7 +229,7 @@ html,
 body,
 .ember-view {
   height: 100%;
-  font-family: 'proxima_nova_light', 'Ubuntu', 'Raleway', sans-serif;
+  font-family: 'kreon', 'Ubuntu', 'Raleway', sans-serif;
   margin: 0;
 }
 
@@ -348,7 +348,7 @@ a {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 /* line 94, ../sass/partials/modules/_page.scss */
