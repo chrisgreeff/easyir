@@ -422,19 +422,19 @@ $ird-screen-height: 405px;
     left: 118px;
 }
 
-.easyir-progress-checkbox-quater-1 {
+.easyir-progress-checkbox-quater-first {
     left: 78px;
 }
 
-.easyir-progress-checkbox-quater-2 {
+.easyir-progress-checkbox-quater-second {
     left: 98px;
 }
 
-.easyir-progress-checkbox-quater-3 {
+.easyir-progress-checkbox-quater-third {
     left: 118px
 }
 
-.easyir-progress-checkbox-quater-4 {
+.easyir-progress-checkbox-quater-fourth {
     left: 138px
 }
 
@@ -554,10 +554,17 @@ $ird-screen-height: 405px;
 }
 
 .easyir-ani-menu-bar-verification1,
-.easyir-ani-menu-bar-verification2,
-.easyir-ani-menu-bar-verification3 {
+.easyir-ani-menu-bar-verification2 {
     @extend %easyir-ani-menu-bar;
     background: url("../images/jane-app/01-registration/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-menu-bar-verification3,
+.easyir-ani-menu-bar-verification4,
+.easyir-ani-menu-bar-verification5 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/jane-app/04-PIN-setup/menu-bar-top.png");
     background-size: 100% auto;
 }
 
@@ -651,12 +658,39 @@ $ird-screen-height: 405px;
     background-size: 100% auto;
 }
 
-.easyir-ani-verification-menubar1 {
-    @extend %easyir-ani-menu-bar;
-    background: url("../images/jane-app/04-PIN-setup/menu-bar-top.png");
+// =========================== Verification 4 ===========================
+
+.easyir-ani-verification4 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/05-successful/bg.png");
     background-size: 100% auto;
 }
 
+.easyir-ani-verification-getstarted {
+    @extend %easyir-ani-default;
+    bottom: 0;
+    height: 38px;
+    background-color: $ird-teal-default;
+    color: white;
+    font-size: 12px;
+    @extend %easyir-centered-content;
+    @extend %easyir-middle-content;
+
+    .easyir-ani-verification-getstarted-arrow {
+        position: absolute;
+        right: 6px;
+        width: 30px;
+        top: 8px;
+    }
+}
+
+// =========================== Verification 5 ===========================
+
+.easyir-ani-verification5 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/06-login/bg.png");
+    background-size: 100% auto;
+}
 
 // =========================== This Stays At The Bottom ===========================
 

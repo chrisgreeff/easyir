@@ -4,6 +4,7 @@
         TIME_HELP = 1,
         TIME_READING_HELP = 1,
         TIME_NEXT_SLIDE = 1,
+        TIME_TYPING = 1,
 
         TIME_CLICK = 400,
         TIME_HELP = 800,
@@ -234,8 +235,7 @@
             '<div class="easyir-ani-ir595-pre5"></div>' +
             '<div class="easyir-ani easyir-ani-ir595-menu-bar-pre5"></div>' +
         '</div>' +
-        '<div class="easyir-ani easyir-ani-header"></div>' +
-        '<div class="easyir-ani-swipe-gesture"></div>';
+        '<div class="easyir-ani easyir-ani-header"></div>';
 
     // OPEN APP
     var fred1 = function () {
@@ -558,15 +558,101 @@
     var janeNode = $('.easyir-ani-jane');
     var janeBtn = $('.easyir-btn-jane');
 
+    var janeAniTemplate = '' +
+        '<div class="easyir-ani easyir-ani-registration">' +
+            '<div class="easyir-ani easyir-ani-menu-bar"></div>' +
+            '<div class="easyir-ani-apply-button easyir-center">' +
+                'Apply for an IRD Number' +
+            '</div>' +
+            '<span class="easyir-ani-registration-irdnumber">' +
+                'IRD Number' +
+            '</span>' +
+            '<span class="easyir-ani-registration-password">' +
+                'Password' +
+            '</span>' +
+            '<div class="easyir-ani-registration-btn">' +
+                'Register' +
+            '</div>' +
+        '</div>' +
+        '<div class="easyir-ani-app easyir-ani-next">' +
+            '<div class="easyir-ani-verification1"></div>' +
+            '<div class="easyir-ani-send-verification-btn">' +
+                'Send Verification Code' +
+            '</div>' +
+            '<span class="easyir-ani-verification-mobile">' +
+                'Mobile Number' +
+            '</span>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification1 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-verification2 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-default-btn easyir-ani-send-verification-submit easyir-ani-next">' +
+                'Submit' +
+            '</div>' +
+            '<div class="easyir-ani-default-btn easyir-ani-send-verification-resend easyir-ani-next">' +
+                'Resend Verification Code' +
+            '</div>' +
+            '<div class="easyir-ani-verification-code-container easyir-ani-next">' +
+                '<span class="easyir-ani-verification-code">' +
+                    'Verification Code' +
+                '</span>' +
+            '</div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification2 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-verification3 easyir-ani-next"></div>' +
+            '<div class="easyir-ani easyir-ani-checkbox-bar easyir-ani-checkbox-bar1 easyir-ani-next">' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-1 easyir-progress-checkbox-quater-first"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-2 easyir-progress-checkbox-quater-second"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-3 easyir-progress-checkbox-quater-third"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-4 easyir-progress-checkbox-quater-fourth"></div>' +
+            '</div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification3 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-verification4 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-verification-getstarted easyir-ani-next">' +
+                'Get Started' +
+                '<img class="easyir-ani-verification-getstarted-arrow" src="web/assets/images/generic-app/00-iphone5s/arrow.svg">' +
+            '</div>' +
+            '<div class="easyir-ani easyir-ani-checkbox-bar easyir-ani-checkbox-bar2 easyir-ani-next">' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-first"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-second"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-third"></div>' +
+                '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-fourth"></div>' +
+            '</div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification4 easyir-ani-next"></div>' +
+            '<div class="easyir-ani-verification5 easyir-ani-next"></div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification5 easyir-ani-next"></div>' +
+        '</div>' +
+        '<div class="easyir-ani easyir-ani-header"></div>' +
+        '<div class="easyir-ani easyir-ani-open"></div>' +
+        '<div class="easyir-ani-swipe-gesture"></div>' +
+        '<div class="easyir-ani-txt easyir-ani-next">' +
+            '<img class="easyir-ani-txt-icon" src="web/assets/images/jane-app/02-mobile-verification/icn-imessage.png">' +
+            '<div class="easyir-ani-txt-heading">' +
+                'Inland Revenue' +
+            '</div>' +
+            '<div class="easyir-ani-txt-message">' +
+                'EasyIR Verification Code: <strong>C68HAS</strong>' +
+            '</div>' +
+            '<div class="easyir-ani-txt-thumbnail"></div>' +
+        '</div>';
+
+    var janeStartTemplate = '' +
+        '<div class="easyir-ani-app">' +
+            '<div class="easyir-ani-verification5"></div>' +
+            '<div class="easyir-ani easyir-ani-menu-bar-verification5"></div>' +
+        '</div>' +
+        '<div class="easyir-ani easyir-ani-header"></div>';
+
     var jane1 = function () {
-        // janeNode.html(janeAniTemplate);
-        // janeNode = $('.easyir-ani-jane');
+        $('.easyir-walkthrough-jane-point1').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-jane-point2').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-jane-point3').addClass(POINT_HIDDEN);
+        janeNode.html(janeAniTemplate);
+        janeNode = $('.easyir-ani-jane');
         janeBtn.removeClass(ANI_START_BTN_JANE2);
         janeBtn.addClass(ANI_START_BTN_JANE1);
         janeBtn.addClass(BTN_DISABLED);
         janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         janeNode.find('.easyir-btn-jane .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-jane1-point1').removeClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-jane-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
             janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
@@ -619,6 +705,7 @@
     var jane7 = function () {
         setTimeout(function () {
             janeNode.find('.easyir-ani-send-verification-btn').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-walkthrough-jane-point2').removeClass(POINT_HIDDEN);
 
             jane8();
         }, TIME_TYPING);
@@ -682,14 +769,16 @@
                 janeNode.find('.easyir-ani-verification-menubar1'),
                 janeNode.find('.easyir-ani-checkbox-bar1')
             ]);
+            $('.easyir-walkthrough-jane-point3').removeClass(POINT_HIDDEN);
 
             jane12();
-        }, TIME_NEXT_SLIDE)
+        }, TIME_CLICK)
     };
 
     var jane12 = function () {
         setTimeout(function () {
             janeNode.find('.easyir-progress-checkbox-quater-1').addClass('easyir-progress-checkbox-checked');
+            janeNode.find('.easyir-ani-swipe-gesture').addClass('easyir-ani-gesture-press-zero');
 
             setTimeout(function () {
                 janeNode.find('.easyir-progress-checkbox-quater-2').addClass('easyir-progress-checkbox-checked');
@@ -698,15 +787,72 @@
                     janeNode.find('.easyir-progress-checkbox-quater-3').addClass('easyir-progress-checkbox-checked');
 
                     setTimeout(function () {
-
                         janeNode.find('.easyir-progress-checkbox-quater-4').addClass('easyir-progress-checkbox-checked');
+
+                        jane13();
                     }, TIME_CLICK);
 
                 }, TIME_CLICK);
 
             }, TIME_CLICK);
 
+        }, TIME_NEXT_SLIDE);
+    };
+
+    var jane13 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                janeNode.find('.easyir-ani-verification3'),
+                fredNode.find('.easyir-ani-menu-bar-verification3'),
+                janeNode.find('.easyir-ani-verification-menubar1'),
+                janeNode.find('.easyir-ani-checkbox-bar1')
+            ]);
+
+            aniNextSlide([
+                janeNode.find('.easyir-ani-verification4'),
+                janeNode.find('.easyir-ani-verification-getstarted'),
+                janeNode.find('.easyir-ani-menu-bar-verification4')
+            ]);
+
+            jane14();
+        }, TIME_CLICK)
+    };
+
+    var jane14 = function () {
+        setTimeout(function () {
+            janeNode.find('.easyir-ani-verification-getstarted').addClass(ANI_CLICK_TEAL_BTN);
+            jane15();
         }, TIME_CLICK);
+    };
+
+    var jane15 = function () {
+        setTimeout(function () {
+            aniPrevSlide([
+                janeNode.find('.easyir-ani-verification4'),
+                janeNode.find('.easyir-ani-verification-getstarted'),
+                janeNode.find('.easyir-ani-menu-bar-verification4')
+            ]);
+
+            aniNextSlide([
+                janeNode.find('.easyir-ani-verification5'),
+                janeNode.find('.easyir-ani-menu-bar-verification5'),
+                janeNode.find('.easyir-ani-checkbox-bar2')
+
+            ]);
+
+            jane16();
+        }, TIME_NEXT_SLIDE)
+    };
+
+    var jane16 = function () {
+        setTimeout(function () {
+            // janeNode.html(janeStartTemplate);
+            janeBtn.removeClass(BTN_DISABLED);
+            janeBtn.removeClass(ANI_START_BTN_JANE1);
+            janeBtn.addClass(ANI_START_BTN_JANE2);
+            janeBtn.find('.easyir-btn-arrow').addClass(BOUNCY_ARROW);
+            janeBtn.find('.easyir-btn-text').html('Go Again!');
+        }, TIME_HELP);
     };
 
     janeBtn.on('click', jane1);

@@ -409,3 +409,58 @@
 
     left: 95px;
 }
+
+@-webkit-keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.easyir-ani-gesture-press-zero {
+    -webkit-animation: pressZero 1.6s ease;
+    -moz-animation:    pressZero 1.6s ease;
+    -o-animation:      pressZero 1.6s ease;
+    animation:         pressZero 1.6s ease;
+
+    left: 97px;
+    top: 316px;
+}
