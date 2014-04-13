@@ -143,6 +143,25 @@ $ird-screen-height: 405px;
     }
 }
 
+%easyir-ani-default-btn,
+.easyir-ani-default-btn {
+    height: 28px;
+    background-color: white;
+    color: $ird-teal-default;
+    border-top: 1px solid $ird-app-button-border;
+    border-bottom: 1px solid $ird-app-button-border;
+    font-size: 12px;
+    @extend %easyir-centered-content;
+    @extend %easyir-middle-content;
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-default-btn {
+    @extend %easyir-ani-default;
+}
+
 .easyir-walkthrough {
     text-align: left;
     position: absolute;
@@ -203,15 +222,28 @@ $ird-screen-height: 405px;
         @extend %easyir-ani-placeholder-text;
         position: absolute;
         top: 128px;
-        left: 10px;
+        left: 16px;
     }
 
     .easyir-ani-registration-password {
         @extend %easyir-ani-placeholder-text;
         position: absolute;
         top: 158px;
-        left: 10px;
+        left: 16px;
     }
+
+
+    .easyir-ani-registration-btn {
+        @extend %easyir-ani-default;
+        @extend %easyir-ani-default-btn;
+        top: 198px;
+    }
+}
+
+.easyir-typing {
+    color: black !important;
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 
 // =========================== App ===========================
@@ -352,7 +384,7 @@ $ird-screen-height: 405px;
 
 .easyir-ani-progress-bar {
     @extend %easyir-ani-progress-bar;
-    
+
     .easyir-ani-progress-bar-content-percentage {
         position: absolute;
         top: 0;
@@ -496,6 +528,105 @@ $ird-screen-height: 405px;
     background-size: 100% auto;
     top: 10px;
 }
+
+// =========================== Verification 1 ===========================
+
+.easyir-ani-verification1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/02-mobile-verification/bg.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-send-verification-btn {
+    @extend %easyir-ani-default;
+    @extend %easyir-ani-default-btn;
+    top: 165px;
+}
+
+.easyir-ani-verification-mobile {
+    @extend %easyir-ani-placeholder-text;
+    position: absolute;
+    top: 125px;
+    left: 16px;
+}
+
+// =========================== Verification 2 ===========================
+
+.easyir-ani-verification2 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/03-verification-code/bg.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-send-verification-submit {
+    top: 160px;
+}
+
+.easyir-ani-send-verification-resend {
+    top: 189px;
+}
+
+.easyir-ani-verification-code-container {
+    @extend %easyir-ani-default;
+    top: 125px;
+}
+
+.easyir-ani-verification-code {
+    @extend %easyir-ani-placeholder-text;
+    position: absolute;
+    left: 16px;
+    top: 0;
+}
+
+.easyir-ani-txt {
+    @extend %easyir-ani-default;
+    height: 70px;
+    top: -80px;
+    background-color: #414143;
+
+    .easyir-ani-txt-icon {
+        position: absolute;
+        left: 10px;
+        height: 35px;
+        top: 17px;
+    }
+
+    .easyir-ani-txt-heading {
+        position: absolute;
+        top: 14px;
+        left: 51px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .easyir-ani-txt-message {
+        position: absolute;
+        top: 33px;
+        left: 52px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .easyir-ani-txt-thumbnail {
+        position: absolute;
+        top: 56px;
+        left: 50%;
+        margin-left: -15px;
+        height: 7px;
+        width: 30px;
+        @include border-radius(5px);
+        background-color: gray;
+    }
+}
+
+// =========================== Verification 3 ===========================
+
+.easyir-ani-verification3 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/04-PIN-setup/bg.png");
+    background-size: 100% auto;
+}
+
 
 // =========================== This Stays At The Bottom ===========================
 

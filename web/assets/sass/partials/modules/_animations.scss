@@ -45,7 +45,8 @@
     100% { top: 500px; }
 }
 
-.easyir-ani-start-fred1 {
+.easyir-ani-start-fred1,
+.easyir-ani-start-jane1 {
     -webkit-animation: fredBtn1 1s ease;
     -moz-animation:    fredBtn1 1s ease;
     -o-animation:      fredBtn1 1s ease;
@@ -71,13 +72,14 @@
     100% { top: 400px; }
 }
 
-.easyir-ani-start-fred2 {
+.easyir-ani-start-fred2,
+.easyir-ani-start-jane2 {
     -webkit-animation: fredBtn2 1s ease;
     -moz-animation:    fredBtn2 1s ease;
     -o-animation:      fredBtn2 1s ease;
     animation:         fredBtn2 1s ease;
 
-    top: 500px;
+    top: 400px;
 }
 
 // =========================== Open App ===========================
@@ -106,6 +108,39 @@
     animation:         openApp 0.3s ease;
 
     opacity: 0;
+}
+
+// =========================== Typing ===========================
+
+@-webkit-keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+@-moz-keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+@-o-keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+@keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+
+.easyir-ani-typing {
+    position: absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white;
+    @include box-sizing(border-box);
+
+    -webkit-animation: typing 1s steps(8, end);
+    -moz-animation:    typing 1s steps(8, end);
+    -o-animation:      typing 1s steps(8, end);
+    animation:         typing 1s steps(8, end);
 }
 
 // =========================== Click Teal Button ===========================
@@ -248,9 +283,63 @@
     -moz-animation:    slidePrevFrame 0.4s ease;
     -o-animation:      slidePrevFrame 0.4s ease;
     animation:         slidePrevFrame 0.4s ease;
-    
+
     left: auto;
     right: $ird-screen-width;
+}
+
+// =========================== Show Text ===========================
+
+@-webkit-keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+@-moz-keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+@-o-keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+@keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+
+.easyir-ani-show-txt {
+    -webkit-animation: showTxt 0.4s ease;
+    -moz-animation:    showTxt 0.4s ease;
+    -o-animation:      showTxt 0.4s ease;
+    animation:         showTxt 0.4s ease;
+
+    top: -5px;
+}
+
+@-webkit-keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+@-moz-keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+@-o-keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+@keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+
+.easyir-ani-hide-txt {
+    -webkit-animation: hideTxt 0.4s ease;
+    -moz-animation:    hideTxt 0.4s ease;
+    -o-animation:      hideTxt 0.4s ease;
+    animation:         hideTxt 0.4s ease;
+
+    top: -80px;
 }
 
 // =========================== Gestures ===========================
