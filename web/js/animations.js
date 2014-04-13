@@ -641,6 +641,9 @@
         '<div class="easyir-ani easyir-ani-header"></div>';
 
     var jane1 = function () {
+        $('.easyir-walkthrough-jane-point1').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-jane-point2').addClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-jane-point3').addClass(POINT_HIDDEN);
         janeNode.html(janeAniTemplate);
         janeNode = $('.easyir-ani-jane');
         janeBtn.removeClass(ANI_START_BTN_JANE2);
@@ -649,6 +652,7 @@
         janeBtn.find('.easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         janeNode.find('.easyir-btn-jane .easyir-btn-arrow').removeClass(BOUNCY_ARROW);
         $('.easyir-walkthrough-jane1-point1').removeClass(POINT_HIDDEN);
+        $('.easyir-walkthrough-jane-point1').removeClass(POINT_HIDDEN);
 
         setTimeout(function() {
             janeNode.find('.easyir-ani-open').addClass(ANI_OPEN_APP);
@@ -701,6 +705,7 @@
     var jane7 = function () {
         setTimeout(function () {
             janeNode.find('.easyir-ani-send-verification-btn').addClass(ANI_CLICK_GRAY_BTN);
+            $('.easyir-walkthrough-jane-point2').removeClass(POINT_HIDDEN);
 
             jane8();
         }, TIME_TYPING);
@@ -764,6 +769,7 @@
                 janeNode.find('.easyir-ani-verification-menubar1'),
                 janeNode.find('.easyir-ani-checkbox-bar1')
             ]);
+            $('.easyir-walkthrough-jane-point3').removeClass(POINT_HIDDEN);
 
             jane12();
         }, TIME_CLICK)
@@ -840,7 +846,7 @@
 
     var jane16 = function () {
         setTimeout(function () {
-            janeNode.html(janeStartTemplate);
+            // janeNode.html(janeStartTemplate);
             janeBtn.removeClass(BTN_DISABLED);
             janeBtn.removeClass(ANI_START_BTN_JANE1);
             janeBtn.addClass(ANI_START_BTN_JANE2);
