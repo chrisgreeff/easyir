@@ -599,7 +599,7 @@
             '<div class="easyir-ani-verification4 easyir-ani-next"></div>' +
             '<div class="easyir-ani-verification-getstarted easyir-ani-next">' +
                 'Get Started' +
-                '<img class="easyir-ani-verification-getstarted-arrow" src="web/assets/images/generic-app/00-iphone5s/arrow.svg">' +
+                '<img class="easyir-ani-verification-getstarted-arrow" src="web/assets/images/jane-app/arrow-white.svg">' +
             '</div>' +
             '<div class="easyir-ani easyir-ani-checkbox-bar easyir-ani-checkbox-bar2 easyir-ani-next">' +
                 '<div class="easyir-progress-checkbox easyir-progress-checkbox-quater-first"></div>' +
