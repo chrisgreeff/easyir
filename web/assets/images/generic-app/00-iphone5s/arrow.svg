@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="40px" viewBox="0 0 54 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>IR595-17</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Fred" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="IR595-17" sketch:type="MSArtboardGroup" transform="translate(-561.000000, -629.000000)" fill="#979797">
+            <g id="arrow.svg" sketch:type="MSLayerGroup" transform="translate(588.000000, 648.500000) rotate(-180.000000) translate(-588.000000, -648.500000) translate(561.000000, 629.000000)">
+                <path d="M11.9852358,22.5 L50.255185,22.5 C52.1881816,22.5 53.755185,20.9329966 53.755185,19 C53.755185,17.0670034 52.1881816,15.5 50.255185,15.5 L11.9852358,15.5 L11.9852358,15.5 L22.3029368,5.03574116 C23.660099,3.65930122 23.6444712,1.44327889 22.2680313,0.0861167682 C20.8915913,-1.27104536 18.675569,-1.2554176 17.3184069,0.121022341 L1.50773502,16.156277 C0.786741907,16.8875114 0.453187352,17.8556988 0.505275498,18.806186 C0.501773745,18.8703459 0.5,18.9349658 0.5,19 C0.5,19.0650342 0.501773745,19.1296541 0.505275498,19.193814 C0.453187352,20.1443012 0.786741907,21.1124886 1.50773502,21.843723 L17.3184069,37.8789777 C18.675569,39.2554176 20.8915913,39.2710454 22.2680313,37.9138832 C23.6444712,36.5567211 23.660099,34.3406988 22.3029368,32.9642588 L11.9852358,22.5 Z" id="Line" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,564 @@
+// ========================== Start Btn ===========================
+
+@-webkit-keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+@-moz-keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+@-o-keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+@keyframes bounceArrow {
+    0%   { left: 1px; }
+    50% { left: 8px; }
+    100% { left: 1px; }
+}
+
+.easyir-ani-bounce-arrow {
+    -webkit-animation: bounceArrow 1s ease infinite;
+    -moz-animation:    bounceArrow 1s ease infinite;
+    -o-animation:      bounceArrow 1s ease infinite;
+    animation:         bounceArrow 1s ease infinite;
+}
+
+@-webkit-keyframes fredBtn1 {
+    0%   { top: 300px; }
+    100% { top: 400px; }
+}
+@-moz-keyframes fredBtn1 {
+    0%   { top: 300px; }
+    100% { top: 400px; }
+}
+@-o-keyframes fredBtn1 {
+    0%   { top: 300px; }
+    100% { top: 400px; }
+}
+@keyframes fredBtn1 {
+    0%   { top: 300px; }
+    100% { top: 400px; }
+}
+
+.easyir-ani-start-fred1,
+.easyir-ani-start-jane1,
+.easyir-ani-start-mike1 {
+    -webkit-animation: fredBtn1 1s ease;
+    -moz-animation:    fredBtn1 1s ease;
+    -o-animation:      fredBtn1 1s ease;
+    animation:         fredBtn1 1s ease;
+
+    top: 400px;
+}
+
+// =========================== Open App ===========================
+
+@-webkit-keyframes openApp {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes openApp {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes openApp {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes openApp {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.easyir-ani-open-app {
+    -webkit-animation: openApp 0.5s ease;
+    -moz-animation:    openApp 0.5s ease;
+    -o-animation:      openApp 0.5s ease;
+    animation:         openApp 0.5s ease;
+
+    opacity: 0;
+}
+
+// =========================== Typing ===========================
+
+@-webkit-keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+@-moz-keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+@-o-keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+@keyframes typing {
+    from { width: 100% }
+    to   { width: 0 }
+}
+
+.easyir-ani-typing {
+    position: absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white;
+    @include box-sizing(border-box);
+
+    -webkit-animation: typing 0.8s steps(8, end);
+    -moz-animation:    typing 0.8s steps(8, end);
+    -o-animation:      typing 0.8s steps(8, end);
+    animation:         typing 0.8s steps(8, end);
+}
+
+.easyir-ani-typing-11 {
+    position: absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white;
+    @include box-sizing(border-box);
+
+    -webkit-animation: typing 0.8s steps(11, end);
+    -moz-animation:    typing 0.8s steps(11, end);
+    -o-animation:      typing 0.8s steps(11, end);
+    animation:         typing 0.8s steps(11, end);
+}
+
+.easyir-ani-typing-6 {
+    position: absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white;
+    @include box-sizing(border-box);
+
+    -webkit-animation: typing 0.8s steps(6, end);
+    -moz-animation:    typing 0.8s steps(6, end);
+    -o-animation:      typing 0.8s steps(6, end);
+    animation:         typing 0.8s steps(6, end);
+}
+
+// =========================== Click Teal Button ===========================
+
+@-webkit-keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+@-moz-keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+@-o-keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+@keyframes clickTealButton {
+    0%   { background-color: $ird-teal-default; }
+    50%  { background-color: $ird-teal-active;  }
+    100% { background-color: $ird-teal-default; }
+}
+
+.easyir-ani-click-teal-button {
+    -webkit-animation: clickTealButton 0.6s ease;
+    -moz-animation:    clickTealButton 0.6s ease;
+    -o-animation:      clickTealButton 0.6s ease;
+    animation:         clickTealButton 0.6s ease;
+}
+
+@-webkit-keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+@-moz-keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+@-o-keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+@keyframes clickGrayButton {
+    0%   { background-color: $ird-app-button; }
+    50%  { background-color: $ird-app-button-active;  }
+    100% { background-color: $ird-app-button; }
+}
+
+.easyir-ani-click-gray-button {
+    -webkit-animation: clickGrayButton 0.4s ease;
+    -moz-animation:    clickGrayButton 0.4s ease;
+    -o-animation:      clickGrayButton 0.4s ease;
+    animation:         clickGrayButton 0.4s ease;
+}
+
+// =========================== Show Help ===========================
+
+@-webkit-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@-moz-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@-o-keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+@keyframes showHelp {
+    0%   { top: 0; }
+    40%  { top: -330px; }
+    100% { top: -281px; }
+}
+
+.easyir-ani-show-help {
+    -webkit-animation: showHelp 1.5s ease;
+    -moz-animation:    showHelp 1.5s ease;
+    -o-animation:      showHelp 1.5s ease;
+    animation:         showHelp 1.5s ease;
+
+    top: -281px;
+}
+
+// =========================== Open Dashboard ===========================
+
+.easyir-ani-open-dash-board {
+    top: 103px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board-profile {
+    top: -97px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board-bottom {
+    top: 305px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board2 {
+    top: -50px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-open-dash-board-profile2 {
+    top: -250px;
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+@-webkit-keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+@-o-keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+@keyframes pressDashboardButton {
+    0%   { opacity: 0; }
+    50%   { opacity: 0.4; }
+    100% { opacity: 0; }
+}
+
+.easyir-press-dashboard-button {
+    -webkit-animation: pressDashboardButton 0.4s ease;
+    -moz-animation:    pressDashboardButton 0.4s ease;
+    -o-animation:      pressDashboardButton 0.4s ease;
+    animation:         pressDashboardButton 0.4s ease;
+}
+
+
+// =========================== Slide Frame ===========================
+
+@-webkit-keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+@-moz-keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+@-o-keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+@keyframes slideNextFrame {
+    0%   { right: -$ird-screen-width; }
+    100% { right: 0; }
+}
+
+.easyir-ani-slide-next-frame {
+    -webkit-animation: slideNextFrame 0.5s ease;
+    -moz-animation:    slideNextFrame 0.5s ease;
+    -o-animation:      slideNextFrame 0.5s ease;
+    animation:         slideNextFrame 0.5s ease;
+
+    right: 0;
+}
+
+@-webkit-keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+@-moz-keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+@-o-keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+@keyframes slidePrevFrame {
+    0%   { right: 0; }
+    100% { right: $ird-screen-width; }
+}
+
+.easyir-ani-slide-prev-frame {
+    -webkit-animation: slidePrevFrame 0.5s ease;
+    -moz-animation:    slidePrevFrame 0.5s ease;
+    -o-animation:      slidePrevFrame 0.5s ease;
+    animation:         slidePrevFrame 0.5s ease;
+
+    left: auto;
+    right: $ird-screen-width;
+}
+
+// =========================== Show Text ===========================
+
+@-webkit-keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+@-moz-keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+@-o-keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+@keyframes showTxt {
+    0%   { top: -80px; }
+    100% { top: -5px; }
+}
+
+.easyir-ani-show-txt {
+    -webkit-animation: showTxt 0.4s ease;
+    -moz-animation:    showTxt 0.4s ease;
+    -o-animation:      showTxt 0.4s ease;
+    animation:         showTxt 0.4s ease;
+
+    top: -5px;
+}
+
+@-webkit-keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+@-moz-keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+@-o-keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+@keyframes hideTxt {
+    0%   { top: -5px; }
+    100% { top: -80px; }
+}
+
+.easyir-ani-hide-txt {
+    -webkit-animation: hideTxt 0.4s ease;
+    -moz-animation:    hideTxt 0.4s ease;
+    -o-animation:      hideTxt 0.4s ease;
+    animation:         hideTxt 0.4s ease;
+
+    top: -80px;
+}
+
+// =========================== Gestures ===========================
+
+@-webkit-keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes gestureHelp {
+    0%   {
+        top: 200px;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.easyir-ani-gesture-show-help {
+    -webkit-animation: gestureHelp 1.5s ease;
+    -moz-animation:    gestureHelp 1.5s ease;
+    -o-animation:      gestureHelp 1.5s ease;
+    animation:         gestureHelp 1.5s ease;
+
+    left: 95px;
+}
+
+@-webkit-keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes pressZero {
+    0%   { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    37.5% { opacity: 1; }
+    50% { opacity: 0; }
+    62.5% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.easyir-ani-gesture-press-zero {
+    -webkit-animation: pressZero 1.6s ease;
+    -moz-animation:    pressZero 1.6s ease;
+    -o-animation:      pressZero 1.6s ease;
+    animation:         pressZero 1.6s ease;
+
+    left: 97px;
+    top: 316px;
+}
+
+// =========================== Page Animations ===========================
+
+@-webkit-keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+@-moz-keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+@-o-keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+@keyframes bounceIntroArrow {
+    0%   { margin-top: 0; }
+    50% { margin-top: 6px; }
+    100% { margin-top: 0; }
+}
+
+.easyir-ani-bounce-intro-arrow {
+    -webkit-animation: bounceIntroArrow 1s ease infinite;
+    -moz-animation:    bounceIntroArrow 1s ease infinite;
+    -o-animation:      bounceIntroArrow 1s ease infinite;
+    animation:         bounceIntroArrow 1s ease infinite;
+}

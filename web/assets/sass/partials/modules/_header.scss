@@ -1,0 +1,33 @@
+.easyir-header {
+    height: 70px;
+    position: fixed;
+    top: -70px;
+    opacity: 1;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    min-width: 960px;
+
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+
+    .easyir-logo {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 20px;
+        vertical-align: middle;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}

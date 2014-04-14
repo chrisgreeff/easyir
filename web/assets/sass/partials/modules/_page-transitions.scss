@@ -1,0 +1,203 @@
+.easyir-main,
+.easyir-story,
+.easyir-slide {
+    height: 100%;
+    position: relative;
+    min-width: 960px;
+    @include transition-property(all);
+    @include transition-duration(1s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-main {
+    overflow-y: hidden;
+}
+
+.easyir-story {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.easyir-slide {
+    display: inline-block;
+    width: 100%;
+}
+
+// =========================== Slide Buttons ===========================
+
+.easyir-slide-btn {
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    color: $color-teal-text;
+    font-size: 80px;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+
+    &:hover {
+        @include transition-delay(0s);
+        color: lighten($color-teal-text, 15%);
+    }
+}
+
+.easyir-slide-btn-prev {
+    left: -50px;
+    opacity: 0;
+}
+
+.easyir-slide-btn-prev-visible {
+    left: 220px;
+    opacity: 1;
+    @include transition-delay(0.5s);
+}
+
+.easyir-slide-btn-next {
+    right: 20px;
+    opacity: 1;
+}
+
+.easyir-slide-btn-next-hidden {
+    right: -50px;
+    opacity: 0;
+}
+
+// =========================== Story Header ===========================
+
+.easyir-header-visible {
+    @include transition-delay(1s);
+    top: 0;
+}
+
+.easyir-story-nav-bar-logo {
+    right: initial;
+    left: 0;
+}
+
+.easyir-story-nav-bar {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-right: 20px;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .easyir-story-nav-logo {
+        font-size: 25px !important;
+
+        span {
+            font-family: 'proxima_nova_bold' !important;
+        }
+    }
+
+    .easyir-story-nav {
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 20px;
+        vertical-align: middle;
+
+        &:hover:not(.active) span:after {
+            width: 100%;
+            background-color: $color-teal-text;
+        }
+
+        span {
+            font-family: 'proxima_nova_regular';
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            color: lighten($color-teal-text, 20%);
+            @include transition-property(all);
+            @include transition-duration(0.4s);
+            @include transition-timing-function(ease-in-out);
+
+            &:hover {
+                color: $color-teal-text;
+            }
+
+            &:after {
+                height: 2px;
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0%;
+                left: 0;
+                background-color: lighten($color-teal-text, 20%);
+
+                @include transition-property(all);
+                @include transition-duration(0.4s);
+                @include transition-timing-function(ease-in-out);
+            }
+        }
+    }
+}
+
+.easyir-story-side-bar-teal {
+    background-color: $color-teal-background;
+}
+
+.easyir-story-side-bar-pink {
+    background-color: $color-pink-background;
+}
+
+.easyir-story-side-bar-blue {
+    background-color: $color-blue-background;
+}
+
+.easyir-story-side-bar {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    text-transform: uppercase;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+    @extend %easyir-middle-content;
+    display: table;
+
+    .easyir-story-side-bar-content {
+        display: table-cell;
+        position: relative;
+        white-space: normal;
+        font-size: 48px;
+        font-family: 'proxima_nova_bold';
+        color: $color-teal-text;
+        text-align: center;
+        vertical-align: middle;
+        @include transition-property(all);
+        @include transition-duration(1s);
+        @include transition-timing-function(ease-in-out);
+
+        .easyir-story-side-bar-app {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            opacity: 0;
+
+            @include transition-property(opacity);
+            @include transition-duration(1s);
+            @include transition-timing-function(ease-in-out);
+        }
+
+        &.easyir-story-side-bar-app-visible {
+            .easyir-story-side-bar-app {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.easyir-story-side-bar-visible {
+    left: 0px;
+    @include transition-delay(0.5s);
+}
+

@@ -1,0 +1,89 @@
+// -------------------------- Teal --------------------------
+
+@include easyir-section(
+    $name: teal,
+    $background-color: $color-teal-background,
+    $text-color: $color-teal-text,
+    $text-color-sub: $color-teal-text-sub
+);
+
+// -------------------------- Gray --------------------------
+
+@include easyir-section(
+    $name: gray,
+    $background-color: $color-gray-background,
+    $text-color: $color-gray-text,
+    $text-color-sub: $color-gray-text-sub
+);
+
+// -------------------------- Pink --------------------------
+
+@include easyir-section(
+    $name: pink,
+    $background-color: $color-pink-background,
+    $text-color: $color-pink-text,
+    $text-color-sub: $color-pink-text-sub
+);
+
+// -------------------------- Blue --------------------------
+
+@include easyir-section(
+    $name: blue,
+    $background-color: $color-blue-background,
+    $text-color: $color-blue-text,
+    $text-color-sub: $color-blue-text-sub
+);
+
+// -------------------------- Teal 2 --------------------------
+
+@include easyir-section(
+    $name: teal2,
+    $background-color: $color-teal2-background,
+    $text-color: $color-teal2-text,
+    $text-color-sub: $color-teal2-text-sub
+);
+
+// -------------------------- Teal 3 --------------------------
+
+@include easyir-section(
+    $name: teal3,
+    $background-color: $color-teal3-background,
+    $text-color: $color-teal3-text,
+    $text-color-sub: $color-teal3-text-sub
+);
+
+// -------------------------- Teal 4 --------------------------
+
+@include easyir-section(
+    $name: teal4,
+    $background-color: $color-teal4-background,
+    $text-color: $color-teal4-text,
+    $text-color-sub: $color-teal4-text-sub
+);
+
+// -------------------------- Brown 1 --------------------------
+
+@include easyir-section(
+    $name: brown1,
+    $background-color: $color-brown1-background,
+    $text-color: $color-brown1-text,
+    $text-color-sub: $color-brown1-text-sub
+);
+
+// -------------------------- Brown 2 --------------------------
+
+@include easyir-section(
+    $name: brown2,
+    $background-color: $color-brown2-background,
+    $text-color: $color-brown2-text,
+    $text-color-sub: $color-brown2-text-sub
+);
+
+// -------------------------- Brown 3 --------------------------
+
+@include easyir-section(
+    $name: brown3,
+    $background-color: $color-brown3-background,
+    $text-color: $color-brown3-text,
+    $text-color-sub: $color-brown3-text-sub
+);

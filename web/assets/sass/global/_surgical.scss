@@ -1,0 +1,39 @@
+$spacing_types:   (m margin) (p padding);
+$position_values: (t top) (b bottom) (l left) (r right) a;
+$spacing_values:  (n 0) (s 10px) (m 20px) (l 50px);
+
+@each $spacing_type in $spacing_types {
+    @each $position_value in $position_values {
+        @each $spacing_value in $spacing_values {
+            @if $position_value == a {
+                .easyir-#{nth($spacing_type, 1) + nth($position_value, 1) + nth($spacing_value, 1)} {
+                    #{nth($spacing_type, 2)}: #{nth($spacing_value,2)} !important;
+                }
+            } @else {
+                .easyir-#{nth($spacing_type, 1) + nth($position_value, 1) + nth($spacing_value, 1)} {
+                    #{nth($spacing_type, 2)}-#{nth($position_value, 2)}: #{nth($spacing_value,2)} !important;
+                }
+            }
+        }
+    }
+}
+
+.easyir-center {
+    text-align: center !important;
+}
+
+%easyir-centered-content {
+    max-width: $section-content-max-width;
+    margin: $section-content-margin;
+}
+
+%easyir-middle-content {
+    vertical-align: middle;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,316 @@
+@mixin easyir-section(
+    $name,
+    $background-color,
+    $text-color,
+    $text-color-sub
+) {
+    .easyir-page-#{$name} {
+        background-color: #{$background-color};
+    }
+
+    .easyir-section-#{$name} {
+        background-color: #{$background-color};
+        color: #{$text-color};
+
+        .easyir-section--heading-underline {
+            border-bottom: 1px solid #{$text-color-sub};
+        }
+
+        .easyir-section--sub-heading {
+            color: #{$text-color-sub};
+        }
+    }
+}
+
+// --------------------------- Base -------------------------
+
+.easyir-section {
+    // line-height: 0 to ensure the sections are hard up against each other.
+    line-height: 0;
+    padding: $section-padding;
+    @include box-sizing(border-box);
+    min-width: 960px;
+}
+
+.easyir-section--content {
+    line-height: 2;
+    min-width: 960px;
+    @extend %easyir-centered-content;
+    white-space: normal;
+    position: relative;
+    top: 50%;
+    margin-top: -250px;
+}
+
+.easyir-section--content-footer {
+    padding: $section-footer-padding;
+    // line-height: normal so there is no empty space below the footer.
+    line-height: normal;
+}
+
+.easyir-section--content-header {
+    position: relative;
+    height: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.easyir-section--heading {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-align: left;
+
+    .easyir-section--heading-primary {
+        text-transform: uppercase;
+        font-family: 'proxima_nova_bold';
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-primary-font-size;
+        margin: $section-heading-margin;
+        border-bottom: 1px solid $color-teal-text;
+    }
+
+    .easyir-section--heading-secondary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-secondary-font-size;
+        margin: $section-heading-margin;
+    }
+
+    .easyir-section--heading-tertiary {
+        font-weight: $section-heading-font-weight;
+        font-size: $section-heading-tertiary-font-size;
+        margin: 0;
+    }
+
+    .easyir-section--sub-heading {
+        font-weight: $section-sub-heading-font-weight;
+        font-size: $section-sub-heading-font-size;
+        color: #bebebe;
+        line-height: 1.5;
+        // font-style: italic;
+        font-size: 21px;
+    }
+}
+
+.easyir-section--story-telling {
+    padding-left: 250px;
+}
+
+.easyir-section--content-table {
+    height: 100%;
+    width: 960px;
+    display: table;
+    table-layout: fixed;
+}
+
+.easyir-section--content-cell {
+    display: table-cell;
+    text-align: center;
+    height: 100%;
+    width: 480px;
+}
+
+.easyir--content-cell-top {
+    vertical-align: top;
+}
+
+.easyir--content-cell-wide {
+    width: 100%;
+}
+
+.easyir-section--content-caption {
+    vertical-align: top;
+}
+
+.easyir-caption-container {
+    padding: 20px;
+}
+
+.easyir-image-container {
+    height: 100%;
+}
+
+.easyir-image-container-left {
+    text-align: left;
+}
+
+.easyir-section-sub-heading-speech {
+    position: relative;
+    background-color: white;
+    padding: 12px 20px;
+    margin-top: 40px;
+
+    .easyir-speech-beak {
+        width: 0;
+        bottom: 0;
+        left: -40px;
+        position: absolute;
+        border-left: 40px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 40px solid white;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+// INTRO
+
+.easyir-section-intro {
+    height: 100%;
+    @include box-sizing(border-box);
+    padding-bottom: 190px;
+
+    .easyir-section-intro-top {
+        height: 100%;
+        margin-bottom: -310px;
+        position: relative;
+        background: url("../images/introduction/intro-small.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .easyir-title-container {
+        position: absolute;
+        top: 140px;
+        left: 140px;
+        // width: 185px;
+        color: white;
+        font-family: 'proxima_nova_bold';
+        white-space: initial;
+
+        .easyir-intro-title {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .easyir-intro-subtitle {
+            margin-top: 10px;
+            font-family: 'proxima_nova_light';
+            font-size: 20px;
+        }
+    }
+
+    .easyir-section-intro-bottom {
+        height: 310px;
+    }
+
+    .bouncing-message {
+        font-family: proxima_nova_light;
+        color: $color-gray-text;
+        text-transform: uppercase;
+    }
+
+    // FEATURES
+
+    .easyir-section-intro-features {
+        position: absolute;
+        bottom: 0;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        height: 200px;
+    }
+
+    .easyir-section-intro-feature {
+        display: table-cell;
+        // vertical-align: middle;
+        text-align: center;
+        background-color: #FFF;
+        padding: 35px 70px;
+        white-space: normal;
+        font-family: proxima_nova_light;
+        color: $color-gray-text;
+    }
+
+    .easyir-intro-feature-icon {
+        width: auto;
+        height: 29px;
+        margin-bottom: 10px;
+    }
+
+    .easyir-intro-feature-title {
+        font-size: 15px;
+        font-family: 'proxima_nova_bold';
+        border-bottom: 1px solid $color-gray-text;
+        text-transform: uppercase;
+        padding-bottom: 4px;
+    }
+
+    .easyir-intro-feature-description {
+        line-height: 1.5;
+        font-size: 14px;
+        margin-top: 6px;
+        font-style: italic;
+    }
+
+    // Bottom Bar
+
+    .easyir-section-intro-bottom-bar {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #FFF;
+        text-align: center;
+    }
+
+    .easyir-next-container {
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+    .easyir-intro-next {
+        color: $color-gray-text;
+    }
+}
+
+// Meet the team
+
+.easyir-team-container {
+    display: table;
+    width: 100%;
+}
+
+.easyir-team {
+    padding: 30px;
+    display: table-cell;
+    position: relative;
+    top: 75px;
+}
+
+.easyir-team-face {
+    width: 110px;
+    height: auto;
+}
+
+.easyir-team-name {
+    font-size: 25px;
+    font-family: 'proxima_nova_bold';
+}
+
+.easyir-team-title {
+    font-family: 'proxima_nova_light';
+    border-bottom: 2px solid #d4d4d4;
+    position: relative;
+    top: -15px;
+}
+
+.easyir-team-twitter-img,
+.easyir-team-github-img {
+    width: 30px;
+}
+
+.easyir-section--content-meet-team {
+    padding-left: 30px;
+}
+
+.easyir-meet-team-heading {
+    margin-top: -30px;
+}

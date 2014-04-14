@@ -1,0 +1,790 @@
+$ird-screen-width: 223px;
+$ird-screen-height: 405px;
+
+.easyir-btn {
+    background-color: $color-red-background;
+    color: $color-red-text;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-family: 'proxima_nova_regular';
+    @include border-radius(0px);
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+
+    &:hover {
+        background-color: darken($color-red-background, 15%);
+    }
+
+    .easyir-btn-arrow {
+        position: relative;
+        top: 1px;
+        left: 1px;
+    }
+}
+
+.easyir-btn-secret-sauce {
+    background-color: $ird-teal-default;
+    &:hover {
+        background-color: darken($ird-teal-default, 15%);
+    }
+    position: relative;
+    top: 40px;
+    left: -118px;
+}
+
+.easyir-btn-disabled {
+    pointer-events: none;
+    background-color: lighten(#4a4a4a, 10%);
+}
+
+.easyir-btn-fred,
+.easyir-btn-jane,
+.easyir-btn-mike {
+    position: absolute;
+    top: 300px;
+    right: 150px;
+}
+
+.easyir-section--animation-view {
+    width: 275px;
+    position: relative;
+    vertical-align: top;
+}
+
+.easyir--section--animation-start {
+    position: relative;
+    width: 685px;
+
+    .easyir-section--content-animation-start-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .easyir-section--heading {
+            width: 500px;
+            margin-top: 123px;
+        }
+    }
+}
+
+.easyir-ani-swipe-gesture {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    @include transition-property(opacity);
+    @include transition-duration(0.4s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-iphone {
+    position: relative;
+    background: url("../images/generic-app/00-iphone5s/iphone5s.png");
+    width: 100%;
+    height: 600px;
+    background-size: 287px 600px;
+}
+
+.easyir-ani-overlay {
+    position: absolute;
+    left: 25px;
+    top: 93px;
+    height: $ird-screen-height;
+    width: $ird-screen-width;
+    overflow: hidden;
+    font-family: 'helvetica' !important;
+}
+
+%easyir-ani-default {
+    position: absolute;
+    left: 0;
+    width: $ird-screen-width;
+}
+
+%easyir-ani-placeholder-text {
+    color: #D4D4D4;
+    font-size: 12px;
+}
+
+%easyir-ani-full-screen {
+    @extend %easyir-ani-default;
+    top: 0;
+    height: $ird-screen-height;
+}
+
+.easyir-ani-header {
+    @extend %easyir-ani-default;
+    background: url("../images/generic-app/00-iphone5s/fixed-top-header.png");
+    background-size: auto 100%;
+    top: -1px;
+    height: 15px;
+}
+
+.easyir-ani-open {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/generic-app/01-open-page/open-page.png");
+    background-size: auto 100%;
+}
+
+%easyir-ani-menu-bar {
+    @extend %easyir-ani-default;
+    top: 11px;
+    height: 31px;
+}
+
+%easyir-ani-progress-bar {
+    @extend %easyir-ani-default;
+    top: 42px;
+    height: 38px;
+    font-size: 12px;
+    background: white;
+    color: $ird-teal-default;
+    border-bottom: 1px solid $ird-app-button-border;
+
+    .easyir-ani-progress-bar-content {
+        position: absolute;
+        top: 8px;
+        width: 100%;
+    }
+}
+
+%easyir-ani-default-btn,
+.easyir-ani-default-btn {
+    height: 30px;
+    background-color: white;
+    color: $ird-teal-default;
+    border-top: 1px solid $ird-app-button-border;
+    border-bottom: 1px solid $ird-app-button-border;
+    font-size: 12px;
+    @extend %easyir-centered-content;
+    @extend %easyir-middle-content;
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-ani-default-btn {
+    @extend %easyir-ani-default;
+}
+
+.easyir-walkthrough {
+    text-align: left;
+    position: absolute;
+    top: 127px;
+    left: 368px;
+    width: 250px;
+    color: #979797;
+
+    .easyir-walkthrough-point-hidden {
+        opacity: 0;
+    }
+
+    .easyir-walkthrough-point {
+        @include transition-property(opacity);
+        @include transition-duration(0.8s);
+        @include transition-timing-function(ease-in-out);
+        line-height: 1.5;
+        margin-bottom: 5px;
+        list-style: none;
+        padding-bottom: 12px;
+        // font-family: helvetica;
+        text-align: right;
+        font-size: 13px;
+        background-color: white;
+        margin-top: 0px;
+        border-left: 6px solid #028b95;
+        padding: 10px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.easyir-walkthrough-mike {
+    top: 150px;
+}
+
+// =========================== Registration Page ===========================
+
+.easyir-ani-registration {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/generic-app/02-registration/bg.png");
+    background-size: auto 100%;
+
+    .easyir-ani-menu-bar {
+        @extend %easyir-ani-menu-bar;
+        background: url("../images/generic-app/02-registration/menu-bar-top.png");
+        background-size: auto 100%;
+    }
+
+    .easyir-ani-apply-button {
+        @extend %easyir-ani-default;
+        bottom: 0;
+        height: 38px;
+        background-color: $ird-teal-default;
+        color: white;
+        font-size: 12px;
+        @extend %easyir-centered-content;
+        @extend %easyir-middle-content;
+    }
+
+    .easyir-ani-registration-irdnumber {
+        @extend %easyir-ani-placeholder-text;
+        position: absolute;
+        top: 128px;
+        left: 16px;
+    }
+
+    .easyir-ani-registration-password {
+        @extend %easyir-ani-placeholder-text;
+        position: absolute;
+        top: 158px;
+        left: 16px;
+    }
+
+
+    .easyir-ani-registration-btn {
+        @extend %easyir-ani-default;
+        @extend %easyir-ani-default-btn;
+        top: 196px;
+        height: 30px;
+    }
+}
+
+.easyir-typing {
+    color: black !important;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+// =========================== App ===========================
+
+.easyir-ani-next {
+    right: -$ird-screen-width;
+    left: initial !important;
+}
+
+.easyir-ani-app {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.easyir-ani-options-table {
+    display: table;
+    width: 100%;
+}
+
+.easyir-ani-options-cell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.easyir-ani-options-bar {
+    @extend %easyir-ani-default;
+    height: 160px;
+    bottom: 0;
+    background-color: $ird-app-button;
+    border-top: 1px solid $ird-app-button-border;
+    font-size: 14px;
+}
+
+.easyir-ani-options-yes {
+    color: $ird-teal-default;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+}
+
+.easyir-ani-options-no {
+    color: red;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid $ird-app-button-border;
+}
+
+.easyir-ani-options-bar-quater {
+    position: relative;
+    color: $ird-app-text-color;
+    height: 40px;
+    border-bottom: 1px solid $ird-app-button-border;
+
+    .easyir-ani-options-bar-quater-content {
+        font-size: 11px;
+        text-align: left;
+        position: absolute;
+        left: 45px;
+        line-height: 1.5;
+    }
+
+    .easyir-ani-options-bar-quater-content-1 {
+        top: 13px;
+    }
+
+    .easyir-ani-options-bar-quater-content-2 {
+        top: 4px;
+    }
+
+    .easyir-ani-options-bar-quater-checkbox {
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 4px;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-color: gray;
+        border-width: 1px;
+        border-style: solid;
+
+        &::before {
+            @include transition-property(opacity);
+            @include transition-duration(0.5s);
+            @include transition-timing-function(ease-in-out);
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            background-color: gray;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border-color: gray;
+            border-width: 1px;
+            border-style: solid;
+            opacity: 0;
+        }
+
+        &.easyir-ani-options-bar-quater-checkbox-checked {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.easyir-ani-options-bar-half {
+    position: relative;
+    color: $ird-app-text-color;
+    height: 80px;
+    border-bottom: 1px solid $ird-app-button-border;
+}
+
+.easyir-ani-options-bar-half-single {
+    width: 100%;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+
+.easyir-ani-options-bar-half-double {
+    line-height: 1.5;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 193px;
+    padding: 0 15px;
+}
+
+.easyir-ani-options-bar-half-image {
+    width: 50px;
+    height: auto;
+}
+
+.easyir-ani-options-bar-full {
+    color: $ird-app-text-color;
+    height: 100%;
+    @extend %easyir-middle-content;
+}
+
+.easyir-ani-options-bar-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: auto;
+    right: 35px;
+}
+
+.easyir-ani-progress-bar {
+    @extend %easyir-ani-progress-bar;
+
+    .easyir-ani-progress-bar-content-percentage {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: $ird-app-text-color-lighter;
+    }
+}
+
+.easyir-ani-checkbox-bar {
+    @extend %easyir-ani-default;
+    top: 7px;
+}
+
+.easyir-progress-checkbox {
+    display: inline-block;
+    position: absolute;;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border-color: $ird-teal-default;
+    border-width: 1px;
+    border-style: solid;
+    top: 87px;
+    @include transition-property(background-color);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.easyir-progress-checkbox-left {
+    left: 96px;
+}
+
+.easyir-progress-checkbox-right {
+    left: 118px;
+}
+
+.easyir-progress-checkbox-quater-first {
+    left: 78px;
+}
+
+.easyir-progress-checkbox-quater-second {
+    left: 98px;
+}
+
+.easyir-progress-checkbox-quater-third {
+    left: 118px
+}
+
+.easyir-progress-checkbox-quater-fourth {
+    left: 138px
+}
+
+.easyir-progress-checkbox-checked {
+    background-color: $ird-teal-default;
+}
+
+// =========================== Pre 1 ===========================
+
+.easyir-ani-pre1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/03-pre-1/bg.png");
+    background-size: 100% auto;
+    height: 1025px;
+}
+
+.easyir-ani-menu-bar-pre1,
+.easyir-ani-menu-bar-pre2,
+.easyir-ani-menu-bar-pre3,
+.easyir-ani-menu-bar-pre4 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/fred-app/03-pre-1/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+// =========================== Pre 2 ===========================
+
+.easyir-ani-pre2 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/04-pre-2/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Pre 3 ===========================
+
+.easyir-ani-pre3 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/05-pre-3/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Pre 4 ===========================
+
+.easyir-ani-pre4 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/06-pre-4/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 1 ===========================
+
+.easyir-ani-ir595-pre1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/07-IR595-pre-1/bg.png");
+    background-size: 100% auto;
+    height: 1025px;
+}
+
+.easyir-ani-ir595-menu-bar-pre1,
+.easyir-ani-ir595-menu-bar-pre2,
+.easyir-ani-ir595-menu-bar-pre3,
+.easyir-ani-ir595-menu-bar-pre4,
+.easyir-ani-ir595-menu-bar-pre5 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/fred-app/07-IR595-pre-1/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 2 ===========================
+
+.easyir-ani-ir595-pre2 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/08-IR595-pre-2/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 3 ===========================
+
+.easyir-ani-ir595-pre3 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/09-IR595-pre-3/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== IR595 Pre 4 ===========================
+
+.easyir-ani-ir595-pre4 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/09-IR595-pre-4/bg.png");
+    background-size: 100% auto;
+    top: 6px;
+}
+
+.easyir-ani-ir595-pre4-upload-button {
+    @extend %easyir-ani-default;
+    background: url("../images/fred-app/09-IR595-pre-4/uploadbutton.png");
+    background-size: 100% auto;
+    bottom: 0;
+    height: 36px;
+}
+
+// =========================== IR595 Pre 5 ===========================
+
+.easyir-ani-ir595-pre5 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/fred-app/09-IR595-pre-5/bg.png");
+    background-size: 100% auto;
+    top: 10px;
+}
+
+// =========================== Verification 1 ===========================
+
+.easyir-ani-verification1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/02-mobile-verification/bg.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-menu-bar-verification1,
+.easyir-ani-menu-bar-verification2 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/jane-app/01-registration/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-menu-bar-verification3,
+.easyir-ani-menu-bar-verification4,
+.easyir-ani-menu-bar-verification5,
+.easyir-ani-menu-bar-dashboard1 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/jane-app/04-PIN-setup/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-send-verification-btn {
+    @extend %easyir-ani-default;
+    @extend %easyir-ani-default-btn;
+    top: 165px;
+}
+
+.easyir-ani-verification-mobile-container {
+    @extend %easyir-ani-default;
+    top: 125px;
+}
+
+.easyir-ani-verification-mobile {
+    @extend %easyir-ani-placeholder-text;
+    position: absolute;
+    left: 16px;
+    top: 0;
+}
+
+// =========================== Verification 2 ===========================
+
+.easyir-ani-verification2 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/03-verification-code/bg.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-send-verification-submit {
+    top: 160px;
+}
+
+.easyir-ani-send-verification-resend {
+    top: 189px;
+}
+
+.easyir-ani-verification-code-container {
+    @extend %easyir-ani-default;
+    top: 125px;
+}
+
+.easyir-ani-verification-code {
+    @extend %easyir-ani-placeholder-text;
+    position: absolute;
+    left: 16px;
+    top: 0;
+}
+
+.easyir-ani-txt {
+    @extend %easyir-ani-default;
+    height: 70px;
+    top: -80px;
+    background-color: #414143;
+
+    .easyir-ani-txt-icon {
+        position: absolute;
+        left: 10px;
+        height: 35px;
+        top: 17px;
+    }
+
+    .easyir-ani-txt-heading {
+        position: absolute;
+        top: 14px;
+        left: 51px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .easyir-ani-txt-message {
+        position: absolute;
+        top: 33px;
+        left: 52px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .easyir-ani-txt-thumbnail {
+        position: absolute;
+        top: 56px;
+        left: 50%;
+        margin-left: -15px;
+        height: 7px;
+        width: 30px;
+        @include border-radius(5px);
+        background-color: gray;
+    }
+}
+
+// =========================== Verification 3 ===========================
+
+.easyir-ani-verification3 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/04-PIN-setup/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Verification 4 ===========================
+
+.easyir-ani-verification4 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/05-successful/bg.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-verification-getstarted {
+    @extend %easyir-ani-default;
+    bottom: 0;
+    height: 38px;
+    background-color: $ird-teal-default;
+    color: white;
+    font-size: 12px;
+    @extend %easyir-centered-content;
+    @extend %easyir-middle-content;
+
+    .easyir-ani-verification-getstarted-arrow {
+        position: absolute;
+        right: 6px;
+        width: 30px;
+        top: 8px;
+    }
+}
+
+// =========================== Verification 5 ===========================
+
+.easyir-ani-verification5 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/jane-app/06-login/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Dashboard 1 ===========================
+
+.easyir-ani-dashboard1 {
+    @extend %easyir-ani-full-screen;
+    background: url("../images/mike-app/01-login/bg.png");
+    background-size: 100% auto;
+}
+
+// =========================== Dashboard 2 ===========================
+
+.easyir-ani-dashboard2 {
+    @extend %easyir-ani-default;
+    background: url("../images/mike-app/02-home/01.png");
+    background-size: 100% auto;
+    height: 354px;
+    top: 242px;
+}
+
+.easyir-ani-menu-bar-dashboard2 {
+    @extend %easyir-ani-menu-bar;
+    background: url("../images/mike-app/02-home/menu-bar-top.png");
+    background-size: 100% auto;
+}
+
+.easyir-ani-dashboard-profile {
+    @extend %easyir-ani-default;
+    background: url("../images/mike-app/02-home/profile.png");
+    background-size: 100% auto;
+    top: 42px;
+    height: 200px;
+}
+
+.easyir-ani-dashboard-bottom {
+    @extend %easyir-ani-default;
+    background: url("../images/mike-app/02-home/02.png");
+    background-size: 100% auto;
+    top: 460px;
+    height: 100px;
+}
+
+.easyir-ani-press-dashboard {
+    @extend %easyir-ani-default;
+    height: 50px;
+    background-color: gray;
+    top: 255px;
+    opacity: 0;
+}
+
+// =========================== This Stays At The Bottom ===========================
+
+.easyir-ani {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
